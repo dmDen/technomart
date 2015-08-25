@@ -11,7 +11,7 @@
 			<nav class="main-navigation">
 				<ul>
 					<li>
-						<a href="#">Главная</a>
+						<a href="/">Главная</a>
 					</li>
 					<li>
 						<a href="#">Информация</a>
@@ -23,7 +23,7 @@
 						<a href="text.html">Прайс-лист</a>
 					</li>
 					<li class="active">
-						<a href="#">Магазин</a>
+						<a href="/catalog.html">Магазин</a>
 					</li>
 					<li>
 						<a href="#">Контакты</a>
@@ -54,41 +54,41 @@
 				<form action="/echo" method="post">
 					<h2 class="catalog-title">Производители:</h2>
 					<div class="form-row">
-						<input type="checkbox" name="brand" id="brand-checkbox-baxter">
+						<input type="checkbox" name="brand-checkbox-baxter" id="brand-checkbox-baxter">
 						<label for="brand-checkbox-baxter">Baxter of California</label>
 					</div>
 					<div class="form-row">
-						<input type="checkbox" name="brand" id="brand-checkbox-natty">
+						<input type="checkbox" name="brand-checkbox-natty" id="brand-checkbox-natty">
 						<label for="brand-checkbox-natty">Mr Natty</label>
 					</div>
 					<div class="form-row">
-						<input type="checkbox" name="brand" id="brand-checkbox-suavecito">
+						<input type="checkbox" name="brand-checkbox-suavecito" id="brand-checkbox-suavecito">
 						<label for="brand-checkbox-suavecito">Suavecito</label>
 					</div>
 					<div class="form-row">
-						<input type="checkbox" name="brand" id="brand-checkbox-malin">
+						<input type="checkbox" name="brand-checkbox-malin" id="brand-checkbox-malin">
 						<label for="maker-checkbox-malin">Malin+Goetz</label>
 					</div>
 					<div class="form-row">
-						<input type="checkbox" name="brand" id="brand-checkbox-murray">
+						<input type="checkbox" name="brand-checkbox-murray" id="brand-checkbox-murray">
 						<label for="brand-checkbox-murray">Murray’s</label>
 					</div>
 					<div class="form-row">
-						<input type="checkbox" name="brand" id="brand-checkbox-americancrew">
+						<input type="checkbox" name="brand-checkbox-americancrew" id="brand-checkbox-americancrew">
 						<label for="brand-checkbox-crew">American Crew</label>
 					</div>
 					
 					<h2 class="catalog-title">Группы товаров:</h2>
 					<div class="form-row">
-						<input type="radio" name="group" id="group-radio-shaver">
+						<input type="radio" name="group" id="group-radio-shaver" value="group-radio-shaver">
 						<label for="group-radio-shaver">Бритвенные<br>принадлежности</label>
 					</div>
 					<div class="form-row">
-						<input type="radio" name="group" id="group-radio-means">
+						<input type="radio" name="group" id="group-radio-means" value="group-radio-means">
 						<label for="group-radio-means">Средства для ухода</label>
 					</div>
 					<div class="form-row">
-						<input type="radio" name="group" id="group-radio-accessories">
+						<input type="radio" name="group" id="group-radio-accessories" value="group-radio-accessories">
 						<label for="group-radio-accessories">Аксессуары</label>
 					</div>
 					<button type="submit" class="btn">Показать</button>
@@ -98,14 +98,16 @@
 			<div class="catalog">
 				<article class="catalog-item">
 					<a href="#">
-						<img src="#" width="220" height="165" alt="">					
+						<img src="#" width="220" height="165" alt="">
+					</a>
+					<a>
 						<div class="item-description">
 							<span class="catalog-item-description">Набор для путешествий</span><br>
 							<span class="catalog-item-brand">«Baxter of California»</span>
 						</div>
 					</a>
 					<div class="price-with-button">
-						<p class="price">2900 РУБ.</p>
+						<div class="price">2900 РУБ.</div>
 						<a href="#" class="button">Купить</a>
 					</div>											
 				</article>
@@ -113,41 +115,47 @@
 				<article class="catalog-item">
 					<a href="#">
 						<img src="#" width="220" height="165" alt="">					
+					</a>
+					<a href="#">
 						<div class="item-description">
 							<span class="catalog-item-description">Увлажняющий кондиционер</span><br>
 							<span class="catalog-item-brand">«Baxter of California»</span>
 						</div>
 					</a>
 					<div class="price-with-button">
-						<p class="price">750 РУБ.</p>
+						<div class="price">750 РУБ.</div>
 						<a href="#" class="button">Купить</a>
 					</div>											
 				</article>
 				
 				<article class="catalog-item">
 					<a href="#">
-						<img src="#" width="220" height="165" alt="">					
+						<img src="#" width="220" height="165" alt="">
+					</a>
+					<a href="#">
 						<div class="item-description">
 							<span class="catalog-item-description">Гель для волос</span><br>
 							<span class="catalog-item-brand">«Suavecito»</span>
 						</div>
 					</a>
 					<div class="price-with-button">
-						<p class="price">290 РУБ.</p>
+						<div class="price">290 РУБ.</div>
 						<a href="#" class="button">Купить</a>
 					</div>											
 				</article>
 				
 				<article class="catalog-item">
 					<a href="#">
-						<img src="#" width="220" height="165" alt="">					
+						<img src="#" width="220" height="165" alt="">
+					</a>
+					<a href="#">					
 						<div class="item-description">
 							<span class="catalog-item-description">Глина для укладки волос</span><br>
 							<span class="catalog-item-brand">«American crew»</span>
 						</div>
 					</a>
 					<div class="price-with-button">
-						<p class="price">500 РУБ.</p>
+						<div class="price">500 РУБ.</div>
 						<a href="#" class="button">Купить</a>
 					</div>											
 				</article>
@@ -155,13 +163,15 @@
 				<article class="catalog-item">
 					<a href="#">
 						<img src="#" width="220" height="165" alt="">					
+					</a>
+					<a href="#">
 						<div class="item-description">
 							<span class="catalog-item-description">Гель для волос</span><br>
 							<span class="catalog-item-brand">«American Crew»</span>
 						</div>
 					</a>
 					<div class="price-with-button">
-						<p class="price">300 РУБ.</p>
+						<div class="price">300 РУБ.</div>
 						<a href="#" class="button">Купить</a>
 					</div>											
 				</article>
@@ -169,19 +179,21 @@
 				<article class="catalog-item">
 					<a href="#">
 						<img src="#" width="220" height="165" alt="">					
+					</a>
+					<a href="#">
 						<div class="item-description">
 							<span class="catalog-item-description">Набор для бритья</span><br>
 							<span class="catalog-item-brand">«Baxter of California»</span>
 						</div>
 					</a>
 					<div class="price-with-button">
-						<p class="price">3900 РУБ.</p>
+						<div class="price">3900 РУБ.</div>
 						<a href="#" class="button">Купить</a>
 					</div>											
 				</article>																																																																
 				<div class="pagination">
 					<a href="#" class="page-number">1</a>
-					<a href="#" class="page-number page-current">2</a>
+					<div class="page-number page-current">2</div>
 					<a href="#" class="page-number">3</a>
 					<a href="#" class="page-number">4</a>
 				</div>
