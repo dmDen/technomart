@@ -209,3 +209,12 @@ h3 {
 .page-number {
   display: inline-block;
 }
+/*////////////////
+ catalog-item.html
+////////////////*/
+.catalog-item-content {
+  display: block;
+}
+.product {
+  display: flex;
+}
