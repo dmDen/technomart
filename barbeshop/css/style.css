@@ -21,7 +21,6 @@ h3 {
   margin: 0px auto;
   padding: 0;
   display: flex;
-  outline1: 1px solid red;
 }
 .btn {
   box-sizing: border-box;
@@ -70,7 +69,6 @@ h3 {
 }
 .main-navigation ul {
   display: flex;
-  outline1: 1px solid brown;
 }
 .user-block {
   padding-right: 30px;
@@ -117,7 +115,6 @@ h3 {
 }
 .features-row {
   display: flex;
-  outline1: 1px solid yellow;
   padding-bottom: 80px;
 }
 .features-item {
@@ -217,6 +214,9 @@ h3 {
 }
 .product {
   display: flex;
+}
+.product a {
+  text-decoration: none;
 }
 /*////////////////
    price.html
