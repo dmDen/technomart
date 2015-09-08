@@ -15,6 +15,11 @@ body{
 	min-width: @body_width;
 }
 
+h1, h2, h3{
+	margin: 0;
+	padding: 0;
+}
+
 .container{
 	width: @container_width;
 	margin: 0px auto;
@@ -32,6 +37,18 @@ body{
 	text-transform: uppercase;
 	border: none;
 	
+}
+
+.breadcrumbs{
+	list-style: none;
+	display: flex;
+	a{
+		text-decoration: none;
+		color: #000;
+	}
+	li{
+		padding-right: 38px;
+	}
 }
 
 /*////////////////
@@ -185,4 +202,31 @@ body{
 		width: 100%;
 		margin-top: 15px;
 	}
+}
+/*////////////////
+   catalog.html
+////////////////*/
+.catalog-container{
+	display: flex;	
+}
+.catalog-filter{
+	box-sizing: border-box;
+	flex-shrink: 0;
+	flex-grow: 0;	
+	flex-basis: 240px;
+	
+}
+.catalog{
+	box-sizing: border-box;
+	flex-shrink: 0;
+	flex-grow: 0;	
+	flex-basis: 680px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.pagination{
+	width: 100%;	
+}
+.page-number{
+	display: inline-block;
 }
