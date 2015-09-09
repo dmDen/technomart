@@ -3,15 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<title>Средства для ухода - Барбершоп «Бородинский»</title>
-	<link rel="stylesheet" href="css/catalog-style.css">	
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">	
+	<link rel="stylesheet" href="css/normalize.css">	
+	<link rel="stylesheet" href="css/style.css">	
 </head>
 <body>
 	<header class="main-header">
-		<div class="container clearfix">
+		<div class="container">
 			<nav class="main-navigation">
 				<ul>
 					<li>
-						<a href="#">Главная</a>
+						<a href="index.html">Главная</a>
 					</li>
 					<li>
 						<a href="#">Информация</a>
@@ -20,10 +22,10 @@
 						<a href="#">Новости</a>
 					</li>
 					<li>
-						<a href="text.html">Прайс-лист</a>
+						<a href="price.html">Прайс-лист</a>
 					</li>
 					<li class="active">
-						<a href="#">Магазин</a>
+						<a href="catalog.html">Магазин</a>
 					</li>
 					<li>
 						<a href="#">Контакты</a>
@@ -36,7 +38,7 @@
 		</div>
 	</header>
 
-	<div class="container inner-content">
+	<div class="container catalog-item-content">
 		<h1>Набор для путешествий «Baxter of California»</h1>
 		<ul class="breadcrumbs">
 			<li>
@@ -54,17 +56,17 @@
 		<div class="product">
 			<div class="product-image">
 				<div class="product-image-big">
-					<img src="#" width="460" height="500" alt="">
+					<img src="img/catalog-item-Big.jpg" width="460" height="499" alt="">
 				</div>
 				<div class="product-image-small">
 					<a href="#">
-						<img src="#" width="140" height="140" alt="">
+						<img src="img/small-item01.jpg" width="140" height="149" alt="">
 					</a>
 					<a href="#">
-						<img src="#" width="140" height="140" alt="">
+						<img src="img/small-item02.jpg" width="140" height="149" alt="">
 					</a>
 					<a href="#">
-						<img src="#" width="140" height="140" alt="">
+						<img src="img/small-item03.jpg" width="140" height="149" alt="">
 					</a>
 				</div>
 			</div>
@@ -94,7 +96,7 @@
 	</div>      
 
 	<footer class="main-footer">
-		<div class="container clearfix">
+		<div class="container">
 			<section class="footer-contacts">
 				Барбершоп «Бородинский»
 				<br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
@@ -104,12 +106,14 @@
 			</section>
 			<section class="footer-social">
 				<p>Давайте дружить!</p>
-				<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-				<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-				<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+				<div class="social-buttons">
+					<a href="#" class="social-btn sprite icon-vk">Вконтакте</a>
+					<a href="#" class="social-btn sprite icon-fb">Фейсбук</a>
+					<a href="#" class="social-btn sprite icon-ig">Инстаграм</a>
+				</div>
 			</section>
 			<section class="footer-copyright">
-				<p>Дизайн сайта:</p>
+				<p>Разработано:</p>
 				<a href="#" class="btn">htmlacademy.ru</a>
 			</section>
 		</div>
