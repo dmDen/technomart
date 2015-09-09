@@ -109,7 +109,6 @@ h3 {
 }
 .main-header ul {
   margin: 0;
-  margin-left: 9px;
   padding: 0;
   list-style: none;
 }
@@ -117,7 +116,8 @@ h3 {
   display: block;
   color: #fff;
   text-decoration: none;
-  padding: 23px 21px;
+  padding: 21px 21px;
+  padding-bottom: 25px;
 }
 .main-header a:hover {
   background: #242424;
@@ -138,7 +138,6 @@ h3 {
   background: #fff;
 }
 .user-block {
-  padding-right: 9px;
   padding-left: 29px;
   position: relative;
 }
