@@ -5,11 +5,18 @@
 @body_padding: 10px;
 @container_width: @body_width - (2 * @body_padding);
 
-.sprite { background: url("../img/sprite.png") no-repeat center; height: 16px;  } 
-.icon-fb { background-position: 0 0; width: 12px; height: 22px; } 
-.icon-ig { background-position: 0 -52px; width: 21px; height: 21px; } 
-.icon-login { background-position: 0 -103px; width: 18px; } 
-.icon-vk { background-position: 5 -149px; width: 25px; } 
+.sprite { background: url("../img/sprite.png") no-repeat top left; width: 20px; height: 20px;  } 
+.cd-unchecked { background-position: 0 0; } 
+.icon-fb { background-position: 15px -40px; } 
+.icon-fb-reverse { background-position: 15px -92px;} 
+.icon-ig { background-position: 12px -144px;  } 
+.icon-ig-reverse { background-position: 12px -195px; } 
+.icon-login { background-position: 0 -256px; } 
+.icon-vk { background-position: 9px -287px;} 
+.icon-vk-reverse { background-position: 9px -333px; } 
+.rb-checked { background-position: 0 -394px; } 
+.cb-checked { background-position: 0 -444px; } 
+.rb-unchecked { background-position: 0 -494px; } 
 
 body{	
 	font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -187,6 +194,16 @@ h1, h2, h3{
 .social-btn:hover{
 	background-color: #fff;
 }
+.social-btn.icon-vk:hover{
+	.icon-vk-reverse;
+}
+.social-btn.icon-fb:hover{
+	.icon-fb-reverse;
+}
+.social-btn.icon-ig:hover{
+	.icon-ig-reverse;
+}
+	
 .footer-copyright{
 	text-align: right;
 	p{
