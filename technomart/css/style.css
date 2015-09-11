@@ -118,3 +118,23 @@ p {
 .about-company-contacts {
   float: right;
 }
+/*////////////////
+   catalog.html
+////////////////*/
+.breadcrumbs {
+  list-style: none;
+}
+.breadcrumbs li {
+  display: inline-block;
+}
+.catalog-filter {
+  float: left;
+  width: 200px;
+}
+.catalog-items {
+  width: 700px;
+  float: right;
+}
+.paginator {
+  clear: both;
+}
