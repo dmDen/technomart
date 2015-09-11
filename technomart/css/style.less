@@ -1,7 +1,159 @@
 /*////////////////
     Общая часть
 ////////////////*/
+html,
+body {
+	min-width: 960px;
+	padding: 0;
+}
+p{
+	padding: 0;
+	margin: 0;
+}
+
+.container{
+	width: 940px;
+	margin: 0 auto;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
 
 /*////////////////
     Header
 ////////////////*/
+.header-top-panel{
+	.header-logo{
+		float: left;
+	}
+	form{
+		float:left;
+	}
+	.top-panel-right-side{
+		float: right;
+	}	
+}
+.header-middle-panel{
+	.shop-description{
+		float: left;
+	}
+	.header-contacts{
+		float: left;
+	}
+	.login-menu{
+		float: right;
+	}
+}
+.main-menu{
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	li{
+		display: inline-block;
+	}
+}
+
+/*////////////////
+      Footer
+////////////////*/
+.footer-menu{
+	ul{
+		list-style: none;
+	}
+	li{
+		display: inline-block;
+	}
+}
+.footer-top-panel{
+	.footer-contacts{
+		float: left;
+	}
+	.footer-menu{
+		float: right;
+	}	
+}
+.footer-bottom-panel{
+	.copyright{
+		float: left;
+	}
+	.social-buttons{
+		float: left;
+	}
+	.studio-contacts{
+		float: right;
+	}		
+}
+
+/*////////////////
+   index.html
+////////////////*/
+
+
+//Верхняя часть (слайден плашки)
+////////////////////
+.product-kinds{
+	.materials{
+		float: left;
+	}
+	.tools{
+		float: left;
+	}
+	.equipment{
+		float: right;
+	}
+}
+.promo-slider-and-actions{
+	.promo-slider{
+		float: left;
+	}
+	.actions{
+		float: right;
+	}
+}
+//Разделитель секций
+////////////////////
+.section-title{
+	h2{
+		float: left;
+	}
+	a{
+		float: right;
+	}
+}
+//Товары каталога
+/////////////////
+.catalog-item{
+	float: left;
+}
+//Бренды
+///////////////
+.catalog-brand{
+	float: left;
+}
+//Доставка Гарнатия Кредит
+////////////////
+.services-bottom-level{
+	.tabs{
+		float: left;
+	}
+	.services-info{
+		display: none;
+		float: right;
+	}
+	.active{
+		display: block;
+	}
+}
+//О компании и карта
+////////////////
+.about-company-description{
+	float: left;
+}
+.about-company-contacts{
+	float: right;
+}

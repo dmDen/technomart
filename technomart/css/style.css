@@ -1,6 +1,120 @@
 /*////////////////
     Общая часть
 ////////////////*/
+html,
+body {
+  min-width: 960px;
+  padding: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 /*////////////////
     Header
 ////////////////*/
+.header-top-panel .header-logo {
+  float: left;
+}
+.header-top-panel form {
+  float: left;
+}
+.header-top-panel .top-panel-right-side {
+  float: right;
+}
+.header-middle-panel .shop-description {
+  float: left;
+}
+.header-middle-panel .header-contacts {
+  float: left;
+}
+.header-middle-panel .login-menu {
+  float: right;
+}
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-menu li {
+  display: inline-block;
+}
+/*////////////////
+      Footer
+////////////////*/
+.footer-menu ul {
+  list-style: none;
+}
+.footer-menu li {
+  display: inline-block;
+}
+.footer-top-panel .footer-contacts {
+  float: left;
+}
+.footer-top-panel .footer-menu {
+  float: right;
+}
+.footer-bottom-panel .copyright {
+  float: left;
+}
+.footer-bottom-panel .social-buttons {
+  float: left;
+}
+.footer-bottom-panel .studio-contacts {
+  float: right;
+}
+/*////////////////
+   index.html
+////////////////*/
+.product-kinds .materials {
+  float: left;
+}
+.product-kinds .tools {
+  float: left;
+}
+.product-kinds .equipment {
+  float: right;
+}
+.promo-slider-and-actions .promo-slider {
+  float: left;
+}
+.promo-slider-and-actions .actions {
+  float: right;
+}
+.section-title h2 {
+  float: left;
+}
+.section-title a {
+  float: right;
+}
+.catalog-item {
+  float: left;
+}
+.catalog-brand {
+  float: left;
+}
+.services-bottom-level .tabs {
+  float: left;
+}
+.services-bottom-level .services-info {
+  display: none;
+  float: right;
+}
+.services-bottom-level .active {
+  display: block;
+}
+.about-company-description {
+  float: left;
+}
+.about-company-contacts {
+  float: right;
+}
