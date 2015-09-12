@@ -87,6 +87,7 @@ p{
 	a{
 		font-size: 17px;
 		display: inline-block;
+		vertical-align: top;
 		box-sizing: border-box;
 		height: 42px;
 		padding-top: 11px;
@@ -151,7 +152,8 @@ p{
 		font-size: 0;
 	}
 	.login-menu-btn{
-		display: inline-block;		
+		display: inline-block;
+		vertical-align: top;
 		font-size: 21px;
 		color: #000;
 		background: #fff;
@@ -164,7 +166,50 @@ p{
 	.icon-login{
 		padding-left: 48px;
 	}
-	
+	@all_width: 300px;
+	@logout_btn_width: 40px;
+	@user_name_width: @all_width - @logout_btn_width;
+	.user-menu{
+		float: right;
+		text-align: right;		
+		width: @all_width;
+		font-size: 0;
+		a{
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+	.user-menu-name{		
+		font-size: 21px;
+		line-height: 24px;
+		color: #000;
+		background: #fff;
+		padding-left: 47px;
+		padding-top: 10px;
+		box-sizing: border-box;
+		height: 45px;
+		width: @all_width - @logout_btn_width;
+		text-align: left;		
+	}
+	.user-menu-logout-btn{
+		box-sizing: border-box;
+		height: 45px;
+		width: @logout_btn_width;
+		background: #fff;
+	}
+	.user-menu-ref{		
+		font-size: 16px;
+		line-height: 18px;
+		color: #32425c;
+		text-decoration: underline;
+		margin-top: 8px;
+	}
+	.my-orders{
+		margin-right: 32px;
+	}
+	.my-cabinet{
+		margin-right: 72px;		
+	}
 }
 //Нижняя панель
 /////////////////
@@ -181,6 +226,7 @@ p{
 	}
 	li{
 		display: inline-block;
+		vertical-align: top;
 	}
 	a{
 		display: block;
@@ -210,6 +256,7 @@ p{
 	}
 	li{
 		display: inline-block;
+		vertical-align: top;
 	}
 }
 .footer-top-panel{
@@ -289,6 +336,7 @@ p{
 	}
 	.btn-social{
 		display: inline-block;
+		vertical-align: top;
 		width: 40px;
 		height: 40px;
 		margin-left: 3px;

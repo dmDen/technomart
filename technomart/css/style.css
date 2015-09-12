@@ -82,6 +82,7 @@ p {
 .top-panel-right-side a {
   font-size: 17px;
   display: inline-block;
+  vertical-align: top;
   box-sizing: border-box;
   height: 42px;
   padding-top: 11px;
@@ -141,6 +142,7 @@ p {
 }
 .header-middle-panel .login-menu-btn {
   display: inline-block;
+  vertical-align: top;
   font-size: 21px;
   color: #000;
   background: #fff;
@@ -152,6 +154,47 @@ p {
 }
 .header-middle-panel .icon-login {
   padding-left: 48px;
+}
+.header-middle-panel .user-menu {
+  float: right;
+  text-align: right;
+  width: 300px;
+  font-size: 0;
+}
+.header-middle-panel .user-menu a {
+  display: inline-block;
+  vertical-align: top;
+}
+.header-middle-panel .user-menu-name {
+  font-size: 21px;
+  line-height: 24px;
+  color: #000;
+  background: #fff;
+  padding-left: 47px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  height: 45px;
+  width: 260px;
+  text-align: left;
+}
+.header-middle-panel .user-menu-logout-btn {
+  box-sizing: border-box;
+  height: 45px;
+  width: 40px;
+  background: #fff;
+}
+.header-middle-panel .user-menu-ref {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+  margin-top: 8px;
+}
+.header-middle-panel .my-orders {
+  margin-right: 32px;
+}
+.header-middle-panel .my-cabinet {
+  margin-right: 72px;
 }
 .main-menu {
   background: #32425c;
@@ -167,6 +210,7 @@ p {
 }
 .main-menu li {
   display: inline-block;
+  vertical-align: top;
 }
 .main-menu a {
   display: block;
@@ -193,6 +237,7 @@ p {
 }
 .footer-menu li {
   display: inline-block;
+  vertical-align: top;
 }
 .footer-top-panel {
   background: #32425c;
@@ -270,6 +315,7 @@ p {
 }
 .footer-bottom-panel .btn-social {
   display: inline-block;
+  vertical-align: top;
   width: 40px;
   height: 40px;
   margin-left: 3px;
