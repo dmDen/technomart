@@ -4,16 +4,18 @@
 <head>
 	<title>ТЕХНОМАРТ - ИНТЕРНЕТ-МАГАЗИН</title>
 	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700italic,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/normalize.css">	
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 	<header class="main-header">
-		<div class="container clearfix">
-			<div class="header-top-panel clearfix">
-				<a class="header-logo" href="/">ТЕХНОМАРТ</a>
-				<form action="#" method="post">
+		<div class="header-top-panel">				
+			<div class="container clearfix">
+				<a class="logo header-logo" href="/">ТЕХНОМАРТ</a>
+				<form class="header-search-form" action="#" method="post">
 					<div class="header-search">
 						<input type="text" name="search" id="search" placeholder="Поиск:">
 						<button type="submit" class="search-btn">Найти</button>
@@ -25,30 +27,30 @@
 					<a class="btn-order" href="#">Оформить заказ</a>
 				</div>
 			</div>
-
-			<div class="header-middle-panel clearfix">
-				<p class="shop-description">Интернет магазин строительных материалов и инструментов для ремонта</p>
-				<div class="header-contacts">
-					<p class="icon-phone phone-number">+7 (812) 555-05-55</p>
-					<p class="header-street">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-				</div>
-				<div class="login-menu">
-					<a class="icon-login login-menu-btn" href="#">Войти</a>
-					<a class="login-menu-btn" href="#">Регистрация</a>
-				</div>
-			</div>
-			<nav class="main-menu">
-				<ul>
-					<li><a href="/">Главная</a></li>
-					<li><a href="#">Компания </a></li>
-					<li><a href="catalog.html">Каталог</a></li>
-					<li><a href="#">Новости</a></li>
-					<li><a href="#">Спецпредложения</a></li>
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-			</nav>
 		</div>
+
+		<div class="header-middle-panel container clearfix">
+			<p class="shop-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+			<div class="header-contacts">
+				<p class="icon-phone phone-number">+7 (812) 555-05-55</p>
+				<p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+			</div>
+			<div class="login-menu">
+				<a class="icon-login login-menu-btn" href="#">Войти</a>
+				<a class="login-menu-btn" href="#">Регистрация</a>
+			</div>
+		</div>
+		<nav class="main-menu container">
+			<ul>
+				<li><a href="/">Главная</a></li>
+				<li><a href="#">Компания </a></li>
+				<li><a href="catalog.html">Каталог</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Спецпредложения</a></li>
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>
 	</header>
 
 	<div class="container main-content">
@@ -241,12 +243,13 @@
 	</div>
 
 	<footer class="main-footer">
-		<div class="container clearfix">	
-			<div class="footer-top-panel clearfix">	
+		<div class="footer-top-panel">
+			<div class="container clearfix">
 				<div class="footer-contacts">
-					<a class="footer-logo" href="/">Техномарт</a>
+					<a class="logo footer-logo" href="/">Техномарт</a>
 					<p>
-						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55
+						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+						<br>+7 (812) 555-05-55
 					</p>
 				</div>
 
@@ -266,10 +269,13 @@
 					</ul>
 				</div>
 			</div>
+		</div>
 
-			<div class="footer-bottom-panel clearfix">
+		<div class="footer-bottom-panel">
+			<div class="container clearfix">
 				<p class="copyright">
-					© 2010-2015 Компани "Техномарт"<br>Все права защищены
+					© 2010–2015 Компания «Техномарт»
+					<br>Все права защищены
 				</p>
 
 				<div class="social-buttons">
@@ -278,18 +284,21 @@
 					<a class="icon-instagramm btn-social" href="#">Instagram</a>
 				</div>
 
-				<div class="studio-contacts">
+				<div class="studio-contacts site">
 					<p>
-						Обратная связь:<br>
-						<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>					
-					</p>
-				</div>
-				<div class="studio-contacts">
-					<p>
-						Разработано - <br>
+						Разработано —
+						<br>
 						<a href="http://htmlacademy.ru">htmlacademy.ru</a>
 					</p>
-				</div>				
+				</div>
+							
+				<div class="studio-contacts">
+					<p>
+						Обратная связь:
+						<br>
+						<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+					</p>
+				</div>
 			</div>
 		</div>
 	</footer>
