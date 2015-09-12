@@ -5,17 +5,17 @@
 	<title>ТЕХНОМАРТ - ИНТЕРНЕТ-МАГАЗИН</title>
 	<meta charset="UTF-8">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700italic,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">	
-	<link rel="stylesheet" href="css/normalize.css">	
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700italic,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 	<header class="main-header">
-		<div class="container clearfix">
-			<div class="header-top-panel clearfix">
-				<a class="header-logo" href="/">ТЕХНОМАРТ</a>
-				<form action="#" method="post">
+		<div class="header-top-panel">
+			<div class="container clearfix">
+				<a class="logo header-logo" href="/">ТЕХНОМАРТ</a>
+				<form class="header-search-form" action="#" method="post">
 					<div class="header-search">
 						<input type="text" name="search" id="search" placeholder="Поиск:">
 						<button type="submit" class="search-btn">Найти</button>
@@ -23,36 +23,36 @@
 				</form>
 				<div class="top-panel-right-side">
 					<a class="icon-bookmark top-menu-item" href="#">Закладки: <span class="bookmark-count">0</span></a>
-					<a class="icon-basket top-menu-item top-menu-item-active" href="#">Корзина: 10<span class="basket-count">0</span></a>
+					<a class="icon-basket top-menu-item" href="#">Корзина: <span class="basket-count">0</span></a>
 					<a class="btn-order" href="#">Оформить заказ</a>
 				</div>
 			</div>
-
-			<div class="header-middle-panel clearfix">
-				<p class="shop-description">Интернет магазин строительных материалов и инструментов для ремонта</p>
-				<div class="header-contacts">
-					<p class="icon-phone phone-number">+7 (812) 555-05-55</p>
-					<p class="header-street">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-				</div>
-				<div class="user-menu">
-					<a class="user-menu-name" href="#">Равшан Джамшутович</a>
-					<a class="user-menu-logout-btn" href="#"></a>
-					<a class="user-menu-ref" href="#">Мои заказы</a>
-					<a class="user-menu-ref" href="#">Личный кабинет</a>
-				</div>
-			</div>
-			<nav class="main-menu">
-				<ul>
-					<li><a href="/">Главная</a></li>
-					<li><a href="#">Компания </a></li>
-					<li><a href="catalog.html">Каталог</a></li>
-					<li><a href="#">Новости</a></li>
-					<li><a href="#">Спецпредложения</a></li>
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-			</nav>
 		</div>
+
+		<div class="header-middle-panel container clearfix">
+			<p class="shop-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+			<div class="header-contacts">
+				<p class="icon-phone phone-number">+7 (812) 555-05-55</p>
+				<p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+			</div>
+			<div class="user-menu">
+				<a class="user-menu-name" href="#">Равшан Джамшутович</a>
+				<a class="user-menu-logout-btn" href="#"></a>
+				<a class="user-menu-ref" href="#">Мои заказы</a>
+				<a class="user-menu-ref" href="#">Личный кабинет</a>
+			</div>
+		</div>
+		<nav class="main-menu container">
+			<ul>
+				<li><a href="/">Главная</a></li>
+				<li><a href="#">Компания </a></li>
+				<li><a href="catalog.html">Каталог</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Спецпредложения</a></li>
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>
 	</header>
 
 
@@ -176,12 +176,12 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="container items-description">
 		<h2 class="items-description-title">Пара слов о перфораторах</h2>
-		<p class="items-description-text">Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
-			Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-	</div>	
+		<p class="items-description-text">Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+			<br> Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+	</div>
 
 	<footer class="main-footer">
 		<div class="footer-top-panel">
@@ -232,7 +232,7 @@
 						<a href="http://htmlacademy.ru">htmlacademy.ru</a>
 					</p>
 				</div>
-							
+
 				<div class="studio-contacts">
 					<p>
 						Обратная связь:
