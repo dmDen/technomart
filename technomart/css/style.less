@@ -7,7 +7,7 @@ body {
 	padding: 0;
 	font-family: "Cuprum", "Arial", sans-serif;
 }
-p{
+p,h1,h2,h3{
 	padding: 0;
 	margin: 0;
 }
@@ -16,7 +16,11 @@ p{
 	width: 940px;
 	margin: 0 auto;
 }
-
+.clearfix:before{
+	content: "";
+	display: table;
+	clear:both;
+}
 .clearfix:after {
 	content: "";
 	display: table;
@@ -359,12 +363,96 @@ p{
 	margin-left: 38px;
 }
 
+//Товары каталога
+/////////////////
+.catalog-item{
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	width: 220px;
+	min-height: 317px;
+	border: 1px solid #e5e5e5;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #000;
+}
+
 /*////////////////
    index.html
 ////////////////*/
 
-//Верхняя часть (слайден плашки)
+//Красные кнопки
+/////////////////
+.btn{
+	display: inline-block;
+	box-sizing: border-box;
+	height: 38px;
+	text-align: center;
+	padding-top: 11px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 18px;
+	background: #ee3643;
+	text-decoration: none;
+	border-radius: 2px;
+}
+//Верхняя часть (слайдер, плашки)
 ////////////////////
+.promo-blocks{
+	margin-top: 60px;
+}
+.product-kinds{
+	margin-bottom: 20px;
+}
+.promo-block{
+	box-sizing: border-box;
+	width: 300px;
+	height: 123px;
+	padding-top: 12px;
+	padding-left: 22px;	
+	p{
+		font-size: 24px;
+		line-height: 30px;		
+		color: #fff;
+		font-weight: 700;
+		margin-bottom: 15px;
+	}
+	a{		
+		display: block;
+		font-size: 14px;
+		line-height: 18px;
+		box-sizing: border-box;
+		width: 135px;
+		height: 38px;
+		padding-top: 11px;
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		background: rgba(0,0,0,0.1);
+		text-align: center;
+		border-radius: 4px;
+	}
+}
+.promo-block.materials{
+	background: #f6b22d;
+	margin-right: 20px;
+}
+.promo-block.tools{
+	background: #4aafde;
+}
+.promo-block.equipment{
+	background: #cc79d1;
+}
+.promo-block.sale{
+	background: #85d179;
+	margin-bottom: 20px;
+}
+.promo-block.delivery{
+	background: #f6b22d;
+}
 .product-kinds{
 	.materials{
 		float: left;
@@ -377,55 +465,192 @@ p{
 	}
 }
 .promo-slider-and-actions{
+	margin-bottom: 53px;
 	.promo-slider{
 		float: left;
+		background: green;
+		box-sizing: border-box;
+		width: 620px;
+		height: 266px;
 	}
 	.actions{
 		float: right;
-	}
+	}	
 }
 //Разделитель секций
 ////////////////////
 .section-title{
+	box-sizing: border-box;
+	min-height: 89px;
+	background: #f7f3ec;
+	padding-left: 28px;
+	padding-right: 23px;
+	padding-top: 30px;
+	margin-bottom: 20px;
 	h2{
 		float: left;
+		text-transform: uppercase;
+		font-size: 30px;
+		line-height: 36px;
+		color: #32425c;
 	}
-	a{
+	.section-title-btn
+	{
 		float: right;
+		width: 253px;
 	}
 }
-//Товары каталога
-/////////////////
-.catalog-item{
-	float: left;
+//Популярные товары каталога
+////////////////////////////
+.popular-catalog-items{
+	font-size: 0;
+	//margin-bottom: 21px;
+	.catalog-item{
+		margin-right: 20px;
+		margin-bottom: 21px;
+	}
+	.catalog-item:nth-child(4n){
+		margin-right: 0;
+	}
 }
 //Бренды
 ///////////////
 .catalog-brand{
-	float: left;
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	width: 220px;
+	min-height: 145px;
+	border: 1px solid #e5e5e5;
+	font-size: 18px;
+}
+.popular-brands{
+	font-size: 0;
+	.catalog-brand{
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+	.catalog-brand:nth-child(4n){
+		margin-right: 0;		
+	}
+	.catalog-brand:last-child{
+		margin-bottom: 85px;	
+	}	
+}
+//Сервисы
+////////////
+.services{
+	background: #f2f6f8;
+	padding-bottom: 102px;
+	margin-bottom: 77px;
+}
+.services-top-level{
+	padding-top: 65px;
+}
+.services-title{
+	font-size: 30px;
+	line-height: 35px;
+	text-transform: uppercase;
+	margin-bottom: 35px;
+}
+.services-description{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	margin-bottom: 70px;
 }
 //Доставка Гарнатия Кредит
 ////////////////
 .services-bottom-level{
-	.tabs{
-		float: left;
-	}
 	.services-info{
 		display: none;
 		float: right;
 	}
 	.active{
 		display: block;
+	}	
+}
+.tabs{
+	float: left;
+	ul{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}	
+	a{
+		display: block;
+		text-decoration: none;
+		box-sizing: border-box;
+		width: 240px;
+		min-height: 61px;
+		padding-top: 18px;
+		padding-left: 20px;
+		background: #32425c;
+		box-shadow: inset 0px 1px #405069,
+			inset 0px -1px #293449;
+		color: #fff;
+		font-weight: 700;
+		font-size: 21px;
+		line-height: 25px;
+			
 	}
+}
+.services-info-title{
+	font-size: 36px;
+	line-height: 45px;
+	color: #32425c;
+	text-transform: uppercase;
+}
+.services-info-text{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
 }
 //О компании и карта
 ////////////////
+.about-company{
+	.btn{
+		margin-bottom: 85px;
+	}
+}
 .about-company-description{
 	float: left;
+	box-sizing: border-box;
+	width: 550px;
+	ul{
+		list-style: none;
+		padding: 0;
+		margin-top: 25px;
+		margin-bottom: 38px;
+	}
+	li{
+		font-size: 18px;
+		line-height: 20px;		
+	}
+}
+.about-company-title{
+	font-size: 30px;
+	line-height: 35px;
+	text-transform: uppercase;
+}
+.about-company-text{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	margin-top: 38px;
 }
 .about-company-contacts{
 	float: right;
+	box-sizing: border-box;
+	width: 300px;
 }
+.about-company-btn{
+	width: 220px;
+}
+.write-us-btn{
+	width: 300px;
+}
+
 
 /*////////////////
    catalog.html
