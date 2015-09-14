@@ -562,7 +562,7 @@ h3 {
   line-height: 24px;
 }
 .about-company .btn {
-  margin-bottom: 85px;
+  margin-bottom: 86px;
 }
 .about-company-description {
   float: left;
@@ -572,10 +572,12 @@ h3 {
 .about-company-description ul {
   list-style: none;
   padding: 0;
-  margin-top: 25px;
-  margin-bottom: 38px;
+  margin-top: 22px;
+  margin-bottom: 37px;
 }
 .about-company-description li {
+  padding-left: 36px;
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 20px;
 }
@@ -594,6 +596,16 @@ h3 {
   float: right;
   box-sizing: border-box;
   width: 300px;
+}
+.about-company-contacts .about-company-text {
+  margin-bottom: 32px;
+}
+.map {
+  margin-bottom: 35px;
+}
+.map img {
+  width: 300px;
+  height: 158px;
 }
 .about-company-btn {
   width: 220px;
