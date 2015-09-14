@@ -243,8 +243,8 @@ h3 {
   vertical-align: top;
   box-sizing: border-box;
   height: 42px;
+  min-width: 150px;
   padding-top: 11px;
-  padding-right: 30px;
   padding-left: 45px;
   position: relative;
 }
@@ -256,7 +256,7 @@ h3 {
 }
 .top-panel-right-side .icon-bookmark {
   padding-left: 43px;
-  padding-right: 32px;
+  min-width: 150px;
 }
 .top-panel-right-side .icon-bookmark:before,
 .top-panel-right-side .icon-basket:before {
