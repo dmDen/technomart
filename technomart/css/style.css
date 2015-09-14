@@ -104,7 +104,6 @@ h3 {
   padding-right: 21px;
 }
 .top-panel-right-side .icon-bookmark {
-  padding-left: 20px;
   padding-right: 32px;
 }
 .header-middle-panel {
@@ -617,6 +616,10 @@ h3 {
    catalog.html
 ////////////////*/
 .breadcrumbs {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
   list-style: none;
 }
 .breadcrumbs li {
