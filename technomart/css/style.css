@@ -485,31 +485,29 @@ h3 {
   margin: 0;
   width: 314px;
 }
-.footer-bottom-panel .social-buttons {
+.social-buttons {
   float: left;
   box-sizing: border-box;
   width: 314px;
   font-size: 0;
   padding-left: 72px;
 }
-.footer-bottom-panel .btn-social {
+.btn-social {
   display: inline-block;
   vertical-align: top;
+  text-align: center;
   width: 40px;
   height: 40px;
   margin-left: 3px;
   margin-right: 3px;
   background: #212a3a;
   border-radius: 50%;
-  position: relative;
 }
-.footer-bottom-panel .btn-social:before {
+.btn-social i {
   font-size: 18px;
-  text-align: center;
-  vertical-align: middle;
-  position: absolute;
-  left: 7px;
-  top: 10px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
 }
 .studio-contacts {
   float: right;
@@ -802,17 +800,74 @@ h3 {
   line-height: 15px;
   text-transform: uppercase;
   list-style: none;
+  padding: 0;
+  margin-top: 19px;
+  margin-bottom: 18px;
 }
 .breadcrumbs li {
   display: inline-block;
 }
+.breadcrumbs li:first-child {
+  font-size: 0;
+}
+.breadcrumbs a {
+  text-decoration: none;
+  color: #000;
+}
+.breadcrumbs a:before,
+.breadcrumbs span:before {
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 16px;
+  margin-left: 8px;
+}
+.breadcrumbs .icon-home:before {
+  margin: 0;
+}
+.catalog-title {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 400;
+  color: #32425c;
+  background: #f2f6f8;
+  padding: 27px 28px;
+  margin-bottom: 20px;
+}
+.filter-title,
+.catalog-items-sort-bar {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  padding-top: 9px;
+  padding-bottom: 11px;
+  padding-left: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: #f7f3ec;
+}
+.filter-title a,
+.catalog-items-sort-bar a {
+  text-decoration: none;
+}
 .catalog-filter {
   float: left;
-  width: 200px;
+  width: 220px;
+}
+.catalog-items-sort-bar {
+  margin-bottom: 20px;
 }
 .catalog-items {
   width: 700px;
   float: right;
+  font-size: 0;
+}
+.catalog-items .catalog-item {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.catalog-items .catalog-item:nth-child(3n) {
+  margin-right: 0;
 }
 .paginator {
   clear: both;
