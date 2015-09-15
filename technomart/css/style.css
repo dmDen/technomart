@@ -168,11 +168,7 @@ h3 {
   width: 940px;
   margin: 0 auto;
 }
-.clearfix:before {
-  content: "";
-  display: table;
-  clear: both;
-}
+.clearfix:before,
 .clearfix:after {
   content: "";
   display: table;
