@@ -110,8 +110,8 @@ p,h1,h2,h3{
     Header
 ////////////////*/
 
-//Верхняя панель
-//////////////////
+/*Верхняя панель
+////////////////*/
 .main-header{
 	font-size: 17px;
 	padding-bottom: 60px;
@@ -227,8 +227,8 @@ p,h1,h2,h3{
 	.icon-basket:before{
 	}
 }
-//Средняя панель
-/////////////////
+/*Средняя панель
+///////////////*/
 .header-middle-panel{
 	padding-bottom: 41px;
 	.shop-description{
@@ -378,14 +378,7 @@ p,h1,h2,h3{
 		color: #c5c5c5;
 	}	
 }
-/*
-.user-menu-name,
-.user-menu-logout-btn{
-	&hover:before{
-		color: #32425c;
-	}
-}
-*/
+
 .user-menu-name:hover:before,
 .user-menu-logout-btn:hover:before{
 	color: #32425c;
@@ -394,8 +387,8 @@ p,h1,h2,h3{
 .user-menu-logout-btn:active:before{
 	color: #c5c5c5;
 }
-//Нижняя панель
-/////////////////
+/*Нижняя панель
+///////////////*/
 .main-menu{
 	background: #32425c;
 	box-shadow: inset 0 -5px 0 0 #293449;
@@ -580,8 +573,8 @@ p,h1,h2,h3{
 	margin-left: 38px;
 }
 
-//Товары каталога
-/////////////////
+/*Товары каталога
+///////////////*/
 .catalog-item{
 	display: inline-block;
 	vertical-align: top;
@@ -596,12 +589,29 @@ p,h1,h2,h3{
 	color: #000;
 }
 
+/*Плашечка new
+//////////////*/
+.novelty{
+	position: relative;
+	&:after{
+		content: "";
+		background: url("../img/sprite.png") no-repeat;
+		background-position: -523px 0;
+		position: absolute;
+		width: 60px;
+		height: 59px;
+		top: 0;
+		right: 0;
+	}
+}
+
+
 /*////////////////
    index.html
 ////////////////*/
 
-//Красные кнопки
-/////////////////
+/*Красные кнопки
+///////////////*/
 .btn{
 	display: inline-block;
 	box-sizing: border-box;
@@ -622,8 +632,8 @@ p,h1,h2,h3{
 		background: #ba2732;
 	}
 }
-//Верхняя часть (слайдер, плашки)
-////////////////////
+/*Верхняя часть (слайдер, плашки)
+///////////////////////////////*/
 .promo-blocks{
 	margin-top: 59px;
 }
@@ -636,6 +646,7 @@ p,h1,h2,h3{
 	height: 123px;
 	padding-top: 20px;
 	padding-left: 23px;	
+	position: relative;
 	p{
 		font-size: 24px;
 		line-height: 30px;		
@@ -656,7 +667,7 @@ p,h1,h2,h3{
 		text-transform: uppercase;
 		background: rgba(0,0,0,0.1);
 		text-align: center;
-		border-radius: 4px;
+		border-radius: 4px;		
 		&:hover{
 			background: rgba(0,0,0,0.2);
 		}
@@ -664,23 +675,55 @@ p,h1,h2,h3{
 			background: rgba(0,0,0,0.3);
 		}
 	}
+	&:before{
+		content: "";
+		background: url("../img/sprite.png") no-repeat;
+		position: absolute;
+		width: 78px;
+		height: 72px;	
+	}
 }
 .promo-block.materials{
 	background: #f6b22d;
 	margin-right: 20px;
+	&:before{
+		background-position: -232px 0;
+		top: 31px;
+		right: 9px;
+	}
 }
 .promo-block.tools{
 	background: #4aafde;
+	&:before{
+		background-position: -419px 0;		
+		top: 33px;		
+		right: 25px;		
+	}	
 }
 .promo-block.equipment{
 	background: #cc79d1;
+	&:before{
+		background-position: -117px 0;		
+		top: 31px;
+		right: 31px;		
+	}	
 }
 .promo-block.sale{
 	background: #85d179;
 	margin-bottom: 20px;
+	&:before{
+		background-position: -323px 0;
+		top: 26px;
+		right: 26px;		
+	}	
 }
 .promo-block.delivery{
 	background: #f6b22d;
+	&:before{
+		background-position: 0 0;
+		top: 32px;
+		right: 31px;		
+	}	
 }
 .product-kinds{
 	.materials{
@@ -706,8 +749,8 @@ p,h1,h2,h3{
 		float: right;
 	}	
 }
-//Разделитель секций
-////////////////////
+/*Разделитель секций
+//////////////////*/
 .section-title{
 	box-sizing: border-box;
 	min-height: 89px;
@@ -730,8 +773,8 @@ p,h1,h2,h3{
 		width: 253px;
 	}
 }
-//Популярные товары каталога
-////////////////////////////
+/*Популярные товары каталога
+//////////////////////////*/
 .popular-catalog-items{
 	font-size: 0;
 	//margin-bottom: 21px;
@@ -743,8 +786,8 @@ p,h1,h2,h3{
 		margin-right: 0;
 	}
 }
-//Бренды
-///////////////
+/*Бренды
+///////*/
 .catalog-brand{
 	display: inline-block;
 	vertical-align: top;
@@ -767,8 +810,8 @@ p,h1,h2,h3{
 		margin-bottom: 85px;	
 	}	
 }
-//Сервисы
-////////////
+/*Сервисы
+////////*/
 .services{
 	background: #f2f6f8;
 	padding-bottom: 102px;
@@ -789,8 +832,8 @@ p,h1,h2,h3{
 	line-height: 24px;
 	margin-bottom: 69px;
 }
-//Доставка Гарнатия Кредит
-////////////////
+/*Доставка Гарнатия Кредит
+////////////////////////*/
 .services-bottom-level{
 	.services-info{
 		display: none;
@@ -836,8 +879,8 @@ p,h1,h2,h3{
 	font-size: 13px;
 	line-height: 24px;
 }
-//О компании и карта
-////////////////
+/*О компании и карта
+//////////////////*/
 .about-company{
 	.btn{
 		margin-bottom: 86px;

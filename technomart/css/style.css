@@ -177,6 +177,8 @@ h3 {
 /*////////////////
     Header
 ////////////////*/
+/*Верхняя панель
+////////////////*/
 .main-header {
   font-size: 17px;
   padding-bottom: 60px;
@@ -286,6 +288,8 @@ h3 {
   padding-left: 43px;
   min-width: 150px;
 }
+/*Средняя панель
+///////////////*/
 .header-middle-panel {
   padding-bottom: 41px;
 }
@@ -426,14 +430,6 @@ h3 {
   opacity: 1;
   color: #c5c5c5;
 }
-/*
-.user-menu-name,
-.user-menu-logout-btn{
-	&hover:before{
-		color: #32425c;
-	}
-}
-*/
 .user-menu-name:hover:before,
 .user-menu-logout-btn:hover:before {
   color: #32425c;
@@ -442,6 +438,8 @@ h3 {
 .user-menu-logout-btn:active:before {
   color: #c5c5c5;
 }
+/*Нижняя панель
+///////////////*/
 .main-menu {
   background: #32425c;
   box-shadow: inset 0 -5px 0 0 #293449;
@@ -616,6 +614,8 @@ h3 {
 .studio-contacts.site {
   margin-left: 38px;
 }
+/*Товары каталога
+///////////////*/
 .catalog-item {
   display: inline-block;
   vertical-align: top;
@@ -629,9 +629,26 @@ h3 {
   font-weight: 700;
   color: #000;
 }
+/*Плашечка new
+//////////////*/
+.novelty {
+  position: relative;
+}
+.novelty:after {
+  content: "";
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -523px 0;
+  position: absolute;
+  width: 60px;
+  height: 59px;
+  top: 0;
+  right: 0;
+}
 /*////////////////
    index.html
 ////////////////*/
+/*Красные кнопки
+///////////////*/
 .btn {
   display: inline-block;
   box-sizing: border-box;
@@ -652,6 +669,8 @@ h3 {
 .btn:active {
   background: #ba2732;
 }
+/*Верхняя часть (слайдер, плашки)
+///////////////////////////////*/
 .promo-blocks {
   margin-top: 59px;
 }
@@ -664,6 +683,7 @@ h3 {
   height: 123px;
   padding-top: 20px;
   padding-left: 23px;
+  position: relative;
 }
 .promo-block p {
   font-size: 24px;
@@ -693,22 +713,54 @@ h3 {
 .promo-block a:active {
   background: rgba(0, 0, 0, 0.3);
 }
+.promo-block:before {
+  content: "";
+  background: url("../img/sprite.png") no-repeat;
+  position: absolute;
+  width: 78px;
+  height: 72px;
+}
 .promo-block.materials {
   background: #f6b22d;
   margin-right: 20px;
 }
+.promo-block.materials:before {
+  background-position: -232px 0;
+  top: 31px;
+  right: 9px;
+}
 .promo-block.tools {
   background: #4aafde;
 }
+.promo-block.tools:before {
+  background-position: -419px 0;
+  top: 33px;
+  right: 25px;
+}
 .promo-block.equipment {
   background: #cc79d1;
+}
+.promo-block.equipment:before {
+  background-position: -117px 0;
+  top: 31px;
+  right: 31px;
 }
 .promo-block.sale {
   background: #85d179;
   margin-bottom: 20px;
 }
+.promo-block.sale:before {
+  background-position: -323px 0;
+  top: 26px;
+  right: 26px;
+}
 .promo-block.delivery {
   background: #f6b22d;
+}
+.promo-block.delivery:before {
+  background-position: 0 0;
+  top: 32px;
+  right: 31px;
 }
 .product-kinds .materials {
   float: left;
@@ -732,6 +784,8 @@ h3 {
 .promo-slider-and-actions .actions {
   float: right;
 }
+/*Разделитель секций
+//////////////////*/
 .section-title {
   box-sizing: border-box;
   min-height: 89px;
@@ -753,6 +807,8 @@ h3 {
   float: right;
   width: 253px;
 }
+/*Популярные товары каталога
+//////////////////////////*/
 .popular-catalog-items {
   font-size: 0;
 }
@@ -763,6 +819,8 @@ h3 {
 .popular-catalog-items .catalog-item:nth-child(4n) {
   margin-right: 0;
 }
+/*Бренды
+///////*/
 .catalog-brand {
   display: inline-block;
   vertical-align: top;
@@ -785,6 +843,8 @@ h3 {
 .popular-brands .catalog-brand:last-child {
   margin-bottom: 85px;
 }
+/*Сервисы
+////////*/
 .services {
   background: #f2f6f8;
   padding-bottom: 102px;
@@ -805,6 +865,8 @@ h3 {
   line-height: 24px;
   margin-bottom: 69px;
 }
+/*Доставка Гарнатия Кредит
+////////////////////////*/
 .services-bottom-level .services-info {
   display: none;
   float: right;
@@ -846,6 +908,8 @@ h3 {
   font-size: 13px;
   line-height: 24px;
 }
+/*О компании и карта
+//////////////////*/
 .about-company .btn {
   margin-bottom: 86px;
 }
