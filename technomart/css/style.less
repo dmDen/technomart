@@ -150,6 +150,16 @@ p,h1,h2,h3{
 .header-logo{
 	box-shadow: 0 5px 0 0 #b52933,
 		inset 0 1px 0 0 #e03643;
+	&:hover{
+		background: #ca2c37;
+	box-shadow: 0 5px 0 0 #bf2d38,
+		inset 0 1px 0 0 #9a212a;
+	}
+	&:active{
+		background: #ba2732;
+	box-shadow: 0 5px 0 0 #b02834,
+		inset 0 1px 0 0 #8e1e26;
+	}
 }
 .header-search-form{
 	float:left;
@@ -187,6 +197,30 @@ p,h1,h2,h3{
 		padding-right: 10px;
 		padding-left: 21px;
 		padding-right: 21px;
+		&:hover{
+			background: #5fbb2d;
+		}
+		&:active{
+			background: #518534;
+			opacity: 0.51;
+		}
+	}
+	.top-menu-item{
+		&:before{
+			position: absolute;
+			left: 10px;
+			color: #fff;
+			opacity: 0.3;
+		}
+		&:hover:before{
+			opacity: 1;
+		}
+		&:active:before{
+			opacity: 0.5;
+		}
+	}
+	.top-menu-item.not-empty{
+		background: #ee3643;
 	}
 	.icon-bookmark{
 		padding-left: 43px; //pixel perfect
@@ -195,9 +229,6 @@ p,h1,h2,h3{
 	}
 	.icon-bookmark:before,
 	.icon-basket:before{
-		position: absolute;
-		left: 10px;
-		color: rgba(255, 255, 255, 0.3);
 	}
 }
 //Средняя панель
@@ -336,6 +367,37 @@ p,h1,h2,h3{
 		margin-right: 72px;		
 	}
 }
+.login-menu{
+	a:hover{
+		color: #ee3643;
+	}
+	a:hover:before{
+		color: #32425c;
+	}
+	a:active{
+		color: rgba(0,0,0, 0.3);
+	}
+	a:active:before{
+		opacity: 1;
+		color: #c5c5c5;
+	}	
+}
+/*
+.user-menu-name,
+.user-menu-logout-btn{
+	&hover:before{
+		color: #32425c;
+	}
+}
+*/
+.user-menu-name:hover:before,
+.user-menu-logout-btn:hover:before{
+	color: #32425c;
+}
+.user-menu-name:active:before,
+.user-menu-logout-btn:active:before{
+	color: #c5c5c5;
+}
 //Нижняя панель
 /////////////////
 .main-menu{
@@ -351,7 +413,7 @@ p,h1,h2,h3{
 	}
 	li{
 		display: inline-block;
-		vertical-align: top;
+		vertical-align: top;		
 	}
 	a{
 		display: block;
@@ -362,6 +424,13 @@ p,h1,h2,h3{
 		height: 60px;		
 		color: #fff;
 		font-size: 17px;
+		&:hover{
+			background: #293449;
+		}
+		&:active{
+			background: #1d2739;
+			color: rgba(255,255,255,0.5);
+		}
 	}
 }
 
@@ -383,6 +452,15 @@ p,h1,h2,h3{
 		display: inline-block;
 		vertical-align: top;
 	}
+	a{
+		&:hover{
+			text-decoration: underline;
+		}
+		&:active{
+			text-decoration: none;
+			opacity: 0.5;
+		}
+	}
 }
 .footer-top-panel{
 	background: #32425c;
@@ -397,7 +475,10 @@ p,h1,h2,h3{
 		clear: both;
 		font-size: 18px;
 		line-height: 24px;
-		color: #fff;
+		color: #f1f5f7;
+	}
+	a{
+		color: #f1f5f7;
 	}
 }
 .footer-logo{
@@ -477,7 +558,12 @@ p,h1,h2,h3{
 		vertical-align: top;
 		margin-top: 10px;		
 	}
+	&:hover,
+	&:active{
+		background: #ee3643;
+	}
 }
+
 .studio-contacts{
 	float: right;	
 	p{
@@ -485,6 +571,13 @@ p,h1,h2,h3{
 	}
 	a{
 		color: #ffd180;
+		&:hover{
+			text-decoration: underline;
+		}
+		&:active{
+			color: #ee3643;
+			text-decoration: none;
+		}
 	}
 }
 .studio-contacts.site{	
@@ -526,6 +619,12 @@ p,h1,h2,h3{
 	background: #ee3643;
 	text-decoration: none;
 	border-radius: 3px;
+	&:hover{
+		background: #ca2c37;
+	}
+	&:active{
+		background: #ba2732;
+	}
 }
 //Верхняя часть (слайдер, плашки)
 ////////////////////
@@ -562,6 +661,12 @@ p,h1,h2,h3{
 		background: rgba(0,0,0,0.1);
 		text-align: center;
 		border-radius: 4px;
+		&:hover{
+			background: rgba(0,0,0,0.2);
+		}
+		&:active{
+			background: rgba(0,0,0,0.3);
+		}
 	}
 }
 .promo-block.materials{
@@ -881,7 +986,9 @@ p,h1,h2,h3{
 	padding-top: 9px;
 	padding-bottom: 9px;
 	color: #000;
-	
+	&:hover{
+		border-color: #bdc6ca;
+	}
 }
 .btn-show{
 	min-width: 140px;	
@@ -910,6 +1017,9 @@ p,h1,h2,h3{
 	min-width: 36px;
 	text-align: center;
 	margin-right: 10px;
+	&:active{
+		border-color: #ee3643;
+	}
 }
 .paginator-btn.btn-prev,
 .paginator-btn.btn-next{
