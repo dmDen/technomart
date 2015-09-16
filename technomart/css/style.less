@@ -613,10 +613,14 @@ p,h1,h2,h3{
 		top: -1px;
 		right: -1px;
 	}
+	&:hover .catalog-item-actions{
+		display: block;
+	}
 }
 .catalog-image{
 	margin-top: 35px;
 	margin-bottom: 40px;
+	min-height: 101px;
 }
 .catalog-item-title{
 	padding-left: 20px;
@@ -654,17 +658,19 @@ p,h1,h2,h3{
 	right: -20px;
 }
 .catalog-item-actions{
+	display: none;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 218px;
 	height: 88px;
-	padding: 40px 0;
+	padding: 43px 0;
 	background-color: #fff;
 	.buy,
 	.bookmark{
 		font-family: "Cuprum", "Arial", sans-serif;
 		font-size: 14px;
+		line-height: 18px;
 		display: block;
 		width: 135px;
 		margin: 0 auto 7px;
@@ -677,13 +683,39 @@ p,h1,h2,h3{
 	}
 	.buy{
 		box-shadow: inset 0 -3px 0 #367315;
+		position: relative;
+		&:before{
+			position: absolute;
+			left: 8px;
+			top: 9px;
+			opacity: 0.3;
+			font-size: 17px;
+			line-height: 18px;
+		}
+		&:hover{
+			background: #5fbb2d;
+			&:before{
+				opacity: 1;
+			}
+		}
+		&:active{
+			background: #518534;
+			box-shadow: none;
+		}
 	}
 	.bookmark{
 		width: 129px;
 		padding: 7px 0;
-		color: #63a63e;
+		color: #32425c;
 		border: 3px solid #63a63e;
 		background-color: #fff;
+		&:hover{
+			border-color: #32425c;
+		}
+		&:active{
+			border-color: #32425c;
+			opacity: 0.3;
+		}
 	}	
 }
 
