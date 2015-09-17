@@ -728,7 +728,6 @@ h3 {
   display: block;
 }
 .catalog-item:hover {
-  border: none;
   box-shadow: 0 10px 15px 3px rgba(41, 52, 73, 0.5);
 }
 .catalog-image {
@@ -788,7 +787,8 @@ h3 {
   line-height: 18px;
   display: block;
   width: 135px;
-  margin: 0 auto 7px;
+  margin: 0 auto;
+  margin-bottom: 8px;
   padding: 10px 0;
   text-decoration: none;
   text-transform: uppercase;
@@ -1350,6 +1350,61 @@ h3 {
 .max-price {
   float: right;
 }
+.filter-section input {
+  display: none;
+}
+.filter-section ul {
+  margin: 0;
+  margin-top: 19px;
+  padding: 0;
+  list-style: none;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000;
+  text-transform: uppercase;
+}
+.filter-section li {
+  margin-bottom: 20px;
+}
+.filter-section label {
+  padding-left: 34px;
+  position: relative;
+}
+.filter-section .power-filter {
+  /*Вопрос дизайнеру: ЗАЧЕМ? */
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 18px;
+  margin-bottom: 80px;
+}
+.filter-section label:before {
+  content: "";
+  font-family: "symbols-technomart";
+  font-size: 28px;
+  line-height: 20px;
+  color: #c1c1c1;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+.filter-section input[type="checkbox"] + label:before {
+  content: "\2610";
+}
+.filter-section input[type="checkbox"]:checked + label:before {
+  content: "\2611";
+}
+.filter-section input[type="radio"] + label:before {
+  content: "\25cb";
+}
+.filter-section input[type="radio"]:checked + label:before {
+  content: "\25cf";
+}
+ul.firm-filter {
+  padding-bottom: 3px;
+  margin-bottom: 21px;
+  border-bottom: 1px solid #e5e5e5;
+}
 .btn-show,
 .paginator-btn {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1364,6 +1419,7 @@ h3 {
   padding-top: 9px;
   padding-bottom: 9px;
   color: #000;
+  outline: none;
 }
 .btn-show:hover,
 .paginator-btn:hover {

@@ -4,7 +4,7 @@
 <head>
 	<title>ТЕХНОМАРТ - ИНТЕРНЕТ-МАГАЗИН</title>
 	<meta charset="UTF-8">
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Cuprum:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Cuprum:400,700,400italic&subset=cyrillic,latin" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -86,7 +86,7 @@
 					</div>
 					<div class="filter-section">
 						<h3 class="filter-section-title">Производители:</h3>
-						<ul>
+						<ul class="firm-filter">
 							<li>
 								<input type="checkbox" name="firm-filter-bosch" id="firm-filter-bosch">
 								<label for="firm-filter-bosch">Bosch</label>
@@ -111,9 +111,9 @@
 					</div>
 					<div class="filter-section">
 						<h3 class="filter-section-title">Питание:</h3>
-						<ul>
+						<ul class="power-filter">
 							<li>
-								<input type="radio" name="group" id="group-radio-accum" value="group-radio-accum">
+								<input type="radio" name="group" id="group-radio-accum" value="group-radio-accum" checked>
 								<label for="group-radio-accum">Аккумуляторные</label>
 							</li>
 							<li>

@@ -676,7 +676,6 @@ p,h1,h2,h3{
 		display: block;		
 	}
 	&:hover{
-		border: none;
 		box-shadow: 0 10px 15px 3px rgba(41,52,73,0.5);
 	}
 }
@@ -736,7 +735,8 @@ p,h1,h2,h3{
 		line-height: 18px;
 		display: block;
 		width: 135px;
-		margin: 0 auto 7px;
+		margin: 0 auto;
+		margin-bottom: 8px;
 		padding: 10px 0;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -1325,6 +1325,64 @@ p,h1,h2,h3{
 	float: right;
 }
 
+.filter-section{
+	input{
+		display: none;
+	}
+	ul{
+		margin: 0;
+		margin-top: 19px;
+		padding: 0;
+		list-style: none;
+		font-family: "PT Sans", "Arial", sans-serif;
+		font-size: 15px;
+		line-height: 20px;
+		color: #000;
+		text-transform: uppercase;
+	}
+	li{
+		margin-bottom: 20px;
+	}
+	label{
+		padding-left: 34px;
+		position: relative;		
+	}
+	.power-filter{ /*Вопрос дизайнеру: ЗАЧЕМ? */
+		font-size: 14px;
+		line-height: 20px;
+		margin-top: 18px;
+		margin-bottom: 80px;
+	}
+	label:before{
+		content:"";
+		font-family: "symbols-technomart";
+		font-size: 28px;
+		line-height: 20px;
+		color: #c1c1c1;
+		position: absolute;
+		top: 2px;
+		left: 0;
+	}
+	input[type="checkbox"]+label:before{
+		content: "\2610";
+	}
+	input[type="checkbox"]:checked+label:before{
+		content: "\2611";
+	}
+	input[type="radio"]+label:before{
+		content: "\25cb";
+	}
+	input[type="radio"]:checked+label:before{
+		content: "\25cf";
+	}	
+}
+
+ul.firm-filter{
+	padding-bottom: 3px;
+	margin-bottom: 21px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
 .btn-show,
 .paginator-btn{
 	font-family: "PT Sans", "Arial", sans-serif;
@@ -1339,6 +1397,7 @@ p,h1,h2,h3{
 	padding-top: 9px;
 	padding-bottom: 9px;
 	color: #000;
+	outline: none;
 	&:hover{
 		border-color: #bdc6ca;
 	}
