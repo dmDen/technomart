@@ -906,6 +906,20 @@ p,h1,h2,h3{
 }
 /*Бренды
 ///////*/
+.popular-brands{
+	font-size: 0;
+	.catalog-brand{
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+	.catalog-brand:nth-child(4n){
+		margin-right: 0;		
+	}
+	.catalog-brand:last-child{
+		margin-bottom: 85px;	
+	}	
+}
+
 .catalog-brand{
 	display: inline-block;
 	vertical-align: top;
@@ -921,19 +935,14 @@ p,h1,h2,h3{
 		max-height: 143px;
 		vertical-align: middle;
 	}
-}
-.popular-brands{
-	font-size: 0;
-	.catalog-brand{
-		margin-right: 20px;
-		margin-bottom: 20px;
+	&:hover{
+		border: none;
+		box-shadow: 0 7px 20px 3px rgba(41,52,73,0.5);
 	}
-	.catalog-brand:nth-child(4n){
-		margin-right: 0;		
+	&:active{
+		box-shadow: 0 3px 10px 3px rgba(41,52,73,0.5);
+		opacity: 0.3;
 	}
-	.catalog-brand:last-child{
-		margin-bottom: 85px;	
-	}	
 }
 /*Сервисы
 ////////*/
