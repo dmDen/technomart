@@ -1062,6 +1062,15 @@ h3 {
   margin-bottom: 20px;
   font-size: 18px;
   line-height: 20px;
+  position: relative;
+}
+.about-company-description li:before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  border-bottom: 2px solid #fb565a;
+  left: 0px;
+  top: 10px;
 }
 .about-company-title {
   font-size: 30px;

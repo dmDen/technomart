@@ -1034,7 +1034,16 @@ p,h1,h2,h3{
 		padding-left: 36px;
 		margin-bottom: 20px;
 		font-size: 18px;
-		line-height: 20px;	
+		line-height: 20px;
+		position: relative;
+		&:before{
+			content: "";
+			position: absolute;
+			width: 25px;
+			border-bottom: 2px solid #fb565a;
+			left: 0px;
+			top: 10px;
+		}
 	}
 }
 .about-company-title{
