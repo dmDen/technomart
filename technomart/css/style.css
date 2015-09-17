@@ -657,6 +657,10 @@ h3 {
 .catalog-item:hover .catalog-item-actions {
   display: block;
 }
+.catalog-item:hover {
+  border: none;
+  box-shadow: 0 10px 15px 3px rgba(41, 52, 73, 0.5);
+}
 .catalog-image {
   margin-top: 35px;
   margin-bottom: 40px;
@@ -943,6 +947,13 @@ h3 {
   min-height: 145px;
   border: 1px solid #e5e5e5;
   font-size: 18px;
+  text-align: center;
+  line-height: 140px;
+}
+.catalog-brand img {
+  max-width: 218px;
+  max-height: 143px;
+  vertical-align: middle;
 }
 .popular-brands {
   font-size: 0;

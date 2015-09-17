@@ -612,9 +612,13 @@ p,h1,h2,h3{
 	&:after{
 		top: -1px;
 		right: -1px;
-	}
+	}	
 	&:hover .catalog-item-actions{
-		display: block;
+		display: block;		
+	}
+	&:hover{
+		border: none;
+		box-shadow: 0 10px 15px 3px rgba(41,52,73,0.5);
 	}
 }
 .catalog-image{
@@ -910,6 +914,13 @@ p,h1,h2,h3{
 	min-height: 145px;
 	border: 1px solid #e5e5e5;
 	font-size: 18px;
+	text-align: center;
+	line-height: 140px;	
+	img{
+		max-width: 218px;
+		max-height: 143px;
+		vertical-align: middle;
+	}
 }
 .popular-brands{
 	font-size: 0;
