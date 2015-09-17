@@ -227,16 +227,66 @@ h3 {
 .header-search-form {
   float: left;
   width: 270px;
+  position: relative;
+}
+.header-search-form i {
+  position: absolute;
+  font-size: 17px;
+  line-height: 18px;
+  top: 12px;
+  left: 14px;
+  opacity: 0.3;
 }
 .header-search-form input {
   box-sizing: border-box;
   width: 100%;
-  height: 41px;
+  height: 42px;
   border: none;
   padding: 0;
   padding-left: 49px;
   background: #293449;
+  font-family: "Cuprum", "Aria", sans-serif;
+  font-size: 17px;
   color: #fff;
+  outline: none;
+}
+.header-search-form input:hover {
+  background: #212a3a;
+}
+.header-search-form input:focus {
+  background: #fff;
+  color: #000;
+}
+.header-search-form input::-webkit-input-placeholder {
+  color: #fff;
+}
+.header-search-form input::-moz-placeholder {
+  color: #fff;
+}
+.header-search-form input:-moz-placeholder {
+  color: #fff;
+}
+.header-search-form input:-ms-input-placeholder {
+  color: #fff;
+}
+.header-search-form input:focus::-webkit-input-placeholder {
+  color: #000;
+}
+.header-search-form input:focus::-moz-placeholder {
+  color: #000;
+}
+.header-search-form input:focus:-moz-placeholder {
+  color: #000;
+}
+.header-search-form input:focus:-ms-input-placeholder {
+  color: #000;
+}
+.header-search-form input:hover + i {
+  opacity: 1;
+}
+.header-search-form input:focus + i {
+  opacity: 1;
+  color: #ee3643;
 }
 .search-btn {
   display: none;
@@ -413,9 +463,28 @@ h3 {
 }
 .header-middle-panel .my-orders {
   margin-right: 32px;
+  position: relative;
+}
+.header-middle-panel .my-orders:after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: #32425c;
+  border-radius: 50%;
+  position: absolute;
+  right: -19px;
+  top: 8px;
 }
 .header-middle-panel .my-cabinet {
   margin-right: 72px;
+}
+.header-middle-panel .my-orders:hover,
+.header-middle-panel .my-cabinet:hover {
+  color: #ee3643;
+}
+.header-middle-panel .my-orders:active,
+.header-middle-panel .my-cabinet:active {
+  color: #c5c5c5;
 }
 .login-menu a:hover {
   color: #ee3643;
@@ -434,6 +503,7 @@ h3 {
 .user-menu-logout-btn:hover:before {
   color: #32425c;
 }
+.user-menu-name:active,
 .user-menu-name:active:before,
 .user-menu-logout-btn:active:before {
   color: #c5c5c5;

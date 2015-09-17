@@ -160,16 +160,54 @@ p,h1,h2,h3{
 .header-search-form{
 	float:left;
 	width: 270px;
+	position: relative;
+	i{
+		position: absolute;
+		font-size: 17px;
+		line-height: 18px;
+		top: 12px;
+		left: 14px;
+		opacity: 0.3;
+	}
 	input{
 		box-sizing: border-box;
 		width: 100%;
-		height: 41px;
+		height: 42px;
 		border: none;
 		padding: 0;
 		padding-left: 49px;
 		background: #293449;
-		color: #fff;
-	}	
+		font-family: "Cuprum", "Aria", sans-serif;
+		font-size: 17px;
+		color: #fff;		
+		outline: none;
+		&:hover{
+			background: #212a3a;
+		}
+		&:focus{
+			background: #fff;
+			color: #000;
+		}
+	}
+	
+	input::-webkit-input-placeholder {color: #fff;} 
+	input::-moz-placeholder {color: #fff;} 
+	input:-moz-placeholder {color: #fff;} 
+	input:-ms-input-placeholder {color: #fff;}
+	
+	input:focus::-webkit-input-placeholder {color: #000;} 
+	input:focus::-moz-placeholder {color: #000;} 
+	input:focus:-moz-placeholder {color: #000;} 
+	input:focus:-ms-input-placeholder {color: #000;}	
+	
+	input:hover+i{
+		opacity: 1;
+	}
+	input:focus+i{
+		opacity: 1;
+		color: #ee3643;
+	}
+	
 }
 .search-btn{
 	display: none;
@@ -358,9 +396,29 @@ p,h1,h2,h3{
 	}
 	.my-orders{
 		margin-right: 32px;
+		position: relative;
+		&:after{
+			content: "";
+			//display: inline-block;
+			width: 4px;
+			height: 4px;
+			background-color: #32425c;
+			border-radius: 50%;			
+			position: absolute;
+			right: -19px;
+			top: 8px;
+		}
 	}
 	.my-cabinet{
 		margin-right: 72px;		
+	}
+	.my-orders:hover,
+	.my-cabinet:hover{
+		color: #ee3643;
+	}
+	.my-orders:active,
+	.my-cabinet:active{
+		color: #c5c5c5;
 	}
 }
 .login-menu{
@@ -383,6 +441,7 @@ p,h1,h2,h3{
 .user-menu-logout-btn:hover:before{
 	color: #32425c;
 }
+.user-menu-name:active,
 .user-menu-name:active:before,
 .user-menu-logout-btn:active:before{
 	color: #c5c5c5;
