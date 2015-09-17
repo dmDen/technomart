@@ -948,7 +948,6 @@ p,h1,h2,h3{
 ////////*/
 .services{
 	background: #f2f6f8;
-	padding-bottom: 102px;
 	margin-bottom: 76px;
 }
 .services-top-level{
@@ -971,7 +970,10 @@ p,h1,h2,h3{
 .services-bottom-level{
 	.services-info{
 		display: none;
-		float: right;
+		float: left;
+		padding-left: 80px;
+		width: 620px;
+		min-height: 285px;
 	}
 	.active{
 		display: block;
@@ -979,6 +981,7 @@ p,h1,h2,h3{
 }
 .tabs{
 	float: left;
+	width: 240px;
 	ul{
 		list-style: none;
 		padding: 0;
@@ -1004,14 +1007,28 @@ p,h1,h2,h3{
 }
 .services-info-title{
 	font-size: 36px;
-	line-height: 45px;
+	line-height: 30px;
 	color: #32425c;
 	text-transform: uppercase;
+	margin-bottom: 30px;
 }
 .services-info-text{
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
+}
+.delivery{
+	background: url("../img/delivery-bg.png") no-repeat 231px 24px;
+}
+.guarantee{
+	background: url("../img/guarantee-bg.png") no-repeat 316px 0;
+}
+.credit{
+	background: url("../img/credit-bg.png") no-repeat 220px 0;
+	.btn{
+		width: 195px;
+		margin-top: 25px;
+	}
 }
 /*О компании и карта
 //////////////////*/
