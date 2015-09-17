@@ -982,6 +982,7 @@ p,h1,h2,h3{
 .tabs{
 	float: left;
 	width: 240px;
+	position: relative;	
 	ul{
 		list-style: none;
 		padding: 0;
@@ -1002,7 +1003,24 @@ p,h1,h2,h3{
 		font-weight: 700;
 		font-size: 21px;
 		line-height: 25px;
-			
+		&:hover{
+			background: #293449;
+		}
+	}
+	a.active-tab{
+		background: #fff;
+		color: #32425c;
+		box-shadow: none;
+	}
+	&:after{
+		content: "";
+		background: url("../img/sprite.png") no-repeat;
+		background-position: -101px 0;
+		width: 10px;
+		height: 272px;				
+		position: absolute;				
+		top: -40px;
+		right: 0;
 	}
 }
 .services-info-title{
