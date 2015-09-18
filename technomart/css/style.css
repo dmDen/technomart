@@ -1145,14 +1145,14 @@ h3 {
 }
 /*Активация табов
 //////////////*/
-.radio-delivery:checked ~ .delivery,
-.radio-guarantee:checked ~ .guarantee,
-.radio-credit:checked ~ .credit {
+#tab-delivery:checked ~ .delivery,
+#tab-guarantee:checked ~ .guarantee,
+#tab-credit:checked ~ .credit {
   display: block;
 }
-.radio-delivery:checked ~ .tabs label[for="tab-delivery"],
-.radio-guarantee:checked ~ .tabs label[for="tab-guarantee"],
-.radio-credit:checked ~ .tabs label[for="tab-credit"] {
+#tab-delivery:checked ~ .tabs label[for="tab-delivery"],
+#tab-guarantee:checked ~ .tabs label[for="tab-guarantee"],
+#tab-credit:checked ~ .tabs label[for="tab-credit"] {
   background: #fff;
   color: #32425c;
   box-shadow: none;
