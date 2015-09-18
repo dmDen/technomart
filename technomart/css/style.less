@@ -1027,6 +1027,9 @@ p,h1,h2,h3{
 /*Доставка Гарнатия Кредит
 ////////////////////////*/
 .services-bottom-level{
+	input{
+		display: none;
+	}
 	.services-info{
 		display: none;
 		float: left;
@@ -1034,9 +1037,6 @@ p,h1,h2,h3{
 		width: 620px;
 		min-height: 285px;
 	}
-	.active{
-		display: block;
-	}	
 }
 .tabs{
 	float: left;
@@ -1047,7 +1047,7 @@ p,h1,h2,h3{
 		padding: 0;
 		margin: 0;
 	}	
-	a{
+	label{
 		display: block;
 		text-decoration: none;
 		box-sizing: border-box;
@@ -1062,14 +1062,10 @@ p,h1,h2,h3{
 		font-weight: 700;
 		font-size: 21px;
 		line-height: 25px;
+		cursor: pointer;
 		&:hover{
 			background: #293449;
 		}
-	}
-	a.active-tab{
-		background: #fff;
-		color: #32425c;
-		box-shadow: none;
 	}
 	&:after{
 		content: "";
@@ -1107,6 +1103,21 @@ p,h1,h2,h3{
 		margin-top: 25px;
 	}
 }
+/*Активация табов
+//////////////*/
+.radio-delivery:checked ~ .delivery,
+.radio-guarantee:checked ~ .guarantee,
+.radio-credit:checked ~ .credit{
+	display: block;
+}
+#tab-delivery:checked ~ .tabs label[for="tab-delivery"],
+#tab-guarantee:checked ~ .tabs label[for="tab-guarantee"],
+#tab-credit:checked ~ .tabs label[for="tab-credit"]{
+	background: #fff;
+	color: #32425c;
+	box-shadow: none;
+}
+
 /*О компании и карта
 //////////////////*/
 .about-company{
