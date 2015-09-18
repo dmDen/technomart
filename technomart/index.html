@@ -72,20 +72,26 @@
 
 			<div class="promo-slider-and-actions clearfix">
 				<div class="promo-slider">
-					<div class="promo-slide-title">
+					<input type="radio" name="slides" id="slide-1">
+					<input type="radio" name="slides" id="slide-2" checked>
+					<div class="slides">
+						<img src="img/slide01.jpg" width="620" height="266" alt="Слайд 1">
+						<img src="img/slide02.jpg" alt="Слайд 2">					
+					</div>
+					<div class="promo-slide-title slide-1">
+						<h2>Перфораторы</h2>
+						<p>Настоящие мужские игрушки</p>
+					</div>					
+					<div class="promo-slide-title slide-2">
 						<h2>ДРЕЛИ</h2>
-						<p>Соседям на радость</p>
+						<p>Соседям на радость!</p>
 					</div>
-					<div class="slider-arrows">
-						<a href="#" class="icon-left promo-slider-btn"></a>
-						<a href="#" class="icon-right promo-slider-btn"></a>
-					</div>
-					<div>
-						<a class="btn open-catalog-btn" href="catalog.html">Открыть каталог</a>
-						<div class="switcher">
-							<div class="switch-btn"></div>
-							<div class="switch-btn switch-btn-active"></div>
-						</div>
+					<label for="slide-1" class="arrow-left">&lt;</label>
+					<label for="slide-2" class="arrow-right">&gt;</label>
+					<a class="btn open-catalog-btn" href="catalog.html">Открыть каталог</a>
+					<div class="slider-switcher">
+						<label for="slide-1">Первый</label>
+						<label for="slide-2">Второй</label>
 					</div>
 				</div>
 

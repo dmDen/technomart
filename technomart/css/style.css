@@ -959,18 +959,118 @@ h3 {
 .product-kinds .equipment {
   float: right;
 }
+/*Слайдер
+////////*/
 .promo-slider-and-actions {
   margin-bottom: 53px;
 }
-.promo-slider-and-actions .promo-slider {
+.promo-slider-and-actions .actions {
+  float: right;
+}
+.promo-slider {
   float: left;
   background: green;
   box-sizing: border-box;
   width: 620px;
   height: 266px;
+  overflow: hidden;
+  position: relative;
 }
-.promo-slider-and-actions .actions {
-  float: right;
+.promo-slider input {
+  display: none;
+}
+.promo-slider .slides {
+  width: 1240px;
+  transition: transform 0.9s ease;
+}
+.promo-slider img {
+  float: left;
+  width: 620px;
+  height: 266px;
+}
+.promo-slider .open-catalog-btn {
+  position: absolute;
+  width: 195px;
+  left: 25px;
+  bottom: 22px;
+  z-index: 10;
+}
+.promo-slider .arrow-left,
+.promo-slider .arrow-right {
+  position: absolute;
+  font-family: "symbols-technomart";
+  font-size: 45px;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.promo-slider .arrow-left {
+  left: 25px;
+  top: 109px;
+}
+.promo-slider .arrow-right {
+  right: 21px;
+  top: 109px;
+}
+.promo-slide-title {
+  opacity: 0;
+  position: absolute;
+  left: 25px;
+  top: 23px;
+  transition: opacity 1s;
+}
+.promo-slide-title h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.promo-slide-title p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+}
+.slider-switcher {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 36px;
+  z-index: 5;
+  text-align: center;
+}
+.slider-switcher label {
+  font-size: 0;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 3px;
+  background: #fff;
+  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
+  transition: background-color 0.3s;
+}
+/*Активация слайдов
+//////////////*/
+#slide-1:checked ~ .promo-slide-title.slide-1,
+#slide-2:checked ~ .promo-slide-title.slide-2 {
+  opacity: 1;
+}
+#slide-1:checked ~ .slider-switcher label[for="slide-1"],
+#slide-2:checked ~ .slider-switcher label[for="slide-2"] {
+  background: #ee3643;
+}
+#slide-1:checked ~ .arrow-left,
+#slide-2:checked ~ .arrow-right {
+  opacity: 0.3;
+}
+#slide-1:checked ~ .slides {
+  transform: translate(0);
+}
+#slide-2:checked ~ .slides {
+  transform: translate(-620px);
 }
 /*Разделитель секций
 //////////////////*/
