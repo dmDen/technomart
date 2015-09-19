@@ -250,7 +250,7 @@ h3 {
   outline: none;
   background: none;
 }
-.header-search-form input {
+.search-input {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -266,42 +266,42 @@ h3 {
   color: #fff;
   outline: none;
 }
-.header-search-form input:hover {
+.search-input:hover {
   background: #212a3a;
 }
-.header-search-form input:focus {
+.search-input:focus {
   background: #fff;
   color: #000;
 }
-.header-search-form input::-webkit-input-placeholder {
+.search-input::-webkit-input-placeholder {
   color: #fff;
 }
-.header-search-form input::-moz-placeholder {
+.search-input::-moz-placeholder {
   color: #fff;
 }
-.header-search-form input:-moz-placeholder {
+.search-input:-moz-placeholder {
   color: #fff;
 }
-.header-search-form input:-ms-input-placeholder {
+.search-input:-ms-input-placeholder {
   color: #fff;
 }
-.header-search-form input:focus::-webkit-input-placeholder {
+.search-input:focus::-webkit-input-placeholder {
   color: #000;
 }
-.header-search-form input:focus::-moz-placeholder {
+.search-input:focus::-moz-placeholder {
   color: #000;
 }
-.header-search-form input:focus:-moz-placeholder {
+.search-input:focus:-moz-placeholder {
   color: #000;
 }
-.header-search-form input:focus:-ms-input-placeholder {
+.search-input:focus:-ms-input-placeholder {
   color: #000;
 }
-.header-search-form input:hover + .search-btn,
-.header-search-form .search-btn:hover {
+.search-input:hover + .search-btn,
+.search-btn:hover {
   opacity: 1;
 }
-.header-search-form input:focus + .search-btn {
+.search-input:focus + .search-btn {
   opacity: 1;
   color: #ee3643;
 }
@@ -334,24 +334,24 @@ h3 {
   background: #518534;
   opacity: 0.51;
 }
-.top-panel-right-side .top-menu-item:before {
+.top-panel-right-side .icon-bookmark {
+  padding-left: 43px;
+  min-width: 150px;
+}
+.top-menu-item:before {
   position: absolute;
   left: 10px;
   color: #fff;
   opacity: 0.3;
 }
-.top-panel-right-side .top-menu-item:hover:before {
+.top-menu-item:hover:before {
   opacity: 1;
 }
-.top-panel-right-side .top-menu-item:active:before {
+.top-menu-item:active:before {
   opacity: 0.5;
 }
-.top-panel-right-side .top-menu-item.not-empty {
+.top-menu-item.not-empty {
   background: #ee3643;
-}
-.top-panel-right-side .icon-bookmark {
-  padding-left: 43px;
-  min-width: 150px;
 }
 /*Средняя панель
 ///////////////*/
@@ -872,9 +872,6 @@ h3 {
   border-color: #32425c;
   opacity: 0.3;
 }
-/*////////////////
-   index.html
-////////////////*/
 /*Красные кнопки
 ///////////////*/
 .btn {
@@ -900,6 +897,9 @@ h3 {
 .btn:active {
   background: #ba2732;
 }
+/*////////////////
+   index.html
+////////////////*/
 /*Верхняя часть (слайдер, плашки)
 ///////////////////////////////*/
 .promo-blocks {
@@ -1448,22 +1448,20 @@ h3 {
   font-weight: 400;
   text-transform: uppercase;
   background: #f7f3ec;
+}
+.catalog-items-sort-bar {
   position: relative;
 }
-.filter-title a,
 .catalog-items-sort-bar a {
   text-decoration: none;
   color: #000;
   border-bottom: 1px solid #ee3643;
   opacity: 0.3;
 }
-.filter-title a:hover,
 .catalog-items-sort-bar a:hover {
   opacity: 1;
 }
-.filter-title .sort-up,
 .catalog-items-sort-bar .sort-up,
-.filter-title .sort-down,
 .catalog-items-sort-bar .sort-down {
   font-family: "symbols-technomart";
   font-size: 23px;
@@ -1471,30 +1469,24 @@ h3 {
   border: none;
   position: absolute;
 }
-.filter-title .sort-active,
 .catalog-items-sort-bar .sort-active {
   opacity: 1;
   border: none;
   color: #ee3643;
 }
-.filter-title .sort-by-price,
 .catalog-items-sort-bar .sort-by-price {
   margin-left: 136px;
 }
-.filter-title .sort-by-type,
 .catalog-items-sort-bar .sort-by-type {
   margin-left: 68px;
 }
-.filter-title .sort-by-functional,
 .catalog-items-sort-bar .sort-by-functional {
   margin-left: 60px;
 }
-.filter-title .sort-up,
 .catalog-items-sort-bar .sort-up {
   right: 48px;
   top: 16px;
 }
-.filter-title .sort-down,
 .catalog-items-sort-bar .sort-down {
   right: 16px;
   top: 16px;
@@ -1728,7 +1720,7 @@ ul.firm-filter {
   color: #000;
 }
 /*/////////////////
-Форма Напишите нам
+Всплывающие формы
 /////////////////*/
 .modal-form {
   display: none;

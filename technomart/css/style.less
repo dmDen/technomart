@@ -173,48 +173,47 @@ p,h1,h2,h3{
 		border: none;
 		outline: none;
 		background: none;
+	}	
+}
+.search-input{
+	box-sizing: border-box;
+	width: 100%;
+	height: 42px;
+	border: none;
+	padding: 0;
+	padding-left: 49px;
+	padding-right: 10px;
+	background: #293449;
+	font-family: "Cuprum", "Aria", sans-serif;
+	font-size: 17px;
+	color: #fff;		
+	outline: none;
+	&:hover{
+		background: #212a3a;
 	}
-	input{
-		box-sizing: border-box;
-		width: 100%;
-		height: 42px;
-		border: none;
-		padding: 0;
-		padding-left: 49px;
-		padding-right: 10px;
-		background: #293449;
-		font-family: "Cuprum", "Aria", sans-serif;
-		font-size: 17px;
-		color: #fff;		
-		outline: none;
-		&:hover{
-			background: #212a3a;
-		}
-		&:focus{
-			background: #fff;
-			color: #000;
-		}
+	&:focus{
+		background: #fff;
+		color: #000;
 	}
-	
-	input::-webkit-input-placeholder {color: #fff;} 
-	input::-moz-placeholder {color: #fff;} 
-	input:-moz-placeholder {color: #fff;} 
-	input:-ms-input-placeholder {color: #fff;}
-	
-	input:focus::-webkit-input-placeholder {color: #000;} 
-	input:focus::-moz-placeholder {color: #000;} 
-	input:focus:-moz-placeholder {color: #000;} 
-	input:focus:-ms-input-placeholder {color: #000;}	
-	
-	input:hover+.search-btn,
-	.search-btn:hover{
-		opacity: 1;
-	}
-	input:focus+.search-btn{
-		opacity: 1;
-		color: #ee3643;
-	}
-	
+}
+
+.search-input::-webkit-input-placeholder {color: #fff;} 
+.search-input::-moz-placeholder {color: #fff;} 
+.search-input:-moz-placeholder {color: #fff;} 
+.search-input:-ms-input-placeholder {color: #fff;}
+
+.search-input:focus::-webkit-input-placeholder {color: #000;} 
+.search-input:focus::-moz-placeholder {color: #000;} 
+.search-input:focus:-moz-placeholder {color: #000;} 
+.search-input:focus:-ms-input-placeholder {color: #000;}	
+
+.search-input:hover+.search-btn,
+.search-btn:hover{
+	opacity: 1;
+}
+.search-input:focus+.search-btn{
+	opacity: 1;
+	color: #ee3643;
 }
 .top-panel-right-side{
 	float: right;
@@ -242,23 +241,6 @@ p,h1,h2,h3{
 			opacity: 0.51;
 		}
 	}
-	.top-menu-item{
-		&:before{
-			position: absolute;
-			left: 10px;
-			color: #fff;
-			opacity: 0.3;
-		}
-		&:hover:before{
-			opacity: 1;
-		}
-		&:active:before{
-			opacity: 0.5;
-		}
-	}
-	.top-menu-item.not-empty{
-		background: #ee3643;
-	}
 	.icon-bookmark{
 		padding-left: 43px; 
 		min-width: 150px;
@@ -266,6 +248,23 @@ p,h1,h2,h3{
 	.icon-bookmark:before,
 	.icon-basket:before{
 	}
+}
+.top-menu-item{
+	&:before{
+		position: absolute;
+		left: 10px;
+		color: #fff;
+		opacity: 0.3;
+	}
+	&:hover:before{
+		opacity: 1;
+	}
+	&:active:before{
+		opacity: 0.5;
+	}
+}
+.top-menu-item.not-empty{
+	background: #ee3643;
 }
 /*Средняя панель
 ///////////////*/
@@ -783,11 +782,6 @@ p,h1,h2,h3{
 	}	
 }
 
-
-/*////////////////
-   index.html
-////////////////*/
-
 /*Красные кнопки
 ///////////////*/
 .btn{
@@ -810,6 +804,11 @@ p,h1,h2,h3{
 		background: #ba2732;
 	}
 }
+
+/*////////////////
+   index.html
+////////////////*/
+
 /*Верхняя часть (слайдер, плашки)
 ///////////////////////////////*/
 .promo-blocks{
@@ -1343,6 +1342,8 @@ p,h1,h2,h3{
 	font-weight: 400;
 	text-transform: uppercase;
 	background: #f7f3ec;
+}
+.catalog-items-sort-bar{	
 	position: relative;
 	a{
 		text-decoration: none;
@@ -1619,7 +1620,7 @@ ul.firm-filter{
 }
 
 /*/////////////////
-Форма Напишите нам
+Всплывающие формы
 /////////////////*/
 .modal-form{
 	display: none;
