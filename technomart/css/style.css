@@ -194,7 +194,9 @@ h3 {
 }
 .header-top-panel a {
   color: #fff;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .logo {
   display: block;
@@ -208,20 +210,27 @@ h3 {
   text-transform: uppercase;
   background: #ee3643;
   text-align: center;
-  box-shadow: 0 5px 0 0 #b52933;
+  -webkit-box-shadow: 0 5px 0 0 #b52933;
+          box-shadow: 0 5px 0 0 #b52933;
 }
 .header-logo {
-  box-shadow: 0 5px 0 0 #b52933,
+  -webkit-box-shadow: 0 5px 0 0 #b52933,
+		inset 0 1px 0 0 #e03643;
+          box-shadow: 0 5px 0 0 #b52933,
 		inset 0 1px 0 0 #e03643;
 }
 .header-logo:hover {
   background: #ca2c37;
-  box-shadow: 0 5px 0 0 #bf2d38,
+  -webkit-box-shadow: 0 5px 0 0 #bf2d38,
+		inset 0 1px 0 0 #9a212a;
+          box-shadow: 0 5px 0 0 #bf2d38,
 		inset 0 1px 0 0 #9a212a;
 }
 .header-logo:active {
   background: #ba2732;
-  box-shadow: 0 5px 0 0 #b02834,
+  -webkit-box-shadow: 0 5px 0 0 #b02834,
+		inset 0 1px 0 0 #8e1e26;
+          box-shadow: 0 5px 0 0 #b02834,
 		inset 0 1px 0 0 #8e1e26;
 }
 .header-search-form {
@@ -242,7 +251,9 @@ h3 {
   background: none;
 }
 .header-search-form input {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   height: 42px;
   border: none;
@@ -301,7 +312,9 @@ h3 {
   font-size: 17px;
   display: inline-block;
   vertical-align: top;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   height: 42px;
   min-width: 150px;
   padding-top: 11px;
@@ -367,7 +380,9 @@ h3 {
   color: #e9292a;
   font-size: 21px;
   border: 3px solid #fff;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   width: 270px;
   height: 45px;
   position: relative;
@@ -385,7 +400,9 @@ h3 {
 }
 .header-middle-panel .login-menu {
   float: right;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   width: 310px;
   text-align: right;
   font-size: 0;
@@ -429,7 +446,9 @@ h3 {
   background: #fff;
   padding-left: 47px;
   padding-top: 10px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   height: 45px;
   width: 260px;
   text-align: left;
@@ -443,7 +462,9 @@ h3 {
   top: 12px;
 }
 .header-middle-panel .user-menu-logout-btn {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   height: 45px;
   width: 40px;
   background: #fff;
@@ -472,7 +493,8 @@ h3 {
   width: 4px;
   height: 4px;
   background-color: #32425c;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   position: absolute;
   right: -19px;
   top: 8px;
@@ -514,7 +536,8 @@ h3 {
 ///////////////*/
 .main-menu {
   background: #32425c;
-  box-shadow: inset 0 -5px 0 0 #293449;
+  -webkit-box-shadow: inset 0 -5px 0 0 #293449;
+          box-shadow: inset 0 -5px 0 0 #293449;
 }
 .main-menu ul {
   margin: 0;
@@ -530,7 +553,9 @@ h3 {
 }
 .main-menu a {
   display: block;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 19px;
@@ -594,7 +619,9 @@ h3 {
   padding-left: 36px;
   text-align: left;
   font-size: 30px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   line-height: 30px;
   height: 63px;
 }
@@ -641,7 +668,9 @@ h3 {
 }
 .social-buttons {
   float: left;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   width: 314px;
   font-size: 0;
   padding-left: 72px;
@@ -655,7 +684,8 @@ h3 {
   margin-left: 3px;
   margin-right: 3px;
   background: #212a3a;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
 }
 .btn-social i {
   font-size: 18px;
@@ -706,7 +736,9 @@ h3 {
 .catalog-item {
   display: inline-block;
   vertical-align: top;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   width: 220px;
   min-height: 318px;
   border: 1px solid #e5e5e5;
@@ -730,7 +762,8 @@ h3 {
   display: block;
 }
 .catalog-item:hover {
-  box-shadow: 0 10px 15px 3px rgba(41, 52, 73, 0.5);
+  -webkit-box-shadow: 0 10px 15px 3px rgba(41, 52, 73, 0.5);
+          box-shadow: 0 10px 15px 3px rgba(41, 52, 73, 0.5);
 }
 .catalog-image {
   margin-top: 35px;
@@ -757,7 +790,8 @@ h3 {
   padding: 8px 30px;
   width: 80px;
   margin-left: 41px;
-  border-radius: 3px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
   position: relative;
 }
 .catalog-item-title + .catalog-price {
@@ -796,11 +830,13 @@ h3 {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
-  border-radius: 3px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
   background-color: #63a63e;
 }
 .catalog-item-actions .buy {
-  box-shadow: inset 0 -3px 0 #367315;
+  -webkit-box-shadow: inset 0 -3px 0 #367315;
+          box-shadow: inset 0 -3px 0 #367315;
   position: relative;
 }
 .catalog-item-actions .buy:before {
@@ -819,7 +855,8 @@ h3 {
 }
 .catalog-item-actions .buy:active {
   background: #518534;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .catalog-item-actions .bookmark {
   width: 129px;
@@ -842,7 +879,9 @@ h3 {
 ///////////////*/
 .btn {
   display: inline-block;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   height: 38px;
   text-align: center;
   padding-top: 10px;
@@ -852,7 +891,8 @@ h3 {
   line-height: 18px;
   background: #ee3643;
   text-decoration: none;
-  border-radius: 3px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
 }
 .btn:hover {
   background: #ca2c37;
@@ -869,7 +909,9 @@ h3 {
   margin-bottom: 20px;
 }
 .promo-block {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   width: 300px;
   height: 123px;
   padding-top: 20px;
@@ -887,7 +929,9 @@ h3 {
   display: block;
   font-size: 14px;
   line-height: 18px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   width: 138px;
   height: 38px;
   padding-top: 11px;
@@ -896,7 +940,8 @@ h3 {
   text-transform: uppercase;
   background: rgba(0, 0, 0, 0.1);
   text-align: center;
-  border-radius: 4px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
 }
 .promo-block a:hover {
   background: rgba(0, 0, 0, 0.2);
@@ -973,7 +1018,9 @@ h3 {
 .promo-slider {
   float: left;
   background: green;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   width: 620px;
   height: 266px;
   overflow: hidden;
@@ -984,7 +1031,8 @@ h3 {
 }
 .promo-slider .slides {
   width: 1240px;
-  transition: transform 0.9s ease;
+  -webkit-transition: -webkit-transform 0.9s ease;
+          transition: transform 0.9s ease;
 }
 .promo-slider img {
   float: left;
@@ -1005,7 +1053,8 @@ h3 {
   font-size: 45px;
   color: #fff;
   cursor: pointer;
-  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+          transition: opacity 0.3s;
 }
 .promo-slider .arrow-left {
   left: 25px;
@@ -1020,7 +1069,8 @@ h3 {
   position: absolute;
   left: 25px;
   top: 23px;
-  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+          transition: opacity 1s;
 }
 .promo-slide-title h2 {
   font-weight: 700;
@@ -1051,9 +1101,12 @@ h3 {
   background: #fff;
   cursor: pointer;
   border: 2px solid #fff;
-  border-radius: 50%;
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
-  transition: background-color 0.3s;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
+  -webkit-transition: background-color 0.3s;
+          transition: background-color 0.3s;
 }
 /*Активация слайдов
 //////////////*/
@@ -1070,15 +1123,21 @@ h3 {
   opacity: 0.3;
 }
 #slide-1:checked ~ .slides {
-  transform: translate(0);
+  -webkit-transform: translate(0);
+      -ms-transform: translate(0);
+          transform: translate(0);
 }
 #slide-2:checked ~ .slides {
-  transform: translate(-620px);
+  -webkit-transform: translate(-620px);
+      -ms-transform: translate(-620px);
+          transform: translate(-620px);
 }
 /*Разделитель секций
 //////////////////*/
 .section-title {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   min-height: 89px;
   background: #f7f3ec;
   padding-left: 28px;
@@ -1128,7 +1187,9 @@ h3 {
 .catalog-brand {
   display: inline-block;
   vertical-align: top;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   width: 220px;
   min-height: 145px;
   border: 1px solid #e5e5e5;
@@ -1143,10 +1204,12 @@ h3 {
 }
 .catalog-brand:hover {
   border: none;
-  box-shadow: 0 7px 20px 3px rgba(41, 52, 73, 0.5);
+  -webkit-box-shadow: 0 7px 20px 3px rgba(41, 52, 73, 0.5);
+          box-shadow: 0 7px 20px 3px rgba(41, 52, 73, 0.5);
 }
 .catalog-brand:active {
-  box-shadow: 0 3px 10px 3px rgba(41, 52, 73, 0.5);
+  -webkit-box-shadow: 0 3px 10px 3px rgba(41, 52, 73, 0.5);
+          box-shadow: 0 3px 10px 3px rgba(41, 52, 73, 0.5);
   opacity: 0.3;
 }
 /*Сервисы
@@ -1195,13 +1258,16 @@ h3 {
 .tabs label {
   display: block;
   text-decoration: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   width: 240px;
   min-height: 61px;
   padding-top: 17px;
   padding-left: 22px;
   background: #32425c;
-  box-shadow: inset 0px 1px #405069, inset 0px -1px #293449;
+  -webkit-box-shadow: inset 0px 1px #405069, inset 0px -1px #293449;
+          box-shadow: inset 0px 1px #405069, inset 0px -1px #293449;
   color: #fff;
   font-weight: 700;
   font-size: 21px;
@@ -1258,7 +1324,8 @@ h3 {
 #tab-credit:checked ~ .tabs label[for="tab-credit"] {
   background: #fff;
   color: #32425c;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 /*О компании и карта
 //////////////////*/
@@ -1267,7 +1334,9 @@ h3 {
 }
 .about-company-description {
   float: left;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   width: 550px;
 }
 .about-company-description ul {
@@ -1304,7 +1373,9 @@ h3 {
 }
 .about-company-contacts {
   float: right;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   width: 300px;
 }
 .about-company-contacts .about-company-text {
@@ -1454,14 +1525,18 @@ h3 {
 .filter-range-controls {
   position: relative;
   margin-top: 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   height: 80px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
   margin-bottom: 9px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+          border-bottom-right-radius: 5px;
   background: #f7f3ec;
 }
 .filter-range-controls .scale {
@@ -1480,9 +1555,11 @@ h3 {
   height: 4px;
   cursor: pointer;
   border: 8px solid #fff;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   background: #ababab;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
+          box-shadow: 0 2px 1px 0 #cfcfcf;
 }
 .filter-price-controls {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1499,7 +1576,8 @@ h3 {
   text-align: center;
   color: #000;
   border: none;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
   outline: none;
   background: #f7f3ec;
 }
@@ -1573,7 +1651,8 @@ ul.firm-filter {
   text-transform: uppercase;
   text-decoration: none;
   border: 1px solid #e5e5e5;
-  border-radius: 3px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
   background: #fff;
   padding-top: 9px;
   padding-bottom: 9px;
