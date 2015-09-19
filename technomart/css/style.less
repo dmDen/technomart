@@ -313,117 +313,14 @@ p,h1,h2,h3{
 		color: #32425c;
 		margin-left: 25px;
 		max-width: 255px;
-	}	
-	.login-menu{
-		float: right;
-		box-sizing: border-box;
-		width: 330px;
-		text-align: right;
-		font-size: 0;
-	}
-	.login-menu-btn{
-		display: inline-block;
-		vertical-align: top;
-		font-size: 21px;
-		color: #000;
-		background: #fff;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		padding-right: 25px;
-		padding-left: 23px;
-		margin-left: 10px;
-		position: relative;
-		&:before{
-			position: absolute;
-			left: 10px;
-			top: 11px;
-			color: #c5c5c5;
-		}
-	}
-	.icon-login{
-		padding-left: 48px;
-	}
-	@all_width: 300px;
-	@logout_btn_width: 40px;
-	@user_name_width: @all_width - @logout_btn_width;
-	.user-menu{
-		float: right;
-		text-align: right;		
-		width: @all_width;
-		font-size: 0;
-		a{
-			display: inline-block;
-			vertical-align: top;
-		}
-	}
-	.user-menu-name{		
-		font-size: 21px;
-		line-height: 24px;
-		color: #000;
-		background: #fff;
-		padding-left: 47px;
-		padding-top: 10px;
-		box-sizing: border-box;
-		min-height: 45px;
-		width: @all_width - @logout_btn_width;
-		text-align: left;
-		position: relative;
-	}
-	.user-menu-name:before{
-		position: absolute;
-		font-size: 18px;
-		color: #c5c5c5;
-		left: 12px;
-		top: 12px;
-	}
-	.user-menu-logout-btn{
-		box-sizing: border-box;
-		height: 45px;
-		width: @logout_btn_width;
-		background: #fff;
-		position: relative;
-	}
-	.user-menu-logout-btn:before{
-		position: absolute;
-		font-size: 22px;
-		color: #c5c5c5;		
-		top: 11px;
-		right: 4px;
-	}
-	.user-menu-ref{		
-		font-size: 16px;
-		line-height: 18px;
-		color: #32425c;
-		text-decoration: underline;
-		margin-top: 8px;
-	}
-	.my-orders{
-		margin-right: 32px;
-		position: relative;
-		&:after{
-			content: "";			
-			width: 4px;
-			height: 4px;
-			background-color: #32425c;
-			border-radius: 50%;			
-			position: absolute;
-			right: -19px;
-			top: 8px;
-		}
-	}
-	.my-cabinet{
-		margin-right: 72px;		
-	}
-	.my-orders:hover,
-	.my-cabinet:hover{
-		color: #ee3643;
-	}
-	.my-orders:active,
-	.my-cabinet:active{
-		color: #c5c5c5;
-	}
+	}		
 }
 .login-menu{
+	float: right;
+	box-sizing: border-box;
+	width: 330px;
+	text-align: right;
+	font-size: 0;	
 	a:hover{
 		color: #ee3643;
 	}
@@ -437,6 +334,107 @@ p,h1,h2,h3{
 		opacity: 1;
 		color: #c5c5c5;
 	}	
+}
+
+.login-menu-btn{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 21px;
+	color: #000;
+	background: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 25px;
+	padding-left: 23px;
+	margin-left: 10px;
+	position: relative;
+	&:before{
+		position: absolute;
+		left: 10px;
+		top: 11px;
+		color: #c5c5c5;
+	}
+}
+.icon-login{
+	padding-left: 48px;
+}
+@all_width: 300px;
+@logout_btn_width: 40px;
+@user_name_width: @all_width - @logout_btn_width;
+.user-menu{
+	float: right;
+	text-align: right;		
+	width: @all_width;
+	font-size: 0;
+	a{
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+.user-menu-name{		
+	font-size: 21px;
+	line-height: 24px;
+	color: #000;
+	background: #fff;
+	padding-left: 47px;
+	padding-top: 10px;
+	box-sizing: border-box;
+	min-height: 45px;
+	width: @all_width - @logout_btn_width;
+	text-align: left;
+	position: relative;
+}
+.user-menu-name:before{
+	position: absolute;
+	font-size: 18px;
+	color: #c5c5c5;
+	left: 12px;
+	top: 12px;
+}
+.user-menu-logout-btn{
+	box-sizing: border-box;
+	height: 45px;
+	width: @logout_btn_width;
+	background: #fff;
+	position: relative;
+}
+.user-menu-logout-btn:before{
+	position: absolute;
+	font-size: 22px;
+	color: #c5c5c5;		
+	top: 11px;
+	right: 4px;
+}
+.user-menu-ref{		
+	margin-top: 7px;
+	text-align: left;
+	a{			
+		font-size: 16px;
+		line-height: 18px;
+		color: #32425c;			
+		text-decoration: underline;
+		&:hover{
+			color: #ee3643;
+		}
+		&:active{
+			color: #c5c5c5;
+		}
+	}
+}
+.my-orders{
+	margin-left: 19px;
+	margin-right: 32px;
+	position: relative;
+	&:after{
+		content: "";			
+		width: 4px;
+		height: 4px;
+		background-color: #32425c;
+		border-radius: 50%;			
+		position: absolute;
+		right: -19px;
+		top: 8px;
+	}
 }
 
 .user-menu-name:hover:before,

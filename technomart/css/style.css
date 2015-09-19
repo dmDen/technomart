@@ -399,7 +399,7 @@ h3 {
   margin-left: 25px;
   max-width: 255px;
 }
-.header-middle-panel .login-menu {
+.login-menu {
   float: right;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -408,7 +408,20 @@ h3 {
   text-align: right;
   font-size: 0;
 }
-.header-middle-panel .login-menu-btn {
+.login-menu a:hover {
+  color: #ee3643;
+}
+.login-menu a:hover:before {
+  color: #32425c;
+}
+.login-menu a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+.login-menu a:active:before {
+  opacity: 1;
+  color: #c5c5c5;
+}
+.login-menu-btn {
   display: inline-block;
   vertical-align: top;
   font-size: 21px;
@@ -421,26 +434,26 @@ h3 {
   margin-left: 10px;
   position: relative;
 }
-.header-middle-panel .login-menu-btn:before {
+.login-menu-btn:before {
   position: absolute;
   left: 10px;
   top: 11px;
   color: #c5c5c5;
 }
-.header-middle-panel .icon-login {
+.icon-login {
   padding-left: 48px;
 }
-.header-middle-panel .user-menu {
+.user-menu {
   float: right;
   text-align: right;
   width: 300px;
   font-size: 0;
 }
-.header-middle-panel .user-menu a {
+.user-menu a {
   display: inline-block;
   vertical-align: top;
 }
-.header-middle-panel .user-menu-name {
+.user-menu-name {
   font-size: 21px;
   line-height: 24px;
   color: #000;
@@ -455,14 +468,14 @@ h3 {
   text-align: left;
   position: relative;
 }
-.header-middle-panel .user-menu-name:before {
+.user-menu-name:before {
   position: absolute;
   font-size: 18px;
   color: #c5c5c5;
   left: 12px;
   top: 12px;
 }
-.header-middle-panel .user-menu-logout-btn {
+.user-menu-logout-btn {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -471,25 +484,35 @@ h3 {
   background: #fff;
   position: relative;
 }
-.header-middle-panel .user-menu-logout-btn:before {
+.user-menu-logout-btn:before {
   position: absolute;
   font-size: 22px;
   color: #c5c5c5;
   top: 11px;
   right: 4px;
 }
-.header-middle-panel .user-menu-ref {
+.user-menu-ref {
+  margin-top: 7px;
+  text-align: left;
+}
+.user-menu-ref a {
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
   text-decoration: underline;
-  margin-top: 8px;
 }
-.header-middle-panel .my-orders {
+.user-menu-ref a:hover {
+  color: #ee3643;
+}
+.user-menu-ref a:active {
+  color: #c5c5c5;
+}
+.my-orders {
+  margin-left: 19px;
   margin-right: 32px;
   position: relative;
 }
-.header-middle-panel .my-orders:after {
+.my-orders:after {
   content: "";
   width: 4px;
   height: 4px;
@@ -499,30 +522,6 @@ h3 {
   position: absolute;
   right: -19px;
   top: 8px;
-}
-.header-middle-panel .my-cabinet {
-  margin-right: 72px;
-}
-.header-middle-panel .my-orders:hover,
-.header-middle-panel .my-cabinet:hover {
-  color: #ee3643;
-}
-.header-middle-panel .my-orders:active,
-.header-middle-panel .my-cabinet:active {
-  color: #c5c5c5;
-}
-.login-menu a:hover {
-  color: #ee3643;
-}
-.login-menu a:hover:before {
-  color: #32425c;
-}
-.login-menu a:active {
-  color: rgba(0, 0, 0, 0.3);
-}
-.login-menu a:active:before {
-  opacity: 1;
-  color: #c5c5c5;
 }
 .user-menu-name:hover:before,
 .user-menu-logout-btn:hover:before {
