@@ -1621,8 +1621,8 @@ ul.firm-filter{
 
 /*/////////////////
 Форма Напишите нам
-/*/////////////////
-.write-us{
+/////////////////*/
+.modal-form{
 	display: none;
 	box-sizing: border-box;
 	width: 620px;
@@ -1649,14 +1649,32 @@ ul.firm-filter{
 		top: 16px;
 		right: 9px;
 	}
-	.form-part{
+	.top-part{
 		background: #fff;
 		padding: 0 80px;
 		padding-top: 25px;
 	}
+	.btn-part{
+		background: #f1f1f1;
+		padding: 37px 80px;
+		font-size: 0px;
+	}
+	.btn{
+		width: 220px;
+	}
+	.cancel-btn{
+		margin-left: 20px;
+		background: #fff;
+		color: #000;
+	}
+}
+.write-us-form{
 	label{
 		display: block;
 		margin-top: 20px;
+		margin-bottom: 11px;
+	}
+	label[for="e-mail"]{
 		margin-bottom: 10px;
 	}
 	.column{
@@ -1681,18 +1699,30 @@ ul.firm-filter{
 	textarea{
 		height: 114px;
 		margin-bottom: 37px;
+	}	
+}
+.cart-form{
+	.top-part{
+		padding-bottom: 66px;
 	}
-	.btn-part{
-		background: #f1f1f1;
-		padding: 37px 80px;
-		font-size: 0px;
-	}
-	.btn{
-		width: 220px;
-	}
-	.cancel-btn{
-		margin-left: 20px;
-		background: #fff;
+	.top-part-text{
+		font-size: 30px;
+		line-height: 35px;
 		color: #000;
+		position: relative;
+		margin-top: 37px;
+		margin-left: 102px;
+		&:before{
+			content:"";
+			display: block;
+			background: url("../img/sprite.png");
+			background-position: -101px -327px ;
+			width: 66px;
+			height: 66px;
+			position: absolute;
+			top: -15px;
+			left: -102px;			
+		}
 	}
 }
+

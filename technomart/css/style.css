@@ -1729,8 +1729,8 @@ ul.firm-filter {
 }
 /*/////////////////
 Форма Напишите нам
-/*/
-.write-us {
+/////////////////*/
+.modal-form {
   display: none;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -1749,7 +1749,7 @@ ul.firm-filter {
           box-shadow: 0px 20px 40px 10px rgba(0, 1, 1, 0.75);
   z-index: 15;
 }
-.write-us .btn-close {
+.modal-form .btn-close {
   position: absolute;
   background: url("../img/sprite.png");
   background-position: -100px -290px;
@@ -1761,25 +1761,41 @@ ul.firm-filter {
   top: 16px;
   right: 9px;
 }
-.write-us .form-part {
+.modal-form .top-part {
   background: #fff;
   padding: 0 80px;
   padding-top: 25px;
 }
-.write-us label {
+.modal-form .btn-part {
+  background: #f1f1f1;
+  padding: 37px 80px;
+  font-size: 0px;
+}
+.modal-form .btn {
+  width: 220px;
+}
+.modal-form .cancel-btn {
+  margin-left: 20px;
+  background: #fff;
+  color: #000;
+}
+.write-us-form label {
   display: block;
   margin-top: 20px;
+  margin-bottom: 11px;
+}
+.write-us-form label[for="e-mail"] {
   margin-bottom: 10px;
 }
-.write-us .column {
+.write-us-form .column {
   width: 220px;
   float: left;
 }
-.write-us .column:nth-child(2) {
+.write-us-form .column:nth-child(2) {
   float: right;
 }
-.write-us input,
-.write-us textarea {
+.write-us-form input,
+.write-us-form textarea {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -1794,20 +1810,29 @@ ul.firm-filter {
   font-size: 13px;
   line-height: 18px;
 }
-.write-us textarea {
+.write-us-form textarea {
   height: 114px;
   margin-bottom: 37px;
 }
-.write-us .btn-part {
-  background: #f1f1f1;
-  padding: 37px 80px;
-  font-size: 0px;
+.cart-form .top-part {
+  padding-bottom: 66px;
 }
-.write-us .btn {
-  width: 220px;
-}
-.write-us .cancel-btn {
-  margin-left: 20px;
-  background: #fff;
+.cart-form .top-part-text {
+  font-size: 30px;
+  line-height: 35px;
   color: #000;
+  position: relative;
+  margin-top: 37px;
+  margin-left: 102px;
+}
+.cart-form .top-part-text:before {
+  content: "";
+  display: block;
+  background: url("../img/sprite.png");
+  background-position: -101px -327px;
+  width: 66px;
+  height: 66px;
+  position: absolute;
+  top: -15px;
+  left: -102px;
 }
