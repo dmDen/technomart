@@ -743,7 +743,6 @@ h3 {
 .catalog-old-price {
   font-size: 17px;
   line-height: 20px;
-  min-height: 20px;
   color: #999;
   text-decoration: line-through;
   margin-bottom: 10px;
@@ -755,10 +754,12 @@ h3 {
   background: #ee3643;
   padding: 8px 30px;
   width: 80px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 41px;
   border-radius: 3px;
   position: relative;
+}
+.catalog-item-title + .catalog-price {
+  margin-top: 38px;
 }
 .catalog-price:after {
   width: 0;
