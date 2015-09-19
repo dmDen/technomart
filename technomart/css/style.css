@@ -229,13 +229,17 @@ h3 {
   width: 270px;
   position: relative;
 }
-.header-search-form i {
+.header-search-form .search-btn {
   position: absolute;
+  font-family: "symbols-technomart";
   font-size: 17px;
   line-height: 18px;
   top: 12px;
   left: 14px;
   opacity: 0.3;
+  border: none;
+  outline: none;
+  background: none;
 }
 .header-search-form input {
   box-sizing: border-box;
@@ -281,15 +285,13 @@ h3 {
 .header-search-form input:focus:-ms-input-placeholder {
   color: #000;
 }
-.header-search-form input:hover + i {
+.header-search-form input:hover + .search-btn,
+.header-search-form .search-btn:hover {
   opacity: 1;
 }
-.header-search-form input:focus + i {
+.header-search-form input:focus + .search-btn {
   opacity: 1;
   color: #ee3643;
-}
-.search-btn {
-  display: none;
 }
 .top-panel-right-side {
   float: right;
