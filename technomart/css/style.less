@@ -1343,9 +1343,46 @@ p,h1,h2,h3{
 	padding-left: 19px;
 	font-weight: 400;
 	text-transform: uppercase;
-	background: #f7f3ec;	
+	background: #f7f3ec;
+	position: relative;
 	a{
 		text-decoration: none;
+		color: #000;
+		border-bottom: 1px solid #ee3643;		
+		opacity: 0.3;
+		&:hover{
+			opacity: 1;
+		}
+	}
+	.sort-up,
+	.sort-down{
+		font-family: "symbols-technomart";
+		font-size: 23px;
+		line-height: 5px;
+		border: none;
+		position: absolute;
+	}
+	.sort-active{
+		opacity: 1;
+		border: none;
+		color: #ee3643;
+	}
+	.sort-by-price{
+		margin-left: 136px;
+	}
+	.sort-by-type{
+		margin-left: 68px;
+	}
+	.sort-by-functional{
+		margin-left: 60px;
+	}
+	.sort-up{
+		right: 48px;
+		top: 16px;
+	}
+	.sort-down{
+		right: 16px;
+		top: 16px;
 	}
 }
 .filter-title{

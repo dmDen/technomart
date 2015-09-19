@@ -1377,10 +1377,56 @@ h3 {
   font-weight: 400;
   text-transform: uppercase;
   background: #f7f3ec;
+  position: relative;
 }
 .filter-title a,
 .catalog-items-sort-bar a {
   text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #ee3643;
+  opacity: 0.3;
+}
+.filter-title a:hover,
+.catalog-items-sort-bar a:hover {
+  opacity: 1;
+}
+.filter-title .sort-up,
+.catalog-items-sort-bar .sort-up,
+.filter-title .sort-down,
+.catalog-items-sort-bar .sort-down {
+  font-family: "symbols-technomart";
+  font-size: 23px;
+  line-height: 5px;
+  border: none;
+  position: absolute;
+}
+.filter-title .sort-active,
+.catalog-items-sort-bar .sort-active {
+  opacity: 1;
+  border: none;
+  color: #ee3643;
+}
+.filter-title .sort-by-price,
+.catalog-items-sort-bar .sort-by-price {
+  margin-left: 136px;
+}
+.filter-title .sort-by-type,
+.catalog-items-sort-bar .sort-by-type {
+  margin-left: 68px;
+}
+.filter-title .sort-by-functional,
+.catalog-items-sort-bar .sort-by-functional {
+  margin-left: 60px;
+}
+.filter-title .sort-up,
+.catalog-items-sort-bar .sort-up {
+  right: 48px;
+  top: 16px;
+}
+.filter-title .sort-down,
+.catalog-items-sort-bar .sort-down {
+  right: 16px;
+  top: 16px;
 }
 .filter-title {
   margin-bottom: 15px;
