@@ -1618,3 +1618,81 @@ ul.firm-filter{
 	line-height: 24px;
 	color: #000;	
 }
+
+/*/////////////////
+Форма Напишите нам
+/*/////////////////
+.write-us{
+	display: none;
+	box-sizing: border-box;
+	width: 620px;
+	background: #ee3643;
+	position: fixed;
+	left: 50%;
+	top: 0;
+	margin-top: 150px;
+	margin-left: -310px;
+	padding-top: 7px;
+	font-size: 18px;
+	line-height: 18px;
+	box-shadow: 0px 20px 40px 10px rgba(0, 1, 1, 0.75);	
+	z-index: 15;
+	.btn-close{
+		position: absolute;
+		background: url("../img/sprite.png");
+		background-position: -100px -290px ;
+		border: none;
+		outline: none;
+		width: 21px;
+		height: 21px;
+		font-size: 0;
+		top: 16px;
+		right: 9px;
+	}
+	.form-part{
+		background: #fff;
+		padding: 0 80px;
+		padding-top: 25px;
+	}
+	label{
+		display: block;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.column{
+		width: 220px;
+		float: left;
+		&:nth-child(2){
+			float: right;
+		}
+	}
+	input, textarea{
+		box-sizing: border-box;
+		width: 100%;
+		border: 2px solid #d7dcde;
+		border-radius: 5px;
+		outline: none;
+		resize: none;
+		padding: 8px 14px;
+		font-family: "PT Sans", "Arial", sans-serif;
+		font-size: 13px;
+		line-height: 18px;
+	}
+	textarea{
+		height: 114px;
+		margin-bottom: 37px;
+	}
+	.btn-part{
+		background: #f1f1f1;
+		padding: 37px 80px;
+		font-size: 0px;
+	}
+	.btn{
+		width: 220px;
+	}
+	.cancel-btn{
+		margin-left: 20px;
+		background: #fff;
+		color: #000;
+	}
+}

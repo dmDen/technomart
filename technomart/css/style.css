@@ -1727,3 +1727,87 @@ ul.firm-filter {
   line-height: 24px;
   color: #000;
 }
+/*/////////////////
+Форма Напишите нам
+/*/
+.write-us {
+  display: none;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 620px;
+  background: #ee3643;
+  position: fixed;
+  left: 50%;
+  top: 0;
+  margin-top: 150px;
+  margin-left: -310px;
+  padding-top: 7px;
+  font-size: 18px;
+  line-height: 18px;
+  -webkit-box-shadow: 0px 20px 40px 10px rgba(0, 1, 1, 0.75);
+          box-shadow: 0px 20px 40px 10px rgba(0, 1, 1, 0.75);
+  z-index: 15;
+}
+.write-us .btn-close {
+  position: absolute;
+  background: url("../img/sprite.png");
+  background-position: -100px -290px;
+  border: none;
+  outline: none;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  top: 16px;
+  right: 9px;
+}
+.write-us .form-part {
+  background: #fff;
+  padding: 0 80px;
+  padding-top: 25px;
+}
+.write-us label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.write-us .column {
+  width: 220px;
+  float: left;
+}
+.write-us .column:nth-child(2) {
+  float: right;
+}
+.write-us input,
+.write-us textarea {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  border: 2px solid #d7dcde;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  outline: none;
+  resize: none;
+  padding: 8px 14px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+.write-us textarea {
+  height: 114px;
+  margin-bottom: 37px;
+}
+.write-us .btn-part {
+  background: #f1f1f1;
+  padding: 37px 80px;
+  font-size: 0px;
+}
+.write-us .btn {
+  width: 220px;
+}
+.write-us .cancel-btn {
+  margin-left: 20px;
+  background: #fff;
+  color: #000;
+}
