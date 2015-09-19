@@ -259,6 +259,7 @@ h3 {
   border: none;
   padding: 0;
   padding-left: 49px;
+  padding-right: 10px;
   background: #293449;
   font-family: "Cuprum", "Aria", sans-serif;
   font-size: 17px;
@@ -325,7 +326,6 @@ h3 {
   background: #63a63e;
   padding-right: 10px;
   padding-left: 21px;
-  padding-right: 21px;
 }
 .top-panel-right-side .btn-order:hover {
   background: #5fbb2d;
@@ -384,7 +384,7 @@ h3 {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
   width: 270px;
-  height: 45px;
+  min-height: 45px;
   position: relative;
 }
 .header-middle-panel .phone-number:before {
@@ -397,13 +397,14 @@ h3 {
   font-size: 14px;
   color: #32425c;
   margin-left: 25px;
+  max-width: 255px;
 }
 .header-middle-panel .login-menu {
   float: right;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-  width: 310px;
+  width: 330px;
   text-align: right;
   font-size: 0;
 }
@@ -449,7 +450,7 @@ h3 {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-  height: 45px;
+  min-height: 45px;
   width: 260px;
   text-align: left;
   position: relative;
@@ -542,7 +543,7 @@ h3 {
 .main-menu ul {
   margin: 0;
   padding: 0;
-  height: 60px;
+  min-height: 60px;
   list-style: none;
   font-size: 0px;
   text-align: center;
@@ -559,7 +560,7 @@ h3 {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 19px;
-  height: 60px;
+  min-height: 60px;
   color: #fff;
   font-size: 17px;
 }
@@ -913,7 +914,7 @@ h3 {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
   width: 300px;
-  height: 123px;
+  min-height: 123px;
   padding-top: 20px;
   padding-left: 23px;
   position: relative;

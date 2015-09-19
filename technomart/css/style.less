@@ -181,6 +181,7 @@ p,h1,h2,h3{
 		border: none;
 		padding: 0;
 		padding-left: 49px;
+		padding-right: 10px;
 		background: #293449;
 		font-family: "Cuprum", "Aria", sans-serif;
 		font-size: 17px;
@@ -233,7 +234,6 @@ p,h1,h2,h3{
 		background: #63a63e;
 		padding-right: 10px;
 		padding-left: 21px;
-		padding-right: 21px;
 		&:hover{
 			background: #5fbb2d;
 		}
@@ -299,7 +299,7 @@ p,h1,h2,h3{
 		border: 3px solid #fff;
 		box-sizing: border-box;
 		width: 270px;
-		height: 45px;
+		min-height: 45px;
 		position: relative;
 		&:before{
 			position: absolute;
@@ -312,11 +312,12 @@ p,h1,h2,h3{
 		font-size: 14px;
 		color: #32425c;
 		margin-left: 25px;
+		max-width: 255px;
 	}	
 	.login-menu{
 		float: right;
 		box-sizing: border-box;
-		width: 310px;
+		width: 330px;
 		text-align: right;
 		font-size: 0;
 	}
@@ -363,7 +364,7 @@ p,h1,h2,h3{
 		padding-left: 47px;
 		padding-top: 10px;
 		box-sizing: border-box;
-		height: 45px;
+		min-height: 45px;
 		width: @all_width - @logout_btn_width;
 		text-align: left;
 		position: relative;
@@ -455,7 +456,7 @@ p,h1,h2,h3{
 	ul{
 		margin: 0;
 		padding: 0;
-		height: 60px;
+		min-height: 60px;
 		list-style: none;
 		font-size: 0px;
 		text-align: center;
@@ -470,7 +471,7 @@ p,h1,h2,h3{
 		padding-left: 30px;
 		padding-right: 30px;
 		padding-top: 19px;
-		height: 60px;		
+		min-height: 60px;		
 		color: #fff;
 		font-size: 17px;
 		&:hover{
@@ -822,7 +823,7 @@ p,h1,h2,h3{
 .promo-block{
 	box-sizing: border-box;
 	width: 300px;
-	height: 123px;
+	min-height: 123px;
 	padding-top: 20px;
 	padding-left: 23px;	
 	position: relative;
