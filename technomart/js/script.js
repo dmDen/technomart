@@ -97,3 +97,69 @@ if (mapA) {
 		OpenForm(mapForm);
 	});
 }
+
+//Оживляем фильтр цены
+var filterArea = document.querySelector(".filter-range-controls");
+if (filterArea) {	
+	var bar = filterArea.querySelector(".bar");
+	var inputMinPrice = document.querySelector("input.min-price");
+	var inputMaxPrice = document.querySelector("input.max-price");
+	var toggleMin = filterArea.querySelector(".toggle-min");
+	var toggleMax = filterArea.querySelector(".toggle-max");
+	var flagMin = false;
+	var flagMax = false;
+	var minLeft = 10;
+	var maxLeft = 190;
+	var allWidth = maxLeft - minLeft;
+	var currentMinPos = parseInt(toggleMin.style.left);
+	var currentMaxPos = parseInt(toggleMax.style.left);
+	var priceRange = 100000;
+	
+	function SetPriceValue(inputElement, toggleValue) {
+		var minPriceValue = Math.round(priceRange * (toggleValue-minLeft) / allWidth);
+		inputElement.value = minPriceValue;
+		inputElement.setAttribute("value", minPriceValue);				
+	}
+	
+	SetPriceValue(inputMinPrice, currentMinPos);
+	SetPriceValue(inputMaxPrice, currentMaxPos);
+	
+	toggleMin.addEventListener("mousedown", function(event) {
+	  event.preventDefault();
+	  flagMin = true;
+	});
+	
+	toggleMax.addEventListener("mousedown", function(event) {
+	  event.preventDefault();
+	  flagMax = true;
+	});	
+	
+	document.addEventListener("mouseup", function(event) {
+  		flagMin = false;
+		flagMax = false;
+	});
+	
+	filterArea.addEventListener("mousemove", function (event) {
+		var res = event.pageX - this.offsetLeft;
+		if (flagMin) {
+			if (res >= minLeft && res <= maxLeft && res <= currentMaxPos){
+				toggleMin.style.left = res + "px";
+				currentMinPos = res;
+				var left = (res - minLeft) * 100 / allWidth;
+				bar.style.marginLeft = left + "%";
+				SetPriceValue(inputMinPrice, res);
+				var width = (currentMaxPos - currentMinPos) * 100 / allWidth;
+				bar.style.width = Math.round(width) + "%";
+			}
+		}
+		if (flagMax) {
+			if (res >= minLeft && res <= maxLeft && res >= currentMinPos){
+				toggleMax.style.left = res + "px";
+				currentMaxPos = res;
+				var width = (currentMaxPos - currentMinPos) * 100 / allWidth;
+				bar.style.width = Math.round(width) + "%";
+				SetPriceValue(inputMaxPrice, res);
+			}
+		}		
+	});
+}
