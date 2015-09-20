@@ -10,21 +10,28 @@ var btnsBuy = document.querySelectorAll(".catalog-item-actions>.buy");
 var cartForm = document.querySelector(".cart-form");
 var btnsCancel = document.querySelectorAll(".cancel-btn");
 
+//Открытие модальной формы
+function OpenForm(form) {
+	if (!form.classList.contains("modal-show")) {
+		form.classList.remove("modal-hide");
+		form.classList.add("modal-show");
+	}	
+}
+
 //Закрытие модальной формы
 function CloseForm(form) {
 	if (form.classList.contains("write-us-send-error"))
 		form.classList.remove("write-us-send-error");
-	if (form.classList.contains("modal-show")) {		
-		//form.classList.add("modal-close");
+	if (form.classList.contains("modal-show")) {				
 		form.classList.remove("modal-show");
-	}
-	
+		form.classList.add("modal-hide");		
+	}	
 }
 
 //Открыть Напишите нам
 writeUsBtn.addEventListener("click", function(event) {
-	event.preventDefault();	
-	writeUsForm.classList.add("modal-show");
+	event.preventDefault();
+	OpenForm(writeUsForm);
 	var inputYourName = writeUsForm.querySelector(".your-name");
 	inputYourName.focus();
 });
@@ -50,7 +57,7 @@ for (var i = 0; i < btnsCancel.length; i++) {
 for (var i = 0; i < btnsBuy.length; i++) {
     btnsBuy[i].addEventListener("click", function(event) {
         event.preventDefault();
-		cartForm.classList.add("modal-show");
+		OpenForm(cartForm);
     });
 }
 
@@ -58,9 +65,9 @@ for (var i = 0; i < btnsBuy.length; i++) {
 window.addEventListener("keydown", function (event) {
 	if (event.keyCode == 27) {
 		if (writeUsForm.classList.contains("modal-show"))
-			writeUsForm.classList.remove("modal-show");
+			CloseForm(writeUsForm);
 		if (cartForm.classList.contains("modal-show"))
-			cartForm.classList.remove("modal-show");
+			CloseForm(cartForm);
 	}
 });
 
@@ -69,6 +76,6 @@ sendForm.addEventListener("submit", function(event) {
 	if (!(yourNameInput.value && yourEmailInput.value && emailTextInput.value))
 	{
 		event.preventDefault();
-		writeUsForm.classList.add("write-us-send-error");
+		sendForm.classList.add("write-us-send-error");
 	}
 });

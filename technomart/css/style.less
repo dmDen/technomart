@@ -1642,6 +1642,7 @@ ul.firm-filter{
 	line-height: 18px;
 	box-shadow: 0px 20px 40px 10px rgba(0, 1, 1, 0.75);	
 	z-index: 15;
+	transform: translateY(-9999px);	
 	.btn-close-form{
 		position: absolute;
 		background: url("../img/sprite.png");
@@ -1735,34 +1736,36 @@ ul.firm-filter{
 		}
 	}
 }
+
 @keyframes modal-show {
   0%   { transform: translateY(-9999px); }
   10%  { transform: translateY(-800px);  }
   100% { transform: translateY(0px);     }
 }
-/*
-@keyframes modal-close {
+
+@keyframes modal-hide {
   0%   { transform: translateY(0);       }
   90%  { transform: translateY(-800px);  }
   100% { transform: translateY(-9999px); }
 }
-*/
+
 @keyframes send-error {
   0%, 100%                { transform: translateX(0);    }
   10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
   20%, 40%, 60%, 80%      { transform: translateX(5px);  }
 }
 
+.modal-hide{
+	display: block;
+	animation: modal-hide 0.6s;
+	animation-fill-mode: forwards;
+}
+
 .modal-show{
 	display: block;
 	animation: modal-show 0.6s;
-}
-/*
-.modal-close{
-	animation: modal-close 0.6s;
 	animation-fill-mode: forwards;
 }
-*/
 
 .write-us-send-error{
  	animation: send-error 0.6s;
