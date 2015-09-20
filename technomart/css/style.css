@@ -781,6 +781,7 @@ h3 {
   color: #999;
   text-decoration: line-through;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .catalog-price {
   font-size: 18px;
@@ -793,6 +794,7 @@ h3 {
   -webkit-border-radius: 3px;
           border-radius: 3px;
   position: relative;
+  cursor: pointer;
 }
 .catalog-item-title + .catalog-price {
   margin-top: 38px;
@@ -1771,7 +1773,7 @@ ul.firm-filter {
   margin-top: 20px;
   margin-bottom: 11px;
 }
-.write-us-form label[for="e-mail"] {
+.write-us-form label[for="e-mail-text"] {
   margin-bottom: 10px;
 }
 .write-us-form .column {
@@ -1826,6 +1828,101 @@ ul.firm-filter {
   top: -15px;
   left: -102px;
 }
+@-webkit-keyframes modal-show {
+  0% {
+    -webkit-transform: translateY(-9999px);
+            transform: translateY(-9999px);
+  }
+  10% {
+    -webkit-transform: translateY(-800px);
+            transform: translateY(-800px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+@keyframes modal-show {
+  0% {
+    -webkit-transform: translateY(-9999px);
+            transform: translateY(-9999px);
+  }
+  10% {
+    -webkit-transform: translateY(-800px);
+            transform: translateY(-800px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+/*
+@keyframes modal-close {
+  0%   { transform: translateY(0);       }
+  90%  { transform: translateY(-800px);  }
+  100% { transform: translateY(-9999px); }
+}
+*/
+@-webkit-keyframes send-error {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+}
+@keyframes send-error {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+}
 .modal-show {
   display: block;
+  -webkit-animation: modal-show 0.6s;
+          animation: modal-show 0.6s;
+}
+/*
+.modal-close{
+	animation: modal-close 0.6s;
+	animation-fill-mode: forwards;
+}
+*/
+.write-us-send-error {
+  -webkit-animation: send-error 0.6s;
+          animation: send-error 0.6s;
+}
+.write-us-send-error input,
+.write-us-send-error textarea {
+  border-color: #F00;
 }
