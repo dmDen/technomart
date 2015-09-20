@@ -115,14 +115,38 @@ if (filterArea) {
 	var currentMaxPos = parseInt(toggleMax.style.left);
 	var priceRange = 100000;
 	
-	function SetPriceValue(inputElement, toggleValue) {
+	function SetPriceValueToInput(inputElement, toggleValue) {
 		var minPriceValue = Math.round(priceRange * (toggleValue-minLeft) / allWidth);
 		inputElement.value = minPriceValue;
 		inputElement.setAttribute("value", minPriceValue);				
 	}
 	
-	SetPriceValue(inputMinPrice, currentMinPos);
-	SetPriceValue(inputMaxPrice, currentMaxPos);
+	SetPriceValueToInput(inputMinPrice, currentMinPos);
+	SetPriceValueToInput(inputMaxPrice, currentMaxPos);
+	
+	function SetPriceValueToRange(event) {
+		var minValue = parseInt(inputMinPrice.value);
+		var maxValue = parseInt(inputMaxPrice.value);
+		minValue = Math.max(minValue, 0);
+		minValue = Math.min(minValue, priceRange);
+		maxValue = Math.max(maxValue, 0);
+		maxValue = Math.min(maxValue, priceRange);
+		if (minValue > maxValue) {
+			if (event.target == inputMinPrice)
+				minValue = maxValue;
+			else
+				maxValue = minValue;			
+		}
+		toggleMin.style.left = Math.round(allWidth * minValue / priceRange + minLeft) + "px";
+		toggleMax.style.left = Math.round(allWidth * maxValue / priceRange + minLeft) + "px";
+		bar.style.marginLeft = Math.round(minValue / priceRange * 100) + "%";
+		bar.style.width = Math.round((maxValue - minValue) / priceRange * 100) + "%";		
+		console.log(minValue);
+		console.log(maxValue);
+	}
+	
+	inputMinPrice.addEventListener("change", SetPriceValueToRange);	
+	inputMaxPrice.addEventListener("change", SetPriceValueToRange);	
 	
 	toggleMin.addEventListener("mousedown", function(event) {
 	  event.preventDefault();
@@ -147,7 +171,7 @@ if (filterArea) {
 				currentMinPos = res;
 				var left = (res - minLeft) * 100 / allWidth;
 				bar.style.marginLeft = left + "%";
-				SetPriceValue(inputMinPrice, res);
+				SetPriceValueToInput(inputMinPrice, res);
 				var width = (currentMaxPos - currentMinPos) * 100 / allWidth;
 				bar.style.width = Math.round(width) + "%";
 			}
@@ -158,7 +182,7 @@ if (filterArea) {
 				currentMaxPos = res;
 				var width = (currentMaxPos - currentMinPos) * 100 / allWidth;
 				bar.style.width = Math.round(width) + "%";
-				SetPriceValue(inputMaxPrice, res);
+				SetPriceValueToInput(inputMaxPrice, res);
 			}
 		}		
 	});
