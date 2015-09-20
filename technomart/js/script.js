@@ -4,11 +4,13 @@ var sendForm = writeUsForm.querySelector("form");
 var yourNameInput = sendForm.querySelector("#your-name");
 var yourEmailInput = sendForm.querySelector("#your-email");
 var emailTextInput = sendForm.querySelector("#e-mail-text");
-
 var btnsCloseForm = document.querySelectorAll(".btn-close-form");
 var btnsBuy = document.querySelectorAll(".catalog-item-actions>.buy");
 var cartForm = document.querySelector(".cart-form");
 var btnsCancel = document.querySelectorAll(".cancel-btn");
+var mapA = document.querySelector(".map>a");
+var mapForm = document.querySelector(".map-form");
+var modalForms = document.querySelectorAll(".modal-form");
 
 //Открытие модальной формы
 function OpenForm(form) {
@@ -64,10 +66,8 @@ for (var i = 0; i < btnsBuy.length; i++) {
 //Закрываем формы по Esc
 window.addEventListener("keydown", function (event) {
 	if (event.keyCode == 27) {
-		if (writeUsForm.classList.contains("modal-show"))
-			CloseForm(writeUsForm);
-		if (cartForm.classList.contains("modal-show"))
-			CloseForm(cartForm);
+		for (var i = 0; i < modalForms.length; i++)
+			CloseForm(modalForms[i]);
 	}
 });
 
@@ -78,4 +78,10 @@ sendForm.addEventListener("submit", function(event) {
 		event.preventDefault();
 		sendForm.classList.add("write-us-send-error");
 	}
+});
+
+//Открываем карту
+mapA.addEventListener("click", function(event) {
+	event.preventDefault();
+	OpenForm(mapForm);
 });

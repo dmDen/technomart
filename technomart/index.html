@@ -261,7 +261,9 @@
 			<p class="about-company-text">Вы можете забрать товар сами,
 				<br> заехав в наш офис:</p>
 			<div class="map">
-				<img src="img/map.jpg" width="300" height="158" alt="Карта. Большая Конюшенная д. 19/8">
+				<a href="#">
+					<img src="img/map.jpg" width="300" height="158" alt="Карта. Большая Конюшенная д. 19/8">
+				</a>
 			</div>
 			<a class="btn write-us-btn" href="#">Заблудились? Напишите нам!</a>
 		</div>
@@ -364,6 +366,13 @@
 			<a class="btn cancel-btn" href="#">Продожить покупки</a>
 		</div>
 	</div>
-	<script src="js/script.js"></script>	
+	<!-- Форма с картой -->
+	<div class="modal-form map-form">
+		<button class="btn-close-form">Закрыть</button>
+		<div class="map-part" id="map-part">
+		</div>
+	</div>	
+	<script src="js/script.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=7aUj4SKuBFolwF0WuM3k6-4uiYICzePl&height=600&id=map-part"></script>		
 </body>
 </html>

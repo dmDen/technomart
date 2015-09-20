@@ -1752,6 +1752,7 @@ ul.firm-filter {
   font-size: 0;
   top: 16px;
   right: 9px;
+  z-index: 20;
 }
 .modal-form .top-part {
   background: #fff;
@@ -1830,6 +1831,17 @@ ul.firm-filter {
   position: absolute;
   top: -15px;
   left: -102px;
+}
+.map-form {
+  width: 900px;
+  left: 50%;
+  margin-left: -450px;
+  -webkit-box-shadow: 0px 20px 40px 20px rgba(0, 1, 1, 0.95);
+          box-shadow: 0px 20px 40px 20px rgba(0, 1, 1, 0.95);
+}
+.map-form .btn-close-form {
+  top: 0px;
+  right: -30px;
 }
 @-webkit-keyframes modal-show {
   0% {
