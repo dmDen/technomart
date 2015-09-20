@@ -140,9 +140,7 @@ if (filterArea) {
 		toggleMin.style.left = Math.round(allWidth * minValue / priceRange + minLeft) + "px";
 		toggleMax.style.left = Math.round(allWidth * maxValue / priceRange + minLeft) + "px";
 		bar.style.marginLeft = Math.round(minValue / priceRange * 100) + "%";
-		bar.style.width = Math.round((maxValue - minValue) / priceRange * 100) + "%";		
-		console.log(minValue);
-		console.log(maxValue);
+		bar.style.width = Math.round((maxValue - minValue) / priceRange * 100) + "%";
 	}
 	
 	inputMinPrice.addEventListener("change", SetPriceValueToRange);	
