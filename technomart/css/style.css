@@ -1843,6 +1843,11 @@ ul.firm-filter {
   top: 0px;
   right: -30px;
 }
+.map-form img {
+  float: left;
+  width: 900px;
+  height: 600px;
+}
 @-webkit-keyframes modal-show {
   0% {
     -webkit-transform: translateY(-9999px);
