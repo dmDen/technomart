@@ -115,6 +115,7 @@ if (filterArea) {
 	var currentMaxPos = parseInt(toggleMax.style.left);
 	var priceRange = 100000;
 	
+	//Выставление цены в интпуты. По значения ползунка
 	function SetPriceValueToInput(inputElement, toggleValue) {
 		var minPriceValue = Math.round(priceRange * (toggleValue-minLeft) / allWidth);
 		inputElement.value = minPriceValue;
@@ -124,6 +125,7 @@ if (filterArea) {
 	SetPriceValueToInput(inputMinPrice, currentMinPos);
 	SetPriceValueToInput(inputMaxPrice, currentMaxPos);
 	
+	//Выставление цены в ползунок. По значениям инпутов
 	function SetPriceValueToRange(event) {
 		var minValue = parseInt(inputMinPrice.value);
 		var maxValue = parseInt(inputMaxPrice.value);
