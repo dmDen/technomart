@@ -1190,14 +1190,10 @@ h3 {
   width: 220px;
   min-height: 145px;
   border: 1px solid #e5e5e5;
-  font-size: 18px;
-  text-align: center;
-  line-height: 140px;
 }
 .catalog-brand img {
   max-width: 218px;
   max-height: 143px;
-  vertical-align: middle;
 }
 .catalog-brand:hover {
   border: none;
