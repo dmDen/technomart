@@ -4,12 +4,12 @@
 @charset "UTF-8";
 
  @font-face {
-  font-family: 'symbols-technomart';
-  src: url('../font/symbols-technomart.eot?22619757');
-  src: url('../font/symbols-technomart.eot?22619757#iefix') format('embedded-opentype'),
-       url('../font/symbols-technomart.woff?22619757') format('woff'),
-       url('../font/symbols-technomart.ttf?22619757') format('truetype'),
-       url('../font/symbols-technomart.svg?22619757#symbols-technomart') format('svg');
+  font-family: "symbols-technomart";
+  src: url("../font/symbols-technomart.eot?22619757");
+  src: url("../font/symbols-technomart.eot?22619757#iefix") format("embedded-opentype"),
+       url("../font/symbols-technomart.woff?22619757") format("woff"),
+       url("../font/symbols-technomart.ttf?22619757") format("truetype"),
+       url("../font/symbols-technomart.svg?22619757#symbols-technomart") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -18,8 +18,8 @@
 /*
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
-    font-family: 'symbols-technomart';
-    src: url('../font/symbols-technomart.svg?22619757#symbols-technomart') format('svg');
+    font-family: "symbols-technomart";
+    src: url("../font/symbols-technomart.svg?22619757#symbols-technomart") format("svg");
   }
 }
 */
@@ -31,6 +31,7 @@
   speak: none;
  
   display: inline-block;
+  vertical-align: top;
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
@@ -55,32 +56,32 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-left:before { content: '\3c'; } /* '&lt;' */
-.icon-right:before { content: '\3e'; } /* '&gt;' */
-.icon-basket:before { content: '\62'; } /* 'b' */
-.icon-facebook:before { content: '\66'; } /* 'f' */
-.icon-twitter:before { content: '\74'; } /* 't' */
-.icon-vk:before { content: '\76'; } /* 'v' */
-.icon-up:before { content: '\2c4'; } /* '˄' */
-.icon-down:before { content: '\2c5'; } /* '˅' */
-.icon-left-big:before { content: '\2190'; } /* '←' */
-.icon-right-big:before { content: '\2192'; } /* '→' */
-.icon-login:before { content: '\2386'; } /* '⎆' */
-.icon-logout:before { content: '\241b'; } /* '␛' */
-.icon-up-dir:before { content: '\25b2'; } /* '▲' */
-.icon-down-dir:before { content: '\25bc'; } /* '▼' */
-.icon-circle:before { content: '\25cb'; } /* '○' */
-.icon-circle-dot:before { content: '\25cf'; } /* '●' */
-.icon-star:before { content: '\2605'; } /* '★' */
-.icon-check-off:before { content: '\2610'; } /* '☐' */
-.icon-check-on:before { content: '\2611'; } /* '☑' */
-.icon-youtube:before { content: '\f39e'; } /* '' */
-.icon-home:before { content: '🏠'; } /* '\1f3e0' */
-.icon-user:before { content: '👨'; } /* '\1f468' */
-.icon-phone:before { content: '📞'; } /* '\1f4de' */
-.icon-instagramm:before { content: '📷'; } /* '\1f4f7' */
-.icon-search:before { content: '🔍'; } /* '\1f50d' */
-.icon-bookmark:before { content: '🔖'; } /* '\1f516' */
+.icon-left:before { content: "\3c"; } /* "&lt;" */
+.icon-right:before { content: "\3e"; } /* "&gt;" */
+.icon-basket:before { content: "\62"; } /* "b" */
+.icon-facebook:before { content: "\66"; } /* "f" */
+.icon-twitter:before { content: "\74"; } /* "t" */
+.icon-vk:before { content: "\76"; } /* "v" */
+.icon-up:before { content: "\2c4"; } /* "˄" */
+.icon-down:before { content: "\2c5"; } /* "˅" */
+.icon-left-big:before { content: "\2190"; } /* "←" */
+.icon-right-big:before { content: "\2192"; } /* "→" */
+.icon-login:before { content: "\2386"; } /* "⎆" */
+.icon-logout:before { content: "\241b"; } /* "␛" */
+.icon-up-dir:before { content: "\25b2"; } /* "▲" */
+.icon-down-dir:before { content: "\25bc"; } /* "▼" */
+.icon-circle:before { content: "\25cb"; } /* "○" */
+.icon-circle-dot:before { content: "\25cf"; } /* "●" */
+.icon-star:before { content: "\2605"; } /* "★" */
+.icon-check-off:before { content: "\2610"; } /* "☐" */
+.icon-check-on:before { content: "\2611"; } /* "☑" */
+.icon-youtube:before { content: "\f39e"; } /* "" */
+.icon-home:before { content: "🏠"; } /* "\1f3e0" */
+.icon-user:before { content: "👨"; } /* "\1f468" */
+.icon-phone:before { content: "📞"; } /* "\1f4de" */
+.icon-instagramm:before { content: "📷"; } /* "\1f4f7" */
+.icon-search:before { content: "🔍"; } /* "\1f50d" */
+.icon-bookmark:before { content: "🔖"; } /* "\1f516" */
 
 /*////////////////
     Общая часть
@@ -790,10 +791,10 @@ p,h1,h2,h3{
 ///////////////*/
 .btn{
 	display: inline-block;
+	vertical-align: top;	
 	box-sizing: border-box;
 	height: 38px;
-	text-align: center;
-	vertical-align: top;
+	text-align: center;	
 	padding-top: 10px;
 	color: #fff;
 	text-transform: uppercase;
@@ -1003,6 +1004,7 @@ p,h1,h2,h3{
 	label{
 		font-size: 0;
 		display: inline-block;
+		vertical-align: top;
 		width: 6px;
 		height: 6px;
 		margin: 0 3px;
@@ -1301,10 +1303,11 @@ p,h1,h2,h3{
 	text-transform: uppercase;
 	list-style: none;
 	padding: 0;
-	margin-top: 19px;
+	margin-top: 21px;
 	margin-bottom: 18px;
 	li{
 		display: inline-block;
+		vertical-align: top;
 		&:first-child{
 			font-size: 0;
 		}
@@ -1503,7 +1506,7 @@ p,h1,h2,h3{
 		position: relative;
 		cursor: pointer;
 	}
-	.power-filter{ /*Вопрос дизайнеру: ЗАЧЕМ? */
+	.power-filter{
 		font-size: 14px;
 		line-height: 20px;
 		margin-top: 18px;
@@ -1582,6 +1585,7 @@ ul.firm-filter{
 }
 .paginator-btn{
 	display: inline-block;
+	vertical-align: top;
 	min-width: 36px;
 	text-align: center;
 	margin-right: 10px;
