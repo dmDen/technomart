@@ -881,6 +881,7 @@ h3 {
           box-sizing: border-box;
   height: 38px;
   text-align: center;
+  vertical-align: top;
   padding-top: 10px;
   color: #fff;
   text-transform: uppercase;
@@ -890,6 +891,8 @@ h3 {
   text-decoration: none;
   -webkit-border-radius: 3px;
           border-radius: 3px;
+  border: none;
+  outline: none;
 }
 .btn:hover {
   background: #ca2c37;
@@ -1733,7 +1736,7 @@ ul.firm-filter {
           box-shadow: 0px 20px 40px 10px rgba(0, 1, 1, 0.75);
   z-index: 15;
 }
-.modal-form .btn-close {
+.modal-form .btn-close-form {
   position: absolute;
   background: url("../img/sprite.png");
   background-position: -100px -290px;
@@ -1794,6 +1797,9 @@ ul.firm-filter {
   font-size: 13px;
   line-height: 18px;
 }
+.write-us-form .send-btn {
+  padding: 0;
+}
 .write-us-form textarea {
   height: 114px;
   margin-bottom: 37px;
@@ -1819,4 +1825,7 @@ ul.firm-filter {
   position: absolute;
   top: -15px;
   left: -102px;
+}
+.modal-show {
+  display: block;
 }

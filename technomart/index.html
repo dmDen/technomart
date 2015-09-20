@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru-ru">
-
 <head>
 	<title>ТЕХНОМАРТ - ИНТЕРНЕТ-МАГАЗИН</title>
 	<meta charset="UTF-8">
@@ -8,7 +7,6 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 	<header class="main-header">
 		<div class="header-top-panel">
@@ -332,32 +330,32 @@
 
 	<!--Форма Напишите нам -->
 	<div class="modal-form write-us-form">
-		<button class="btn-close">X</button>
-		<div class="top-part">		
-			<form action="#">
-				<div class="clearfix">
-					<div class="column">
-						<label for="your-name">Ваше имя:</label>
-						<input class="your-name" type="text" id="your-name" placeholder="Представьтесь, пожалуйста">
+		<button class="btn-close-form">Закрыть</button>
+		<form action="echo" method="post">
+			<div class="top-part">					
+					<div class="clearfix">
+						<div class="column">
+							<label for="your-name">Ваше имя:</label>
+							<input class="your-name" type="text" name="your-name" id="your-name" placeholder="Представьтесь, пожалуйста">
+						</div>
+						<div class="column">
+							<label for="your-email">Ваш e-mail:</label>
+							<input class="your-email" type="text" name="your-email" id="your-email" placeholder="Для отправки ответа">
+						</div>				
 					</div>
-					<div class="column">
-						<label for="your-email">Ваш e-mail:</label>
-						<input class="your-email" type="text" id="your-email" placeholder="Для отправки ответа">
-					</div>				
-				</div>
-				<label for="e-mail">Текст письма:</label>
-				<textarea class="e-mail" id="e-mail" placeholder="В свободной форме"></textarea>
-			</form>
-		</div>
-		<div class="btn-part">
-			<a class="btn send-btn" href="#">Отправить</a>
-			<a class="btn cancel-btn" href="#">Отмена</a>
-		</div>
+					<label for="e-mail">Текст письма:</label>
+					<textarea class="e-mail" name="e-mail" id="e-mail" placeholder="В свободной форме"></textarea>
+			</div>
+			<div class="btn-part">
+				<button type="submit" name="send-btn" class="btn send-btn" href="#">Отправить</button>>
+				<a class="btn cancel-btn" href="#">Отмена</a>
+			</div>
+		</form>
 	</div>
 
 	<!-- Форма Товар добавлен -->
 	<div class="modal-form cart-form">
-		<button class="btn-close">X</button>
+		<button class="btn-close-form">Закрыть</button>
 		<div class="top-part">
 			<p class="top-part-text">Товар добавлен в корзину!</p>
 		</div>
@@ -366,6 +364,6 @@
 			<a class="btn cancel-btn" href="#">Продожить покупки</a>
 		</div>
 	</div>
+	<script src="js/script.js"></script>	
 </body>
-
 </html>

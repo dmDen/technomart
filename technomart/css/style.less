@@ -789,6 +789,7 @@ p,h1,h2,h3{
 	box-sizing: border-box;
 	height: 38px;
 	text-align: center;
+	vertical-align: top;
 	padding-top: 10px;
 	color: #fff;
 	text-transform: uppercase;
@@ -797,6 +798,8 @@ p,h1,h2,h3{
 	background: #ee3643;
 	text-decoration: none;
 	border-radius: 3px;
+	border: none;
+	outline: none;	
 	&:hover{
 		background: #ca2c37;
 	}
@@ -1637,7 +1640,7 @@ ul.firm-filter{
 	line-height: 18px;
 	box-shadow: 0px 20px 40px 10px rgba(0, 1, 1, 0.75);	
 	z-index: 15;
-	.btn-close{
+	.btn-close-form{
 		position: absolute;
 		background: url("../img/sprite.png");
 		background-position: -100px -290px ;
@@ -1647,7 +1650,7 @@ ul.firm-filter{
 		height: 21px;
 		font-size: 0;
 		top: 16px;
-		right: 9px;
+		right: 9px;		
 	}
 	.top-part{
 		background: #fff;
@@ -1661,7 +1664,7 @@ ul.firm-filter{
 	}
 	.btn{
 		width: 220px;
-	}
+	}	
 	.cancel-btn{
 		margin-left: 20px;
 		background: #fff;
@@ -1696,6 +1699,9 @@ ul.firm-filter{
 		font-size: 13px;
 		line-height: 18px;
 	}
+	.send-btn{
+		padding: 0;
+	}
 	textarea{
 		height: 114px;
 		margin-bottom: 37px;
@@ -1724,5 +1730,8 @@ ul.firm-filter{
 			left: -102px;			
 		}
 	}
+}
+.modal-show{
+	display: block;
 }
 
