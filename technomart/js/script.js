@@ -6,7 +6,7 @@ var modalForms = document.querySelectorAll(".modal-form");
 
 var writeUsBtn = document.querySelector(".write-us-btn");
 
-if (writeUsBtn != null) {
+if (writeUsBtn) {
 	var writeUsForm = document.querySelector(".write-us-form");
 	var sendForm = writeUsForm.querySelector("form");
 	var yourNameInput = sendForm.querySelector("#your-name");
@@ -37,7 +37,7 @@ function CloseForm(form) {
 
 
 //Открыть Напишите нам
-if (writeUsForm != null) {
+if (writeUsForm) {
 	writeUsBtn.addEventListener("click", function(event) {
 		event.preventDefault();
 		OpenForm(writeUsForm);
@@ -80,7 +80,7 @@ window.addEventListener("keydown", function (event) {
 });
 
 //Проверяем заполенность полей перед отправкой
-if (writeUsForm != null) {
+if (writeUsForm) {
 	sendForm.addEventListener("submit", function(event) {
 		if (!(yourNameInput.value && yourEmailInput.value && emailTextInput.value))
 		{
@@ -91,7 +91,7 @@ if (writeUsForm != null) {
 }
 
 //Открываем карту
-if (mapA != null) {
+if (mapA) {
 	mapA.addEventListener("click", function(event) {
 		event.preventDefault();
 		OpenForm(mapForm);
