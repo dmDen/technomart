@@ -1,16 +1,21 @@
-var writeUsBtn = document.querySelector(".write-us-btn");
-var writeUsForm = document.querySelector(".write-us-form");
-var sendForm = writeUsForm.querySelector("form");
-var yourNameInput = sendForm.querySelector("#your-name");
-var yourEmailInput = sendForm.querySelector("#your-email");
-var emailTextInput = sendForm.querySelector("#e-mail-text");
 var btnsCloseForm = document.querySelectorAll(".btn-close-form");
 var btnsBuy = document.querySelectorAll(".catalog-item-actions>.buy");
 var cartForm = document.querySelector(".cart-form");
 var btnsCancel = document.querySelectorAll(".cancel-btn");
-var mapA = document.querySelector(".map>a");
-var mapForm = document.querySelector(".map-form");
 var modalForms = document.querySelectorAll(".modal-form");
+
+var writeUsBtn = document.querySelector(".write-us-btn");
+
+if (writeUsBtn != null) {
+	var writeUsForm = document.querySelector(".write-us-form");
+	var sendForm = writeUsForm.querySelector("form");
+	var yourNameInput = sendForm.querySelector("#your-name");
+	var yourEmailInput = sendForm.querySelector("#your-email");
+	var emailTextInput = sendForm.querySelector("#e-mail-text");
+	var mapA = document.querySelector(".map>a");
+	var mapForm = document.querySelector(".map-form");
+}
+
 
 //Открытие модальной формы
 function OpenForm(form) {
@@ -30,13 +35,16 @@ function CloseForm(form) {
 	}	
 }
 
+
 //Открыть Напишите нам
-writeUsBtn.addEventListener("click", function(event) {
-	event.preventDefault();
-	OpenForm(writeUsForm);
-	var inputYourName = writeUsForm.querySelector(".your-name");
-	inputYourName.focus();
-});
+if (writeUsForm != null) {
+	writeUsBtn.addEventListener("click", function(event) {
+		event.preventDefault();
+		OpenForm(writeUsForm);
+		var inputYourName = writeUsForm.querySelector(".your-name");
+		inputYourName.focus();
+	});
+}
 
 //Клик по закр. крестику на любой форме
 for (var i = 0; i < btnsCloseForm.length; i++) {
@@ -72,16 +80,20 @@ window.addEventListener("keydown", function (event) {
 });
 
 //Проверяем заполенность полей перед отправкой
-sendForm.addEventListener("submit", function(event) {
-	if (!(yourNameInput.value && yourEmailInput.value && emailTextInput.value))
-	{
-		event.preventDefault();
-		sendForm.classList.add("write-us-send-error");
-	}
-});
+if (writeUsForm != null) {
+	sendForm.addEventListener("submit", function(event) {
+		if (!(yourNameInput.value && yourEmailInput.value && emailTextInput.value))
+		{
+			event.preventDefault();
+			sendForm.classList.add("write-us-send-error");
+		}
+	});
+}
 
 //Открываем карту
-mapA.addEventListener("click", function(event) {
-	event.preventDefault();
-	OpenForm(mapForm);
-});
+if (mapA != null) {
+	mapA.addEventListener("click", function(event) {
+		event.preventDefault();
+		OpenForm(mapForm);
+	});
+}
