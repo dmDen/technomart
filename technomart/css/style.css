@@ -1772,23 +1772,23 @@ ul.firm-filter {
   background: #fff;
   color: #000;
 }
-.write-us-form label {
+.write-form label {
   display: block;
   margin-top: 20px;
   margin-bottom: 11px;
 }
-.write-us-form label[for="e-mail-text"] {
+.write-form label[for="e-mail-text"] {
   margin-bottom: 10px;
 }
-.write-us-form .column {
+.write-form .column {
   width: 220px;
   float: left;
 }
-.write-us-form .column:nth-child(2) {
+.write-form .column:nth-child(2) {
   float: right;
 }
-.write-us-form input,
-.write-us-form textarea {
+.write-form input,
+.write-form textarea {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -1803,10 +1803,10 @@ ul.firm-filter {
   font-size: 13px;
   line-height: 18px;
 }
-.write-us-form .send-btn {
+.write-form .send-btn {
   padding: 0;
 }
-.write-us-form textarea {
+.write-form textarea {
   height: 114px;
   margin-bottom: 37px;
 }
@@ -1969,4 +1969,40 @@ ul.firm-filter {
 .write-us-send-error input,
 .write-us-send-error textarea {
   border-color: #F00;
+}
+/*//////
+map.html
+////////*/
+.map-img {
+  margin-bottom: 17px;
+}
+/*///////////
+writeus.html
+////////////*/
+.write-us-columns .column {
+  width: 45%;
+}
+.write-page-send-btn {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0;
+}
+/*///////////
+cartadd.html
+////////////*/
+.cart-page-btn-order,
+.cart-page-btn-back {
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.cart-page-btn-back {
+  color: #000;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+}
+.cart-page-btn-back:hover {
+  background: #fff;
+  color: #000;
+  border: 1px solid #c5c5c5;
 }

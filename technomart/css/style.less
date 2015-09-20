@@ -1676,7 +1676,7 @@ ul.firm-filter{
 	}
 }
 
-.write-us-form{	
+.write-form{
 	label{
 		display: block;
 		margin-top: 20px;
@@ -1691,8 +1691,9 @@ ul.firm-filter{
 		&:nth-child(2){
 			float: right;
 		}
-	}
-	input, textarea{
+	}	
+	input,
+	textarea {
 		box-sizing: border-box;
 		width: 100%;
 		border: 2px solid #d7dcde;
@@ -1704,13 +1705,15 @@ ul.firm-filter{
 		font-size: 13px;
 		line-height: 18px;
 	}
-	.send-btn{
+
+	.send-btn {
 		padding: 0;
 	}
-	textarea{
+
+	textarea {
 		height: 114px;
 		margin-bottom: 37px;
-	}	
+	}
 }
 
 .cart-form{
@@ -1788,5 +1791,46 @@ ul.firm-filter{
  	animation: send-error 0.6s;
 	input, textarea{
 		border-color: #F00;
+	}
+}
+
+/*//////
+map.html
+////////*/
+.map-img{
+	margin-bottom: 17px;
+}
+
+/*///////////
+writeus.html
+////////////*/
+.write-us-columns{
+	.column{
+		width: 45%;
+	}
+}
+.write-page-send-btn{
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+/*///////////
+cartadd.html
+////////////*/
+.cart-page-btn-order,
+.cart-page-btn-back{
+	width: 220px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+.cart-page-btn-back{
+	color: #000;
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	&:hover{
+		background: #fff;
+		color: #000;
+		border: 1px solid #c5c5c5;
 	}
 }
