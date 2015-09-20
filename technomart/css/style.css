@@ -344,6 +344,10 @@ h3 {
   color: #fff;
   opacity: 0.3;
 }
+.top-menu-item:active {
+  opacity: 0.6;
+  background: #161d29;
+}
 .top-menu-item:hover:before {
   opacity: 1;
 }
@@ -781,7 +785,6 @@ h3 {
   color: #999;
   text-decoration: line-through;
   margin-bottom: 10px;
-  cursor: pointer;
 }
 .catalog-price {
   font-size: 18px;
@@ -794,7 +797,6 @@ h3 {
   -webkit-border-radius: 3px;
           border-radius: 3px;
   position: relative;
-  cursor: pointer;
 }
 .catalog-item-title + .catalog-price {
   margin-top: 38px;
@@ -1592,6 +1594,7 @@ h3 {
 .filter-section label {
   padding-left: 34px;
   position: relative;
+  cursor: pointer;
 }
 .filter-section .power-filter {
   /*Вопрос дизайнеру: ЗАЧЕМ? */

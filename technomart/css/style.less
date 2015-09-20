@@ -256,6 +256,10 @@ p,h1,h2,h3{
 		color: #fff;
 		opacity: 0.3;
 	}
+	&:active{
+		opacity: 0.6;
+		background: #161d29;
+	}
 	&:hover:before{
 		opacity: 1;
 	}
@@ -694,7 +698,6 @@ p,h1,h2,h3{
 	color: #999;
 	text-decoration: line-through;
 	margin-bottom: 10px;
-	cursor: pointer;
 }
 .catalog-price{
 	font-size: 18px;
@@ -706,7 +709,6 @@ p,h1,h2,h3{
 	margin-left: 41px;
 	border-radius: 3px;
 	position: relative;
-	cursor: pointer;
 }
 .catalog-item-title + .catalog-price{
 	margin-top: 38px;
@@ -1498,7 +1500,8 @@ p,h1,h2,h3{
 	}
 	label{
 		padding-left: 34px;
-		position: relative;		
+		position: relative;
+		cursor: pointer;
 	}
 	.power-filter{ /*Вопрос дизайнеру: ЗАЧЕМ? */
 		font-size: 14px;
