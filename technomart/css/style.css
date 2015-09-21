@@ -605,6 +605,7 @@ h3 {
 }
 .footer-top-panel .footer-contacts {
   float: left;
+  max-width: 350px;
 }
 .footer-top-panel .footer-menu {
   float: right;
@@ -885,9 +886,9 @@ h3 {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-  height: 38px;
+  min-height: 38px;
   text-align: center;
-  padding-top: 10px;
+  padding: 10px 5px;
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
@@ -1144,6 +1145,7 @@ h3 {
   padding-left: 28px;
   padding-right: 24px;
   padding-top: 25px;
+  padding-bottom: 25px;
   margin-bottom: 20px;
 }
 .section-title h2 {
@@ -1153,6 +1155,7 @@ h3 {
   line-height: 36px;
   font-weight: 400;
   color: #32425c;
+  max-width: 520px;
 }
 .section-title .section-title-btn {
   float: right;
@@ -1443,6 +1446,7 @@ h3 {
   padding-top: 9px;
   padding-bottom: 11px;
   padding-left: 19px;
+  padding-right: 19px;
   font-weight: 400;
   text-transform: uppercase;
   background: #f7f3ec;
