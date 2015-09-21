@@ -1368,10 +1368,11 @@ p,h1,h2,h3{
 		color: #000;		
 	}
 	span{
-		border-bottom: 1px solid #ee3643;
+		border-bottom: 1px dotted #ee3643;
 		opacity: 0.3;
 		&:hover{
 			opacity: 1;
+			border-bottom: 1px solid #ee3643;
 		}		
 	}
 	>span{
@@ -1380,6 +1381,9 @@ p,h1,h2,h3{
 		font-size: 13px;
 		opacity: 1;
 		border: none;
+		&:hover{
+			border: none;
+		}		
 	}	
 	.sort{
 		width: 211px;
@@ -1388,6 +1392,9 @@ p,h1,h2,h3{
 		opacity: 1;
 		border: none;
 		color: #ee3643;
+		&:hover{
+			border: none;
+		}
 	}
 	.sort-by-price{
 		width: 112px;
@@ -1398,22 +1405,28 @@ p,h1,h2,h3{
 	.sort-by-functional{
 		width: 150px;
 	}
-	.sort-up,
-	.sort-down{
-		font-family: "symbols-technomart";
+}
+.sort-up,
+.sort-down{
+	font-family: "symbols-technomart";
+	border: none;
+	position: absolute;
+	span{
 		font-size: 23px;
-		line-height: 5px;
+		line-height: 5px;		
 		border: none;
-		position: absolute;
-	}	
-	.sort-up{
-		right: 48px;
-		top: 16px;
+		&:hover{
+			border: none;
+		}
 	}
-	.sort-down{
-		right: 16px;
-		top: 16px;
-	}
+}	
+.sort-up{
+	right: 49px;
+	top: 13px;
+}
+.sort-down{
+	right: 16px;
+	top: 13px;
 }
 .filter-title{
 	margin-bottom: 15px;
