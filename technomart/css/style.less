@@ -1355,14 +1355,48 @@ p,h1,h2,h3{
 }
 .catalog-items-sort-bar{	
 	position: relative;
-	a{
+	font-size: 0;
+	box-sizing: border-box;
+	min-height: 38px;
+	padding-bottom: 9px;
+	a{		
+		display: inline-block;
+		vertical-align: top;
+		font-size: 13px;
+		margin-left: 10px;
 		text-decoration: none;
-		color: #000;
-		border-bottom: 1px solid #ee3643;		
+		color: #000;		
+	}
+	span{
+		border-bottom: 1px solid #ee3643;
 		opacity: 0.3;
 		&:hover{
 			opacity: 1;
-		}
+		}		
+	}
+	>span{
+		display: inline-block;
+		vertical-align: top;
+		font-size: 13px;
+		opacity: 1;
+		border: none;
+	}	
+	.sort{
+		width: 211px;
+	}
+	.sort-active{
+		opacity: 1;
+		border: none;
+		color: #ee3643;
+	}
+	.sort-by-price{
+		width: 112px;
+	}
+	.sort-by-type{
+		width: 108px;
+	}
+	.sort-by-functional{
+		width: 150px;
 	}
 	.sort-up,
 	.sort-down{
@@ -1371,21 +1405,7 @@ p,h1,h2,h3{
 		line-height: 5px;
 		border: none;
 		position: absolute;
-	}
-	.sort-active{
-		opacity: 1;
-		border: none;
-		color: #ee3643;
-	}
-	.sort-by-price{
-		margin-left: 136px;
-	}
-	.sort-by-type{
-		margin-left: 68px;
-	}
-	.sort-by-functional{
-		margin-left: 60px;
-	}
+	}	
 	.sort-up{
 		right: 48px;
 		top: 16px;
