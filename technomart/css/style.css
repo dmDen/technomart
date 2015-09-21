@@ -1627,6 +1627,10 @@ h3 {
 .filter-section input[type="radio"]:checked + label:before {
   content: "\25cf";
 }
+input[type="checkbox"]:disabled + label,
+input[type="radio"]:disabled + label {
+  opacity: 0.4;
+}
 ul.firm-filter {
   padding-bottom: 3px;
   margin-bottom: 21px;

@@ -1533,7 +1533,11 @@ p,h1,h2,h3{
 	}
 	input[type="radio"]:checked+label:before{
 		content: "\25cf";
-	}	
+	}
+}
+input[type="checkbox"]:disabled+label,
+input[type="radio"]:disabled+label{
+	opacity: 0.4;
 }
 
 ul.firm-filter{
