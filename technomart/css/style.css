@@ -1460,19 +1460,25 @@ h3 {
   min-height: 38px;
   padding-bottom: 9px;
 }
-.catalog-items-sort-bar a {
+.catalog-items-sort-bar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+.catalog-items-sort-bar li {
   display: inline-block;
   vertical-align: top;
   font-size: 13px;
   margin-left: 10px;
-  text-decoration: none;
-  color: #000;
 }
-.catalog-items-sort-bar span {
+.catalog-items-sort-bar a {
+  text-decoration: none;
   border-bottom: 1px dotted #ee3643;
   opacity: 0.3;
+  color: #000;
 }
-.catalog-items-sort-bar span:hover {
+.catalog-items-sort-bar a:hover {
   opacity: 1;
   border-bottom: 1px solid #ee3643;
 }
@@ -1512,14 +1518,14 @@ h3 {
   border: none;
   position: absolute;
 }
-.sort-up span,
-.sort-down span {
+.sort-up a,
+.sort-down a {
   font-size: 23px;
   line-height: 5px;
   border: none;
 }
-.sort-up span:hover,
-.sort-down span:hover {
+.sort-up a:hover,
+.sort-down a:hover {
   border: none;
 }
 .sort-up {

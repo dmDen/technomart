@@ -1359,17 +1359,23 @@ p,h1,h2,h3{
 	box-sizing: border-box;
 	min-height: 38px;
 	padding-bottom: 9px;
-	a{		
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: inline-block;
+	}
+	li{		
 		display: inline-block;
 		vertical-align: top;
 		font-size: 13px;
-		margin-left: 10px;
-		text-decoration: none;
-		color: #000;		
+		margin-left: 10px;						
 	}
-	span{
+	a{
+		text-decoration: none;
 		border-bottom: 1px dotted #ee3643;
 		opacity: 0.3;
+		color: #000;
 		&:hover{
 			opacity: 1;
 			border-bottom: 1px solid #ee3643;
@@ -1411,7 +1417,7 @@ p,h1,h2,h3{
 	font-family: "symbols-technomart";
 	border: none;
 	position: absolute;
-	span{
+	a{
 		font-size: 23px;
 		line-height: 5px;		
 		border: none;
