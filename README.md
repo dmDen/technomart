@@ -1,2 +1,0 @@
-# haCourse
-haCourse
