@@ -4,59 +4,10 @@
 	<title>ТЕХНОМАРТ - ИНТЕРНЕТ-МАГАЗИН</title>
 	<meta charset="UTF-8">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Cuprum:400,700,400italic&subset=cyrillic,latin" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="main-header">
-		<div class="header-top-panel">
-			<div class="container clearfix">
-				<a class="logo header-logo" href="index.html">ТЕХНОМАРТ</a>
-				<form class="header-search-form" action="#" method="post">
-					<div class="header-search">
-						<input type="text" name="search" id="search" class="search-input" placeholder="Поиск:">						
-						<button type="submit" class="search-btn">&#x1f50d;</button>
-					</div>
-				</form>
-				<div class="top-panel-right-side">
-					<a class="icon-bookmark top-menu-item" href="#">Закладки: <span class="bookmark-count">0</span></a>
-					<a class="icon-basket top-menu-item" href="#">Корзина: <span class="basket-count">0</span></a>
-					<a class="btn-order" href="#">Оформить заказ</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="header-middle-panel container clearfix">
-			<p class="shop-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-			<div class="header-contacts">
-				<p class="icon-phone phone-number">+7 (812) 555-05-55</p>
-				<p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-			</div>
-			<div class="login-menu">
-				<a class="icon-login login-menu-btn" href="#">Войти</a>
-				<a class="login-menu-btn" href="#">Регистрация</a>
-			</div>
-			<div class="user-menu hide">
-				<a class="user-menu-name icon-user" href="#">Равшан Джамшутович</a>
-				<a class="user-menu-logout-btn icon-logout" href="#">Выход</a>
-				<div class="user-menu-ref">
-					<a class="my-orders" href="#">Мои заказы</a>
-					<a class="my-cabinet" href="#">Личный кабинет</a>
-				</div>
-			</div>			
-		</div>
-		<nav class="main-menu container">
-			<ul>
-				<li><a href="index.html">Главная</a></li>
-				<li><a href="#">Компания </a></li>
-				<li><a href="catalog.html">Каталог</a></li>
-				<li><a href="#">Новости</a></li>
-				<li><a href="#">Спецпредложения</a></li>
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-		</nav>
-	</header>
+@@include("include/header.html", {"basketNotEmpty": "", "basketCount":"0", "LoginMenuHide":"", "userMenuHide":"hide"})
 
 	<div class="container main-content">
 		<div class="promo-blocks">
@@ -120,57 +71,15 @@
 		</div>
 
 		<div class="popular-catalog-items">
-			<div class="catalog-item">
-				<div class="catalog-item-actions">
-					<a href="cartadd.html" class="buy icon-basket">Купить</a>
-					<a href="#" class="bookmark">В закладки</a>				
-				</div>			
-				<div class="catalog-image">
-					<img width="218" height="97" src="img/perf01.jpg" alt="Перфоратор BOSCH BFG 9000">
-				</div>
-				<div class="catalog-item-title">Перфоратор BOSCH BFG 9000</div>
-				<div class="catalog-old-price">32500 Р.</div>
-				<div class="catalog-price">25500 Р.</div>
-			</div>
+		
+@@include("include/catalog-item.html", {"novelty": "", "picture": "img/perf01.jpg", "itemTitle":"Перфоратор BOSCH BFG 9000", "itemOldPrice":"32500 Р.", "itemPrice":"25500 Р."})
 
-			<div class="catalog-item">
-				<div class="catalog-item-actions">
-					<a href="cartadd.html" class="buy icon-basket">Купить</a>
-					<a href="#" class="bookmark">В закладки</a>				
-				</div>
-				<div class="catalog-image">
-					<img width="218" height="97" src="img/perf02.jpg" alt="Перфоратор BOSCH BFG 3000">
-				</div>
-				<div class="catalog-item-title">Перфоратор BOSCH BFG 3000</div>
-				<div class="catalog-old-price">22500 Р.</div>
-				<div class="catalog-price">15500 Р.</div>
-			</div>
+@@include("include/catalog-item.html", {"novelty": "", "picture": "img/perf02.jpg", "itemTitle":"Перфоратор BOSCH BFG 3000", "itemOldPrice":"22500 Р.", "itemPrice":"15500 Р."})		
 
-			<div class="catalog-item">
-				<div class="catalog-item-actions">
-					<a href="cartadd.html" class="buy icon-basket">Купить</a>
-					<a href="#" class="bookmark">В закладки</a>				
-				</div>			
-				<div class="catalog-image">
-					<img width="218" height="97" src="img/perf03.jpg" alt="Перфоратор BOSCH BFG 6000">
-				</div>
-				<div class="catalog-item-title">Перфоратор BOSCH BFG 6000</div>
-				<div class="catalog-old-price">30500 Р.</div>
-				<div class="catalog-price">25500 Р.</div>
-			</div>
+@@include("include/catalog-item.html", {"novelty": "", "picture": "img/perf03.jpg", "itemTitle":"Перфоратор BOSCH BFG 6000", "itemOldPrice":"30500 Р.", "itemPrice":"25500 Р."})				
 
-			<div class="catalog-item novelty">
-				<div class="catalog-item-actions">
-					<a href="cartadd.html" class="buy icon-basket">Купить</a>
-					<a href="#" class="bookmark">В закладки</a>				
-				</div>			
-				<div class="catalog-image">
-					<img width="218" height="97" src="img/perf02.jpg" alt="Перфоратор BOSCH BFG 2000">
-				</div>
-				<div class="catalog-item-title">Перфоратор BOSCH BFG 2000</div>		
-				<div class="catalog-price">12500 Р.</div>
-			</div>
-		</div>
+@@include("include/catalog-item.html", {"novelty": "novelty", "picture": "img/perf02.jpg", "itemTitle":"Перфоратор BOSCH BFG 2000", "itemOldPrice":"", "itemPrice":"12500 Р."})	
+		</div>		
 
 		<div class="section-title clearfix">
 			<h2>Популярные производители:</h2>
@@ -284,109 +193,16 @@
 		</div>
 	</div>
 
-	<footer class="main-footer">
-		<div class="footer-top-panel">
-			<div class="container clearfix">
-				<div class="footer-contacts">
-					<a class="logo footer-logo" href="index.html">Техномарт</a>
-					<p>
-						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-						+7 (812) 555-05-55
-					</p>
-				</div>
-
-				<div class="footer-menu">
-					<ul class="footer-menu-top-part">
-						<li><a href="#">Компания</a></li>
-						<li><a href="#">Новости</a></li>
-						<li><a href="catalog.html">Каталог</a></li>
-						<li><a href="#">Доставка</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-					<ul class="footer-menu-bottom-part">
-						<li><a href="#">Материалы</a></li>
-						<li><a href="#">Техника</a></li>
-						<li><a href="#">Инструмент</a></li>
-						<li><a href="#">Спецпредложения</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-		<div class="footer-bottom-panel">
-			<div class="container clearfix">
-				<p class="copyright">
-					© 2010–2015 Компания «Техномарт»<br>
-					Все права защищены
-				</p>
-
-				<div class="social-buttons">
-					<a class="btn-social" href="#"><i class="icon-vk"></i>Vkontakte</a>
-					<a class="btn-social" href="#"><i class="icon-facebook"></i>Facebook</a>
-					<a class="btn-social" href="#"><i class="icon-instagramm"></i>Instagram</a>
-				</div>
-
-				<div class="studio-contacts site">
-					<p>
-						Разработано — <br>
-						<a href="http://htmlacademy.ru">htmlacademy.ru</a>
-					</p>
-				</div>
-
-				<div class="studio-contacts">
-					<p>
-						Обратная связь: <br>
-						<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
+@@include("include/footer.html")
 
 	<!--Форма Напишите нам -->
-	<div class="modal-form write-us-form">
-		<button class="btn-close-form">Закрыть</button>
-		<form action="echo" method="post" class="write-form">
-			<div class="top-part">					
-					<div class="clearfix">
-						<div class="column">
-							<label for="your-name">Ваше имя:</label>
-							<input class="your-name" type="text" name="your-name" id="your-name" placeholder="Представьтесь, пожалуйста" required>
-						</div>
-						<div class="column">
-							<label for="your-email">Ваш e-mail:</label>
-							<input class="your-email" type="text" name="your-email" id="your-email" placeholder="Для отправки ответа" required>
-						</div>				
-					</div>
-					<label for="e-mail-text">Текст письма:</label>
-					<textarea class="e-mail-text" name="e-mail-text" id="e-mail-text" placeholder="В свободной форме"></textarea>
-			</div>
-			<div class="btn-part">
-				<button type="submit" name="send-btn" class="btn send-btn">Отправить</button>
-				<a class="btn cancel-btn" href="#">Отмена</a>
-			</div>
-		</form>
-	</div>
+@@include("include/write-us-form.html")
 
 	<!-- Форма Товар добавлен -->
-	<div class="modal-form cart-form">
-		<button class="btn-close-form">Закрыть</button>
-		<div class="top-part">
-			<p class="top-part-text">Товар добавлен в корзину!</p>
-		</div>
-		<div class="btn-part">
-			<a class="btn make-order-btn" href="#">Оформить заказ</a>
-			<a class="btn cancel-btn" href="#">Продожить покупки</a>
-		</div>
-	</div>
+@@include("include/cart-form.html")
 	
 	<!-- Форма с картой -->
-	<div class="modal-form map-form clearfix">
-		<button class="btn-close-form">Закрыть</button>
-		<div class="map-part" id="map-part">
-			<img src="img/big-map.jpg" width="900" height="600" alt="Карта проезда">
-		</div>
-	</div>	
+@@include("include/map-form.html")	
 	<script src="js/script.js"></script>
 	<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=7aUj4SKuBFolwF0WuM3k6-4uiYICzePl&height=600&id=map-part"></script>		
 </body>

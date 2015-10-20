@@ -79,16 +79,6 @@ module.exports = function(grunt) {
 						"font/**"
 					],
 					dest: "build"
-				},
-				{
-					expand: true,
-					cwd: "source",
-					flatten: true,
-					src: [
-						"html/**"
-					],
-					dest: "build",
-					filter: 'isFile'
 				}]
 			}
 		},
@@ -135,11 +125,21 @@ module.exports = function(grunt) {
 					spawn: false,
 				},
 			}			
-		},		
+		},
+		includereplace: {
+			build: {
+				expand: true,
+				cwd: "source",
+				flatten: true,
+				src: "html/*.html",
+				dest: "build/"
+			}
+		}
 	});
 	
 	grunt.registerTask("build", [
 		"clean",
+		"includereplace",
 		"copy",
 		"less",
 		"autoprefixer",
