@@ -1,0 +1,133 @@
+.catalog-item{
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	width: 220px;
+	min-height: 318px;
+	border: 1px solid #e5e5e5;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 700;
+	color: #000;
+	text-align: center;
+	position: relative;
+	img{
+		max-width: 218px;
+		max-height: 97px;		
+	}
+	&:after{
+		top: -1px;
+		right: -1px;
+	}	
+	&:hover .catalog-item-actions{
+		display: block;		
+	}
+	&:hover{
+		box-shadow: 0 10px 15px 3px rgba(41,52,73,0.5);
+	}
+}
+.catalog-image{
+	margin-top: 35px;
+	margin-bottom: 40px;
+	min-height: 101px;
+}
+.catalog-item-title{
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 8px;
+}
+.catalog-old-price{
+	font-size: 17px;
+	line-height: 20px;
+	color: #999;
+	text-decoration: line-through;
+	margin-bottom: 10px;
+	min-height: 20px;
+}
+.catalog-price{
+	font-size: 18px;
+	line-height: 22px;
+	color: #fff;
+	background: #ee3643;
+	padding: 8px 30px;;
+	width: 80px;
+	margin-left: 41px;
+	border-radius: 3px;
+	position: relative;
+}
+.catalog-item-title + .catalog-price{
+	margin-top: 38px;
+}
+.catalog-price:after{
+	width: 0;
+	height: 0;
+	content: "";
+	border: 19px solid #fff;
+	border-left-color: #ee3643;
+	position: absolute;
+	top: 0;
+	right: -20px;
+}
+.catalog-item-actions{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 218px;
+	height: 88px;
+	padding: 43px 0;
+	background-color: #fff;
+	.buy,
+	.bookmark{
+		font-family: "Cuprum", "Arial", sans-serif;
+		font-size: 14px;
+		line-height: 18px;
+		display: block;
+		width: 135px;
+		margin: 0 auto;
+		margin-bottom: 8px;
+		padding: 10px 0;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #fff;
+		border-radius: 3px;
+		background-color: #63a63e;
+	}
+	.buy{
+		box-shadow: inset 0 -3px 0 #367315;
+		position: relative;
+		&:before{
+			position: absolute;
+			left: 8px;
+			top: 9px;
+			opacity: 0.3;
+			font-size: 17px;
+			line-height: 18px;
+		}
+		&:hover{
+			background: #5fbb2d;
+			&:before{
+				opacity: 1;
+			}
+		}
+		&:active{
+			background: #518534;
+			box-shadow: none;
+		}
+	}
+	.bookmark{
+		width: 129px;
+		padding: 7px 0;
+		color: #32425c;
+		border: 3px solid #63a63e;
+		background-color: #fff;
+		&:hover{
+			border-color: #32425c;
+		}
+		&:active{
+			border-color: #32425c;
+			opacity: 0.3;
+		}
+	}	
+}
