@@ -1,0 +1,83 @@
+.promo-block{
+	box-sizing: border-box;
+	min-height: 123px;
+	padding-top: 20px;
+	padding-left: 23px;	
+	position: relative;
+	margin-bottom: 20px;
+	p{
+		font-size: 24px;
+		line-height: 30px;		
+		color: #fff;
+		font-weight: 700;
+		margin-bottom: 12px;
+	}
+	a{		
+		display: block;
+		font-size: 14px;
+		line-height: 18px;
+		box-sizing: border-box;
+		width: 138px;
+		height: 38px;
+		padding-top: 11px;
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		background: rgba(0,0,0,0.1);
+		text-align: center;
+		border-radius: 4px;		
+		&:hover{
+			background: rgba(0,0,0,0.2);
+		}
+		&:active{
+			background: rgba(0,0,0,0.3);
+		}
+	}
+	&:before{
+		content: "";
+		background: url("../img/sprite.png") no-repeat;
+		position: absolute;
+		width: 78px;
+		height: 72px;	
+	}
+}
+.promo-block--materials{
+	background: #f6b22d;
+	&:before{
+		background-position: 0 -200px;
+		top: 31px;
+		right: 9px;
+	}
+}
+.promo-block--tools{
+	background: #4aafde;
+	&:before{
+		background-position: 0 -401px; 		
+		top: 33px;		
+		right: 25px;		
+	}	
+}
+.promo-block--equipment{
+	background: #cc79d1;
+	&:before{
+		background-position: -1px -101px;		
+		top: 31px;
+		right: 31px;		
+	}	
+}
+.promo-block--sale{
+	background: #85d179;
+	&:before{
+		background-position: 0 -299px;
+		top: 26px;
+		right: 26px;		
+	}	
+}
+.promo-block--delivery{
+	background: #f6b22d;
+	&:before{
+		background-position: 0 0;
+		top: 32px;
+		right: 31px;		
+	}	
+}

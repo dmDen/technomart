@@ -1,0 +1,77 @@
+.row{
+	&:after{
+		content: "";
+		display: table;
+		clear:both;
+	}
+}
+@col-pading-width: 100% * 1 / @columns-count / 8;
+.col{
+	float: left;
+	padding: 0 @col-pading-width;
+	box-sizing: border-box;
+}
+.row--inline{
+	font-size: 0;
+	.col {
+		float: none;
+		display: inline-block;
+		vertical-align: top;
+	}
+	&:after {
+		display: none;
+	}
+	
+}
+.p0{
+	padding-left: 0;
+	padding-right: 0;
+}
+pl0{
+	padding-left: 0;
+}
+pr0{
+	padding-right: 0;
+}
+.to-left{
+	float: left;
+}
+.to-right{
+	float: right;
+}
+.s-1 {
+	width: 100% * 1 / @columns-count;
+}
+.s-2 {
+	width: 100% * 2 / @columns-count;
+}
+.s-3 {
+	width: 100% * 3 / @columns-count;
+}
+.s-4 {
+	width: 100% * 4 / @columns-count;
+}
+.s-5 {
+	width: 100% * 5 / @columns-count;
+}
+.s-6 {
+	width: 100% * 6 / @columns-count;
+}
+.s-7 {
+	width: 100% * 7 / @columns-count;
+}
+.s-8 {
+	width: 100% * 8 / @columns-count;
+}
+.s-9 {
+	width: 100% * 9 / @columns-count;
+}
+.s-10 {
+	width: 100% * 10 / @columns-count;
+}
+.s-11 {
+	width: 100% * 11 / @columns-count;
+}
+.s-12 {
+	width: 100% * 12 / @columns-count;
+}
