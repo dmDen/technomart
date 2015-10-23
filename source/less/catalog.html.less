@@ -1,0 +1,374 @@
+.breadcrumbs{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 15px;
+	text-transform: uppercase;
+	list-style: none;
+	padding: 0;
+	margin-top: 21px;
+	margin-bottom: 18px;
+	li{
+		display: inline-block;
+		vertical-align: top;
+		&:first-child{
+			font-size: 0;
+		}
+	}
+	a{
+		text-decoration: none;
+		color: #000;
+	}	
+	a:before,
+	span:before{
+		font-size: 14px;
+		line-height: 20px;
+		margin-right: 16px;
+		margin-left: 8px;
+	}
+	.icon-home:before{
+		margin: 0; 
+	}	
+}
+.catalog-title{
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 35px;
+	font-weight: 400;
+	color: #32425c;
+	background: #f2f6f8;
+	padding: 27px 28px;
+	margin-bottom: 20px;
+}
+.filter-title,
+.catalog-items-sort-bar{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	padding-top: 9px;
+	padding-bottom: 11px;
+	padding-left: 19px;
+	padding-right: 19px;
+	font-weight: 400;
+	text-transform: uppercase;
+	background: #f7f3ec;
+}
+.catalog-items-sort-bar{	
+	position: relative;
+	font-size: 0;
+	box-sizing: border-box;
+	min-height: 38px;
+	padding-bottom: 9px;
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: inline-block;
+	}
+	li{		
+		display: inline-block;
+		vertical-align: top;
+		font-size: 13px;
+		margin-left: 10px;						
+	}
+	a{
+		text-decoration: none;
+		border-bottom: 1px dotted #ee3643;
+		opacity: 0.3;
+		color: #000;
+		&:hover{
+			opacity: 1;
+			border-bottom: 1px solid #ee3643;
+		}		
+	}
+	>span{
+		display: inline-block;
+		vertical-align: top;
+		font-size: 13px;
+		opacity: 1;
+		border: none;
+		&:hover{
+			border: none;
+		}		
+	}	
+	.sort{
+		width: 211px;
+	}
+	.sort-active{
+		opacity: 1;
+		border: none;
+		color: #ee3643;
+		&:hover{
+			border: none;
+		}
+	}
+	.sort-by-price{
+		width: 112px;
+	}
+	.sort-by-type{
+		width: 108px;
+	}
+	.sort-by-functional{
+		width: 150px;
+	}
+}
+.sort-up,
+.sort-down{
+	font-family: "symbols-technomart";
+	border: none;
+	position: absolute;
+	a{
+		font-size: 23px;
+		line-height: 5px;		
+		border: none;
+		&:hover{
+			border: none;
+		}
+	}
+}	
+.sort-up{
+	right: 49px;
+	top: 13px;
+}
+.sort-down{
+	right: 16px;
+	top: 13px;
+}
+.filter-title{
+	margin-bottom: 15px;
+}
+.catalog-filter{
+	float: left;
+	width: 220px;
+	margin-bottom: 60px;
+}
+.filter-section-title{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 17px;
+	line-height: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+/*Ползунок цены
+*////////////
+
+.filter-price-range {
+	width: 220px;
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 25px;
+	margin-bottom: 20px;
+}
+
+.filter-range-controls {
+	position: relative;
+	margin-top: 20px;
+	box-sizing: border-box;
+	height: 80px;
+	padding-top: 39px;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-bottom: 9px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: #f7f3ec;
+}
+
+.filter-range-controls .scale {
+	height: 2px;
+	background: #d7dcde;
+}
+
+.filter-range-controls .bar {	
+	height: 2px;
+	background: #00ca74;
+}
+
+.filter-range-controls .toggle {
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	width: 4px;
+	height: 4px;
+	cursor: pointer;
+	border: 8px solid #fff;
+	border-radius: 50%;
+	background: #ababab;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.filter-price-controls {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+
+.filter-price-controls input {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 17px;
+	line-height: 22px;	
+	width: 95px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: center;
+	color: #000;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	background: #f7f3ec;	
+}
+.min-price{
+	margin-right: 7px;
+	
+}
+.max-price {
+	float: right;
+}
+
+.filter-section{
+	input{
+		display: none;
+	}
+	ul{
+		margin: 0;
+		margin-top: 19px;
+		padding: 0;
+		list-style: none;
+		font-family: "PT Sans", "Arial", sans-serif;
+		font-size: 15px;
+		line-height: 20px;
+		color: #000;
+		text-transform: uppercase;
+	}
+	li{
+		margin-bottom: 20px;
+	}
+	label{
+		padding-left: 34px;
+		position: relative;
+		cursor: pointer;
+	}
+	.power-filter{
+		font-size: 14px;
+		line-height: 20px;
+		margin-top: 18px;
+		margin-bottom: 80px;
+	}
+	label:before{
+		content:"";
+		font-family: "symbols-technomart";
+		font-size: 28px;
+		line-height: 20px;
+		color: #c1c1c1;
+		position: absolute;
+		top: 2px;
+		left: 0;
+	}
+	input[type="checkbox"]+label:before{
+		content: "\2610";
+	}
+	input[type="checkbox"]:checked+label:before{
+		content: "\2611";
+	}
+	input[type="radio"]+label:before{
+		content: "\25cb";
+	}
+	input[type="radio"]:checked+label:before{
+		content: "\25cf";
+	}
+}
+input[type="checkbox"]:disabled+label,
+input[type="radio"]:disabled+label{
+	opacity: 0.4;
+}
+
+ul.firm-filter{
+	padding-bottom: 3px;
+	margin-bottom: 21px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.btn-show,
+.paginator-btn{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+	background: #fff;	
+	padding-top: 9px;
+	padding-bottom: 9px;
+	color: #000;
+	outline: none;
+	&:hover{
+		border-color: #bdc6ca;
+	}
+}
+.btn-show{
+	min-width: 140px;	
+}
+.catalog-items-sort-bar{
+	margin-bottom: 20px;
+}
+.catalog-items{
+	width: 700px;
+	float: right;
+	font-size: 0;
+	margin-bottom: 60px;
+	.catalog-item{
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+	.catalog-item:nth-child(3n){
+		margin-right: 0;
+	}
+}
+.catalog-items-container{
+	margin-bottom: 32px;
+}
+.paginator-btn{
+	display: inline-block;
+	vertical-align: top;
+	min-width: 36px;
+	text-align: center;
+	margin-right: 10px;
+	&:active{
+		border-color: #ee3643;
+	}
+}
+.paginator-btn.btn-prev,
+.paginator-btn.btn-next{
+	min-width: 138px;
+}
+.paginator-btn.btn-page-active{
+	background: #ee3643;
+	color: #fff;
+	border: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	min-width: 38px;
+}
+.paginator-btn.hide{
+	display: none;
+}
+.items-description{
+	background: #f2f6f8;
+	padding-top: 62px;
+	padding-bottom: 70px;
+}
+.items-description-title{
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 35px;
+	font-weight: 400;	
+	margin-bottom: 22px;
+}
+.items-description-text{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	color: #000;	
+}

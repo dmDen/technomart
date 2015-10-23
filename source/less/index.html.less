@@ -1,0 +1,353 @@
+/*Верхняя часть (слайдер, плашки)
+///////////////////////////////*/
+.promo-blocks{
+	margin-top: 59px;
+}
+
+/*Слайдер
+////////*/
+.promo-slider-and-actions{
+	margin-bottom: 53px;
+	.actions{
+		float: right;
+	}	
+}
+.promo-slider{
+	float: left;
+	background: green;
+	box-sizing: border-box;
+	width: 620px;
+	height: 266px;
+	overflow: hidden;
+	position: relative;
+	input{
+		display: none;
+	}
+	.slides{
+		width: 620px * 2;
+		//transition: transform 0.9s ease;
+	}
+	img{
+		float: left;
+		width: 620px;
+		height: 266px; 		
+	}
+	.open-catalog-btn{
+		position: absolute;
+		width: 195px;
+		left: 25px;
+		bottom: 22px;
+		z-index: 10;
+	}
+	.arrow-left,
+	.arrow-right{
+		position: absolute;
+		font-family: "symbols-technomart";
+		font-size: 45px;
+		color: #fff;
+		cursor: pointer;
+		//transition: opacity 0.3s;		
+		
+	}
+	.arrow-left{
+		left: 25px;
+		top: 109px;
+	}
+	.arrow-right{
+		right: 21px;
+		top: 109px;
+	}	
+}
+.promo-slide-title{
+	opacity: 0;	
+	position: absolute;	
+	left: 25px;
+	top: 23px;
+	//transition: opacity 1s;
+	h2{
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 36px;
+		color: #fff;
+		text-transform: uppercase;
+	}
+	p{
+		font-size: 18px;
+		line-height: 24px;
+		color: #fff;
+	}
+}
+.slider-switcher{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 36px;
+	z-index: 5;
+	text-align: center;
+	label{
+		font-size: 0;
+		display: inline-block;
+		vertical-align: top;
+		width: 6px;
+		height: 6px;
+		margin: 0 3px;
+		background: #fff;
+		cursor: pointer;   
+		border: 2px solid #fff;
+		border-radius: 50%;    
+		box-shadow: 0px 0px 2px rgba(0,0,0,0.8);     
+		//transition: background-color 0.3s;		
+	}
+}
+/*Активация слайдов
+//////////////*/
+#slide-1:checked ~ .promo-slide-title.slide-1,
+#slide-2:checked ~ .promo-slide-title.slide-2{	
+	opacity: 1;
+}
+#slide-1:checked ~ .slider-switcher label[for="slide-1"],
+#slide-2:checked ~ .slider-switcher label[for="slide-2"],{
+	background: #ee3643;
+}
+#slide-1:checked ~ .arrow-left,
+#slide-2:checked ~ .arrow-right{
+	opacity: 0.3;
+}
+
+#slide-1:checked ~ .slides {
+	transform: translate(0);
+}
+#slide-2:checked ~ .slides {
+	transform: translate(-620px);
+}
+
+/*Популярные товары каталога
+//////////////////////////*/
+.popular-catalog-items{
+	font-size: 0;	
+	.catalog-item{
+		margin-right: 20px;
+		margin-bottom: 21px;
+	}
+	.catalog-item:nth-child(4n){
+		margin-right: 0;
+	}
+}
+/*Бренды
+///////*/
+.popular-brands{
+	font-size: 0;
+	.catalog-brand{
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+	.catalog-brand:nth-child(4n){
+		margin-right: 0;		
+	}
+	.catalog-brand:last-child{
+		margin-bottom: 85px;	
+	}	
+}
+
+.catalog-brand{
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	width: 220px;
+	min-height: 145px;
+	border: 1px solid #e5e5e5;	
+	img{
+		max-width: 218px;
+		max-height: 143px;
+	}
+	&:hover{
+		border: none;
+		box-shadow: 0 7px 20px 3px rgba(41,52,73,0.5);
+	}
+	&:active{
+		box-shadow: 0 3px 10px 3px rgba(41,52,73,0.5);
+		opacity: 0.3;
+	}
+}
+/*Сервисы
+////////*/
+.services{
+	background: #f2f6f8;
+	margin-bottom: 76px;
+}
+.services-top-level{
+	padding-top: 62px;
+}
+.services-title{
+	font-size: 30px;
+	line-height: 35px;
+	text-transform: uppercase;
+	margin-bottom: 23px;
+}
+.services-description{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	margin-bottom: 69px;
+}
+/*Доставка Гарнатия Кредит
+////////////////////////*/
+.services-bottom-level{
+	input{
+		display: none;
+	}
+	.services-info{
+		display: none;
+		float: left;
+		padding-left: 80px;
+		width: 620px;
+		min-height: 285px;
+	}
+}
+.tabs{
+	float: left;
+	width: 240px;
+	position: relative;	
+	ul{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}	
+	label{
+		display: block;
+		text-decoration: none;
+		box-sizing: border-box;
+		width: 240px;
+		min-height: 61px;
+		padding-top: 17px;
+		padding-left: 22px;
+		background: #32425c;
+		box-shadow: inset 0px 1px #405069,
+			inset 0px -1px #293449;
+		color: #fff;
+		font-weight: 700;
+		font-size: 21px;
+		line-height: 25px;
+		cursor: pointer;
+		&:hover{
+			background: #293449;
+		}
+	}
+	&:after{
+		content: "";
+		background: url("../img/sprite.png") no-repeat;
+		background-position: -101px 0;
+		width: 10px;
+		height: 272px;				
+		position: absolute;				
+		top: -40px;
+		right: 0;
+	}
+}
+.services-info-title{
+	font-size: 36px;
+	line-height: 30px;
+	color: #32425c;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.services-info-text{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+}
+.delivery{
+	background: url("../img/delivery-bg.png") no-repeat 231px 24px;
+}
+.guarantee{
+	background: url("../img/guarantee-bg.png") no-repeat 316px 0;
+}
+.credit{
+	background: url("../img/credit-bg.png") no-repeat 220px 0;
+	.btn{
+		width: 195px;
+		margin-top: 25px;
+	}
+}
+/*Активация табов
+//////////////*/
+#tab-delivery:checked ~ .delivery,
+#tab-guarantee:checked ~ .guarantee,
+#tab-credit:checked ~ .credit{
+	display: block;
+}
+#tab-delivery:checked ~ .tabs label[for="tab-delivery"],
+#tab-guarantee:checked ~ .tabs label[for="tab-guarantee"],
+#tab-credit:checked ~ .tabs label[for="tab-credit"]{
+	background: #fff;
+	color: #32425c;
+	box-shadow: none;
+}
+
+/*О компании и карта
+//////////////////*/
+.about-company{
+	.btn{
+		margin-bottom: 86px;
+	}
+}
+.about-company-description{
+	float: left;
+	box-sizing: border-box;
+	width: 550px;
+	ul{
+		list-style: none;
+		padding: 0;
+		margin-top: 22px;
+		margin-bottom: 37px;
+	}
+	li{
+		padding-left: 36px;
+		margin-bottom: 20px;
+		font-size: 18px;
+		line-height: 20px;
+		position: relative;
+		&:before{
+			content: "";
+			position: absolute;
+			width: 25px;
+			border-bottom: 2px solid #fb565a;
+			left: 0px;
+			top: 10px;
+		}
+	}
+}
+.about-company-title{
+	font-size: 30px;
+	line-height: 35px;
+	text-transform: uppercase;
+}
+.about-company-text{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	margin-top: 23px;
+}
+.about-company-contacts{
+	float: right;
+	box-sizing: border-box;
+	width: 300px;
+	.about-company-text{
+		margin-bottom: 32px;	
+	}
+}
+.map{
+	margin-bottom: 35px;
+	img{
+		width: 300px;
+		height: 158px;
+	}
+}
+.about-company-btn{
+	width: 220px;
+}
+.write-us-btn{
+	width: 300px;
+}
+
+

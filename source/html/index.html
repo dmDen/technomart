@@ -9,9 +9,9 @@
 <body>
 @@include("include/header.html", {"basketNotEmpty": "", "basketCount":"0", "LoginMenuHide":"", "userMenuHide":"hide"})
 
-	<div class="container main-content">
+	<div class="container">
 		<div class="promo-blocks">
-			<div class="row product-kinds">
+			<div class="row">
 				<div class="col s-4">
 					<div class="promo-block promo-block--materials novelty">
 						<p class="block-title"> Материалы</p>
@@ -59,7 +59,7 @@
 					</div>
 				</div>
 
-				<div class="actions2 col s-4">
+				<div class="col s-4">
 					<div class="promo-block promo-block--sale">
 						<p class="block-title">Скидки 50%</p>
 						<a class="block-btn" href="#">На 350 товаров</a>
@@ -71,13 +71,15 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="section-title clearfix">
-			<h2>Популярные товары:</h2>
-			<a class="btn section-title-btn" href="#">Все популярные товары</a>
+	
+		<div class="col single">
+			<div class="section-title">
+				<h2>Популярные товары:</h2>
+				<a class="btn" href="#">Все популярные товары</a>
+			</div>
 		</div>
 
-		<div class="popular-catalog-items">
+		<div class="col single popular-catalog-items">
 		
 @@include("include/catalog-item.html", {"novelty": "", "picture": "img/perf01.jpg", "itemTitle":"Перфоратор BOSCH BFG 9000", "itemOldPrice":"32500 Р.", "itemPrice":"25500 Р."})
 
@@ -88,12 +90,14 @@
 @@include("include/catalog-item.html", {"novelty": "novelty", "picture": "img/perf02.jpg", "itemTitle":"Перфоратор BOSCH BFG 2000", "itemOldPrice":"", "itemPrice":"12500 Р."})	
 		</div>		
 
-		<div class="section-title clearfix">
-			<h2>Популярные производители:</h2>
-			<a class="btn section-title-btn" href="#">Все производители</a>
+		<div class="col single">
+			<div class="section-title">
+				<h2>Популярные производители:</h2>
+				<a class="btn" href="#">Все производители</a>
+			</div>
 		</div>
 
-		<div class="popular-brands">
+		<div class="col single popular-brands">
 			<div class="catalog-brand">
 				<a href="#"><img class="brand-logo" src="img/bosch.png" width="218" height="143" alt="Bosch"></a>
 			</div>

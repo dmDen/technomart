@@ -1,5 +1,5 @@
 var btnsCloseForm = document.querySelectorAll(".btn-close-form");
-var btnsBuy = document.querySelectorAll(".catalog-item-actions>.buy");
+var btnsBuy = document.querySelectorAll(".catalog-item__buy");
 var cartForm = document.querySelector(".cart-form");
 var btnsCancel = document.querySelectorAll(".cancel-btn");
 var modalForms = document.querySelectorAll(".modal-form");

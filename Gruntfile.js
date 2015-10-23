@@ -110,6 +110,15 @@ module.exports = function(grunt) {
 				}]
 			}
 		},
+		includereplace: {
+			build: {
+				expand: true,
+				cwd: "source",
+				flatten: true,
+				src: "html/*.html",
+				dest: "build/"
+			}
+		},		
 		watch:{
 			less: {
 				files: ["source/less/**/*.less"],
@@ -120,20 +129,11 @@ module.exports = function(grunt) {
 			},
 			html: {
 				files: ["source/html/**/*.html"],
-				tasks: ["copy"],
+				tasks: ["includereplace"],
 				options: {
 					spawn: false,
 				},
 			}			
-		},
-		includereplace: {
-			build: {
-				expand: true,
-				cwd: "source",
-				flatten: true,
-				src: "html/*.html",
-				dest: "build/"
-			}
 		}
 	});
 	
