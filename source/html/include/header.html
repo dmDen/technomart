@@ -1,49 +1,67 @@
 	<header class="main-header">
 		<div class="header-top-panel">
-			<div class="container clearfix">
-				<a class="logo header-logo" href="index.html">ТЕХНОМАРТ</a>
-				<form class="header-search-form" action="#" method="post">
-					<div class="header-search">
-						<input type="text" name="search" id="search" class="search-input" placeholder="Поиск:">						
-						<button type="submit" class="search-btn">&#x1f50d;</button>
+			<div class="container row">
+				<div class="col s-3">
+					<a class="logo header-logo" href="index.html">ТЕХНОМАРТ</a>
+				</div>
+				<div class="col s-3 p0">
+					<form class="header-search-form" action="#" method="post">
+						<div class="header-search">
+							<input type="text" name="search" id="search" class="search-input" placeholder="Поиск:">						
+							<button type="submit" class="search-btn">&#x1f50d;</button>
+						</div>
+					</form>
+				</div>
+				<div class="col s-6 pl0">
+					<div class="top-panel-right-side">
+						<a class="icon-bookmark top-menu-item" href="#">Закладки: <span class="bookmark-count">0</span></a>
+						<a class="icon-basket top-menu-item @@basketNotEmpty" href="#">Корзина: <span class="basket-count">@@basketCount</span></a>
+						<a class="btn-order" href="#">Оформить заказ</a>
 					</div>
-				</form>
-				<div class="top-panel-right-side">
-					<a class="icon-bookmark top-menu-item" href="#">Закладки: <span class="bookmark-count">0</span></a>
-					<a class="icon-basket top-menu-item @@basketNotEmpty" href="#">Корзина: <span class="basket-count">@@basketCount</span></a>
-					<a class="btn-order" href="#">Оформить заказ</a>
 				</div>
 			</div>
 		</div>
 
-		<div class="header-middle-panel container clearfix">
-			<p class="shop-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-			<div class="header-contacts">
-				<p class="icon-phone phone-number">+7 (812) 555-05-55</p>
-				<p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+		<div class="header-middle-panel row container">
+			<div class="col s-4">
+				<p class="shop-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
 			</div>
-			<div class="login-menu @@LoginMenuHide">
-				<a class="icon-login login-menu-btn" href="#">Войти</a>
-				<a class="login-menu-btn" href="#">Регистрация</a>
+			<div class="col s-4">
+				<div class="header-contacts">
+					<p class="icon-phone phone-number">+7 (812) 555-05-55</p>
+					<p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+				</div>
 			</div>
-			<div class="user-menu @@userMenuHide">
-				<a class="user-menu-name icon-user" href="#">Равшан Джамшутович</a>
-				<a class="user-menu-logout-btn icon-logout" href="#">Выход</a>
-				<div class="user-menu-ref">
-					<a class="my-orders" href="#">Мои заказы</a>
-					<a class="my-cabinet" href="#">Личный кабинет</a>
+			<div class="col s-4 @@LoginMenuHide">
+				<div class="login-menu">
+					<a class="icon-login login-menu-btn" href="#">Войти</a>
+					<a class="login-menu-btn" href="#">Регистрация</a>
+				</div>
+			</div>
+			<div class="col s-4 @@userMenuHide">
+				<div class="user-menu">
+					<a class="user-menu-name icon-user" href="#">Равшан Джамшутович</a>
+					<a class="user-menu-logout-btn icon-logout" href="#">Выход</a>
+					<div class="user-menu-ref">
+						<a class="my-orders" href="#">Мои заказы</a>
+						<a class="my-cabinet" href="#">Личный кабинет</a>
+					</div>
 				</div>
 			</div>			
 		</div>
-		<nav class="main-menu container">
-			<ul>
-				<li><a href="index.html">Главная</a></li>
-				<li><a href="#">Компания </a></li>
-				<li><a href="catalog.html">Каталог</a></li>
-				<li><a href="#">Новости</a></li>
-				<li><a href="#">Спецпредложения</a></li>
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
+		<nav class="container">
+			<div class="col single">
+				<div class="main-menu">
+					<ul>
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="#">Компания </a></li>
+						<li><a href="catalog.html">Каталог</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Спецпредложения</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
 		</nav>
 	</header>
